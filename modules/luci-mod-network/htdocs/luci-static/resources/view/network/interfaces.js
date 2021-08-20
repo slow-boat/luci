@@ -952,6 +952,15 @@ return view.extend({
 				for (var i = 0; i < rtTables.length; i++)
 					o.value(rtTables[i][1], '%s (%d)'.format(rtTables[i][0], rtTables[i][1]));
 
+				o = nettools.replaceOption(s, 'advanced', form.Flag, 'devrule', _('Interface Rule'), _('Add device rule to restrict interface traffic to route table'));
+				o.default = o.disabled;
+				
+				o = nettools.replaceOption(s, 'advanced', form.Value, 'hostrule', _('Host Rule'), _('Allow this host\'s services to pass traffic to/from this interface'));
+				o.value('', _('none'), _('No Interface based rule'));
+				o.value('1', _('subnet'), _('Add device rule for entire interface subnet'));
+				o.value('2', _('address only'), _('Add device rule for interface IP address'));
+				o.depends('devrule', '1');
+		
 				o = nettools.replaceOption(s, 'advanced', form.Flag, 'delegate', _('Delegate IPv6 prefixes'), _('Enable downstream delegation of IPv6 prefixes available on this interface'));
 				o.default = o.enabled;
 
