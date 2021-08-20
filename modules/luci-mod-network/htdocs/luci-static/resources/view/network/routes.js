@@ -101,6 +101,50 @@ return view.extend({
 			o = s.taboption('advanced', form.Flag, 'onlink', _('On-Link route'));
 			o.default = o.disabled;
 			o.rmempty = true;
+			
+			s = m.section(form.GridSection, (i == 4) ? 'rule' : 'rule6', (i == 4) ? _('IPv4 Route Rules') : _('IPv6 Route Rules'));
+			s.anonymous = true;
+			s.addremove = true;
+			s.sortable = true;
+			s.nodescriptions = true;
+			
+			o = s.option(widgets.NetworkSelect, 'in', _('Input Interface'));
+			o.rmempty = false;
+			o.nocreate = true;
+			o.optional = true;
+			
+			o = s.option(widgets.NetworkSelect, 'out', _('Output Interface'));
+			o.rmempty = false;
+			o.nocreate = true;
+			o.optional = true;
+			o.depends('in', '');
+
+			o = s.option(form.Value, 'src', (i == 4) ? _('<abbr title="Internet Protocol Version 4">IPv4</abbr>-Source') : _('<abbr title="Internet Protocol Version 6">IPv6</abbr>-Source'));
+			o.datatype = (i == 4) ? 'ip4addr' : 'ip6addr';
+			o.rmempty = true;
+			
+			o = s.option(form.Value, 'dest', (i == 4) ? _('<abbr title="Internet Protocol Version 4">IPv4</abbr>-Destination') : _('<abbr title="Internet Protocol Version 6">IPv6</abbr>-Destination'));
+			o.datatype = (i == 4) ? 'ip4addr' : 'ip6addr';
+			o.rmempty = true;
+			
+			o = s.option(form.Value, 'lookup', _('Route table'));
+			o.value('local', 'local (255)');
+			o.value('main', 'main (254)');
+			o.value('default', 'default (253)');
+			o.rmempty = true;
+			o.modalonly = true;
+			o.cfgvalue = function(section_id) {
+				var cfgvalue = this.map.data.get('network', section_id, 'table');
+				return cfgvalue || 'main';
+			};
+			
+			o = s.option(form.Value, 'priority', _('Priority'));
+			o.placeholder = 0;
+			o.datatype = 'range(0,65535)';
+			o.rmempty = true;
+			o.textvalue = function(section_id) {
+				return this.cfgvalue(section_id) || 0;
+			};
 		}
 
 		return m.render();
