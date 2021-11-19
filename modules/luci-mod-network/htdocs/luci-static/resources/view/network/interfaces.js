@@ -576,9 +576,11 @@ return view.extend({
 				o.modalonly = true;
 				o.default = o.enabled;
 				
-				o = s.taboption('general', form.Flag, 'ipv6', _('Enable IPv6'));
-				o.optional = true;
-				o.default = o.disabled;
+				if (fs.stat('/proc/net/if_inet6')) {
+					o = s.taboption('general', form.Flag, 'ipv6', _('Enable IPv6'));
+					o.optional = true;
+					o.default = o.disabled;
+				}
 
 				if (L.hasSystemFeature('firewall')) {
 					o = s.taboption('firewall', widgets.ZoneSelect, '_zone', _('Create / Assign firewall-zone'), _('Choose the firewall zone you want to assign to this interface. Select <em>unspecified</em> to remove the interface from the associated zone or fill out the <em>custom</em> field to define a new zone and attach the interface to it.'));
