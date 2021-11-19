@@ -8,6 +8,7 @@
 'require network';
 'require validation';
 'require tools.widgets as widgets';
+'require fs';
 
 var callHostHints, callDUIDHints, callDHCPLeases, CBILeaseStatus, CBILease6Status;
 
@@ -236,7 +237,7 @@ return view.extend({
 	},
 
 	render: function(hosts_duids_pools) {
-		var has_dhcpv6 = L.hasSystemFeature('dnsmasq', 'dhcpv6') || L.hasSystemFeature('odhcpd'),
+		var has_dhcpv6 = fs.stat('/proc/net/if_inet6') && (L.hasSystemFeature('dnsmasq', 'dhcpv6') || L.hasSystemFeature('odhcpd')),
 		    hosts = hosts_duids_pools[0],
 		    duids = hosts_duids_pools[1],
 		    pools = hosts_duids_pools[2],

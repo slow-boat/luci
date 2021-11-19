@@ -4,6 +4,7 @@
 'require uci';
 'require network';
 'require validation';
+'require fs';
 
 var callLuciDHCPLeases = rpc.declare({
 	object: 'luci-rpc',
@@ -60,7 +61,8 @@ return baseclass.extend({
 	},
 
 	renderLeases: function(data) {
-		var leases = Array.isArray(data[0].dhcp_leases) ? data[0].dhcp_leases : [],
+		var has_dhcpv6 = fs.stat('/proc/net/if_inet6') && (L.hasSystemFeature('dnsmasq', 'dhcpv6') || L.hasSystemFeature('odhcpd')),
+			leases = Array.isArray(data[0].dhcp_leases) ? data[0].dhcp_leases : [],
 		    leases6 = Array.isArray(data[0].dhcp6_leases) ? data[0].dhcp6_leases : [],
 		    machints = data[1].getMACHints(false),
 		    hosts = uci.sections('dhcp', 'host'),
@@ -121,61 +123,68 @@ return baseclass.extend({
 			return rows;
 		}, this)), E('em', _('There are no active leases')));
 
-		var table6 = E('table', { 'class': 'table leases6' }, [
-			E('tr', { 'class': 'tr table-titles' }, [
-				E('th', { 'class': 'th' }, _('Host')),
-				E('th', { 'class': 'th' }, _('IPv6 address')),
-				E('th', { 'class': 'th' }, _('DUID')),
-				E('th', { 'class': 'th' }, _('Lease time remaining')),
-				isReadonlyView ? E([]) : E('th', { 'class': 'th cbi-section-actions' }, _('Static Lease'))
-			])
-		]);
+		if (has_dhcpv6) {
+			var table6 = E('table', { 'class': 'table leases6' }, [
+				E('tr', { 'class': 'tr table-titles' }, [
+					E('th', { 'class': 'th' }, _('Host')),
+					E('th', { 'class': 'th' }, _('IPv6 address')),
+					E('th', { 'class': 'th' }, _('DUID')),
+					E('th', { 'class': 'th' }, _('Lease time remaining')),
+					isReadonlyView ? E([]) : E('th', { 'class': 'th cbi-section-actions' }, _('Static Lease'))
+				])
+			]);
 
-		cbi_update_table(table6, leases6.map(L.bind(function(lease) {
-			var exp, rows;
+			cbi_update_table(table6, leases6.map(L.bind(function(lease) {
+				var exp, rows;
 
-			if (lease.expires === false)
-				exp = E('em', _('unlimited'));
-			else if (lease.expires <= 0)
-				exp = E('em', _('expired'));
-			else
-				exp = '%t'.format(lease.expires);
+				if (lease.expires === false)
+					exp = E('em', _('unlimited'));
+				else if (lease.expires <= 0)
+					exp = E('em', _('expired'));
+				else
+					exp = '%t'.format(lease.expires);
 
-			var hint = lease.macaddr ? machints.filter(function(h) { return h[0] == lease.macaddr })[0] : null,
-			    host = null;
+				var hint = lease.macaddr ? machints.filter(function(h) { return h[0] == lease.macaddr })[0] : null,
+					host = null;
 
-			if (hint && lease.hostname && lease.hostname != hint[1] && lease.ip6addr != hint[1])
-				host = '%s (%s)'.format(lease.hostname, hint[1]);
-			else if (lease.hostname)
-				host = lease.hostname;
-			else if (hint)
-				host = hint[1];
+				if (hint && lease.hostname && lease.hostname != hint[1] && lease.ip6addr != hint[1])
+					host = '%s (%s)'.format(lease.hostname, hint[1]);
+				else if (lease.hostname)
+					host = lease.hostname;
+				else if (hint)
+					host = hint[1];
 
-			rows = [
-				host || '-',
-				lease.ip6addrs ? lease.ip6addrs.join(' ') : lease.ip6addr,
-				lease.duid,
-				exp
-			];
+				rows = [
+					host || '-',
+					lease.ip6addrs ? lease.ip6addrs.join(' ') : lease.ip6addr,
+					lease.duid,
+					exp
+				];
 
-			if (!isReadonlyView && lease.duid != null) {
-				var duid = lease.duid.toUpperCase();
-				rows.push(E('button', {
-					'class': 'cbi-button cbi-button-apply',
-					'click': L.bind(this.handleCreateStaticLease6, this, lease),
-					'disabled': this.isDUIDStatic[duid]
-				}, [ _('Set Static') ]));
-			}
+				if (!isReadonlyView && lease.duid != null) {
+					var duid = lease.duid.toUpperCase();
+					rows.push(E('button', {
+						'class': 'cbi-button cbi-button-apply',
+						'click': L.bind(this.handleCreateStaticLease6, this, lease),
+						'disabled': this.isDUIDStatic[duid]
+					}, [ _('Set Static') ]));
+				}
 
-			return rows;
-		}, this)), E('em', _('There are no active leases')));
+				return rows;
+			}, this)), E('em', _('There are no active leases')));
 
+			return E([
+				E('h3', _('Active DHCP Leases')),
+				table,
+				E('h3', _('Active DHCPv6 Leases')),
+				table6
+			]);
+		}
+		
 		return E([
-			E('h3', _('Active DHCP Leases')),
-			table,
-			E('h3', _('Active DHCPv6 Leases')),
-			table6
-		]);
+				E('h3', _('Active DHCP Leases')),
+				table
+			]);
 	},
 
 	render: function(data) {
