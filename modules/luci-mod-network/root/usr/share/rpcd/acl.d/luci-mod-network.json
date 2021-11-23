@@ -66,5 +66,25 @@
 			},
 			"uci": [ "luci" ]
 		}
+	},
+
+	"luci-mod-network-routetables": {
+		"description": "Grant access to route tables",
+		"read": {
+			"file": {
+				"/etc/iproute2/rt_tables": [ "read" ]
+			},
+			"ubus": {
+				"file": [ "read" ]
+			}
+		},
+		"write": {
+			"file": {
+				"/etc/iproute2/rt_tables": [ "write" ]
+			},
+			"ubus": {
+				"file": [ "write" ]
+			}
+		}
 	}
 }

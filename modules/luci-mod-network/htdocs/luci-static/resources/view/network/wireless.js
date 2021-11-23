@@ -1155,6 +1155,9 @@ return view.extend({
 					if (/^radio\d+\.network/.test(o.placeholder))
 						o.placeholder = '';
 
+					o = ss.taboption('advanced', form.Value, 'macaddr', _('<abbr title="Override MAC address">Spoof MAC</abbr>'));
+					o.datatype = 'macaddr';
+					
 					o = ss.taboption('advanced', form.Flag, 'short_preamble', _('Short Preamble'));
 					o.default = o.enabled;
 

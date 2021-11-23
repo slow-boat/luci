@@ -57,6 +57,18 @@
 			"acl": [ "luci-mod-network-config" ]
 		}
 	},
+	
+	"admin/network/routetables": {
+		"title": "Route Tables",
+		"order": 35,
+		"action": {
+			"type": "view",
+			"path": "network/routetables"
+		},
+		"depends": {
+			"acl": [ "luci-mod-network-routetables" ]
+		}
+	},
 
 	"admin/network/dhcp": {
 		"title": "DHCP and DNS",

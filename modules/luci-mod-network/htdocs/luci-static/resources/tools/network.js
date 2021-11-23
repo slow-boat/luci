@@ -342,12 +342,13 @@ return baseclass.extend({
 		o.readonly = !isNew;
 		o.value('', _('Network device'));
 		o.value('bridge', _('Bridge device'));
+		o.value('bond', _('Bond device'));
 		o.value('8021q', _('VLAN (802.1q)'));
 		o.value('8021ad', _('VLAN (802.1ad)'));
 		o.value('macvlan', _('MAC VLAN'));
 		o.value('veth', _('Virtual Ethernet'));
 		o.validate = function(section_id, value) {
-			if (value == 'bridge' || value == 'veth')
+			if (value == 'bridge' || value == 'bond' || value == 'veth')
 				updatePlaceholders(this.section.getOption('name_complex'), section_id);
 
 			return true;
@@ -465,7 +466,7 @@ return baseclass.extend({
 		o.depends('type', '8021q');
 		o.depends('type', '8021ad');
 
-		o = this.replaceOption(s, 'devgeneral', widgets.DeviceSelect, 'ifname_multi', _('Bridge ports'));
+		o = this.replaceOption(s, 'devgeneral', widgets.DeviceSelect, 'ifname_multi', _('Bridge/Bond ports'));
 		o.size = 10;
 		o.rmempty = true;
 		o.multiple = true;
@@ -491,7 +492,7 @@ return baseclass.extend({
 
 			return (!parent_dev || parent_dev.getName() != bridge_name);
 		};
-		o.description = _('Specifies the wired ports to attach to this bridge. In order to attach wireless networks, choose the associated interface as network in the wireless settings.')
+		o.description = _('Specifies the wired ports to attach to this bridge/bond. In order to attach wireless networks, choose the associated interface as network in the wireless settings.')
 		o.onchange = function(ev, section_id, values) {
 			ss.updatePorts(values);
 
@@ -500,6 +501,7 @@ return baseclass.extend({
 			});
 		};
 		o.depends('type', 'bridge');
+		o.depends('type', 'bond');
 
 		o = this.replaceOption(s, 'devgeneral', form.Flag, 'bridge_empty', _('Bring up empty bridge'), _('Bring up the bridge interface even if no ports are attached'));
 		o.default = o.disabled;

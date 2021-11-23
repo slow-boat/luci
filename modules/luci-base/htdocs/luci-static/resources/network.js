@@ -34,6 +34,7 @@ var iface_patterns_ignore = [
 	/^ip6gre\d+/,
 	/^ip6tnl\d+/,
 	/^tunl\d+/,
+	/^mob\d+/,
 	/^lo$/
 ];
 
@@ -374,9 +375,9 @@ function initNetworkState(refresh) {
 			    luci_devs     = data[2];
 
 			var s = {
-				isTunnel: {}, isBridge: {}, isSwitch: {}, isWifi: {},
+				isTunnel: {}, isBridge: {}, isBond: {}, isSwitch: {}, isWifi: {},
 				ifaces: netifd_ifaces, radios: data[3], hosts: data[4],
-				netdevs: {}, bridges: {}, switches: {}, hostapd: {}
+				netdevs: {}, bridges: {}, bonds: {}, switches: {}, hostapd: {}
 			};
 
 			for (var name in luci_devs) {
@@ -442,6 +443,32 @@ function initNetworkState(refresh) {
 				s.isBridge[name] = true;
 			}
 
+			for (var name in luci_devs) {
+				var dev = luci_devs[name];
+
+				if (!dev.bond)
+					continue;
+
+				var b = {
+					name:    name,
+					id:      dev.id,
+					ifnames: []
+				};
+
+				for (var i = 0; dev.ports && i < dev.ports.length; i++) {
+					var subdev = s.netdevs[dev.ports[i]];
+
+					if (subdev == null)
+						continue;
+
+					b.ifnames.push(subdev);
+					subdev.bond = b;
+				}
+
+				s.bonds[name] = b;
+				s.isBond[name] = true;
+			}
+			
 			for (var name in luci_devs) {
 				var dev = luci_devs[name];
 
@@ -1321,6 +1348,8 @@ Network = baseclass.extend(/** @lends LuCI.network.prototype */ {
 
 				if (type == 'bridge')
 					_state.isBridge[name] = true;
+				else if (type == 'bond')
+					_state.isBond[name] = true;
 
 				devices[name] = this.instantiateDevice(name);
 			}
@@ -2437,6 +2466,30 @@ Protocol = baseclass.extend(/** @lends LuCI.network.Protocol.prototype */ {
 	},
 
 	/**
+	 * Checks whether the underlying logical interface is declared as bond.
+	 *
+	 * @returns {boolean}
+	 * Returns `true` when the interface is declared with `option type bond`
+	 * and when the associated protocol implementation is not marked virtual
+	 * or `false` when the logical interface is no bond.
+	 */
+	isBond: function() {
+		return (!this.isVirtual() && this.getType() == 'bond');
+	},
+	
+	/**
+	 * Checks whether the underlying logical interface is declared as bridge or bond.
+	 *
+	 * @returns {boolean}
+	 * Returns `true` when the interface is declared with `option type bond`
+	 * and when the associated protocol implementation is not marked virtual
+	 * or `false` when the logical interface is no bond.
+	 */
+	isBrBo: function() {
+		return (!this.isVirtual() && (this.getType() == 'bridge' || this.getType() == 'bond'));
+	},
+	
+	/**
 	 * Get the name of the opkg package providing the protocol functionality.
 	 *
 	 * This function should be overwritten by protocol specific subclasses.
@@ -2677,6 +2730,11 @@ Protocol = baseclass.extend(/** @lends LuCI.network.Protocol.prototype */ {
 			_state.isBridge[ifname] = true;
 			return new Device(ifname, this);
 		}
+		else if (this.isBond()) {
+			var ifname = 'bo-%s'.format(this.sid);
+			_state.isBond[ifname] = true;
+			return new Device(ifname, this);
+		}
 		else {
 			var ifnames = L.toArray(uci.get('network', this.sid, 'device'));
 
@@ -2730,7 +2788,7 @@ Protocol = baseclass.extend(/** @lends LuCI.network.Protocol.prototype */ {
 	getDevices: function() {
 		var rv = [];
 
-		if (!this.isBridge() && !(this.isVirtual() && !this.isFloating()))
+		if (!this.isBrBo() && !(this.isVirtual() && !this.isFloating()))
 			return null;
 
 		var device = uci.get('network', this.sid, 'device');
@@ -2786,6 +2844,8 @@ Protocol = baseclass.extend(/** @lends LuCI.network.Protocol.prototype */ {
 		else if (this.isVirtual() && '%s-%s'.format(this.getProtocol(), this.sid) == device)
 			return true;
 		else if (this.isBridge() && 'br-%s'.format(this.sid) == device)
+			return true;
+		else if (this.isBond() && 'bo-%s'.format(this.sid) == device)
 			return true;
 
 		var name = uci.get('network', this.sid, 'device');
@@ -2928,6 +2988,7 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 	 *  - `alias` if it is an abstract alias device (`@` notation)
 	 *  - `wifi` if it is a wireless interface (e.g. `wlan0`)
 	 *  - `bridge` if it is a bridge device (e.g. `br-lan`)
+	 *  - `bond` if it is a bond device (e.g. `bo-lan`)
 	 *  - `tunnel` if it is a tun or tap device (e.g. `tun0`)
 	 *  - `vlan` if it is a vlan device (e.g. `eth0.1`)
 	 *  - `switch` if it is a switch device (e.g.`eth1` connected to switch0)
@@ -2940,6 +3001,8 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 			return 'wifi';
 		else if (this.dev.devtype == 'bridge' || _state.isBridge[this.device])
 			return 'bridge';
+		else if (this.dev.devtype == 'bond' || _state.isBond[this.device])
+			return 'bond';			
 		else if (_state.isTunnel[this.device])
 			return 'tunnel';
 		else if (this.dev.devtype == 'vlan' || this.device.indexOf('.') > -1)
@@ -3000,6 +3063,9 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 		case 'bridge':
 			return _('Bridge');
 
+		case 'bridge':
+			return _('Bond');
+			
 		case 'switch':
 			return (_state.netdevs[this.device] && _state.netdevs[this.device].devtype == 'dsa')
 				? _('Switch port') : _('Ethernet Switch');
@@ -3016,22 +3082,25 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 	},
 
 	/**
-	 * Get the associated bridge ports of the device.
+	 * Get the associated bridge/bond ports of the device.
 	 *
 	 * @returns {null|Array<LuCI.network.Device>}
 	 * Returns an array of `Network.Device` instances representing the ports
-	 * (slave interfaces) of the bridge or `null` when this device isn't
-	 * a Linux bridge.
+	 * (slave interfaces) of the bridge/bond or `null` when this device isn't
+	 * a Linux bridge/bond.
 	 */
 	getPorts: function() {
-		var br = _state.bridges[this.device],
+		var pa = _state.bridges[this.device],
 		    rv = [];
+		
+		if (pa == null || !Array.isArray(pa.ifnames))
+			pa = _state.bonds[this.device];
 
-		if (br == null || !Array.isArray(br.ifnames))
+		if (pa == null || !Array.isArray(pa.ifnames))
 			return null;
-
-		for (var i = 0; i < br.ifnames.length; i++)
-			rv.push(Network.prototype.instantiateDevice(br.ifnames[i].name));
+			
+		for (var i = 0; i < pa.ifnames.length; i++)
+			rv.push(Network.prototype.instantiateDevice(pa.ifnames[i].name));
 
 		rv.sort(deviceSort);
 
@@ -3050,6 +3119,18 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 		return (br != null ? br.id : null);
 	},
 
+	/**
+	 * Get the bond ID
+	 *
+	 * @returns {null|string}
+	 * Returns the ID of this network bond or `null` if this network
+	 * device is not a Linux bond.
+	 */
+	getBondID: function() {
+		var bo = _state.bonds[this.device];
+		return (bo != null ? bo.id : null);
+	},
+	
 	/**
 	 * Get the bridge STP setting
 	 *
@@ -3099,7 +3180,51 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 	isBridgePort: function() {
 		return (this._devstate('bridge') != null);
 	},
+	
+	/**
+	 * Checks whether this device is a Linux bond.
+	 *
+	 * @returns {boolean}
+	 * Returns `true` when the network device is present and a Linux bond device,
+	 * else `false`.
+	 */
+	isBond: function() {
+		return (this.getType() == 'bond');
+	},
+	
+	/**
+	 * Checks whether this device is part of a Linux bond.
+	 *
+	 * @returns {boolean}
+	 * Returns `true` when this network device is part of a bond,
+	 * else `false`.
+	 */
+	isBondPort: function() {
+		return (this._devstate('bond') != null);
+	},
 
+	/**
+	 * Checks whether this device is a Linux bond.
+	 *
+	 * @returns {boolean}
+	 * Returns `true` when the network device is present and a Linux bond device,
+	 * else `false`.
+	 */
+	isBrBo: function() {
+		return ((this.getType() == 'bridge') || (this.getType() == 'bond'));
+	},
+	
+	/**
+	 * Checks whether this device is part of a Linux bond.
+	 *
+	 * @returns {boolean}
+	 * Returns `true` when this network device is part of a bond,
+	 * else `false`.
+	 */
+	isBrBoPort: function() {
+		return ((this._devstate('bridge') != null) || (this._devstate('bond') != null));
+	},
+	
 	/**
 	 * Get the amount of transmitted bytes.
 	 *

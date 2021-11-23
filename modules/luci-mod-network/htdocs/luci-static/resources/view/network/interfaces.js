@@ -924,8 +924,20 @@ return view.extend({
 				ifc.renderFormOptions(s);
 
 				// Common interface options
-				o = nettools.replaceOption(s, 'advanced', form.Flag, 'defaultroute', _('Use default gateway'), _('If unchecked, no default route is configured'));
+				o = nettools.replaceOption(s, 'advanced', form.Flag, 'defaultroute', _('Create default route'), _('If unchecked, no default route is configured'));
 				o.default = o.enabled;
+
+				if (protoval == 'dhcp') {
+					o = nettools.replaceOption(s, 'advanced', form.Flag, 'usegateway', _('Use provided gateway'), _('If unchecked, gateway is ignored for default route'));
+					o.depends('defaultroute', '1');
+					o.default = o.enabled;
+
+					o = nettools.replaceOption(s, 'advanced', form.Flag, 'classlessroute', _('Use classless route option'), _('Allows DHCP server to set static routes on this client'));
+					o.default = o.enabled;
+					
+					o = nettools.replaceOption(s, 'advanced', form.Flag, 'subnetroute', _('Create subnet route'), _('If unchecked, assign interface as /32 address'));
+					o.default = o.enabled;
+				}
 
 				if (protoval != 'static') {
 					o = nettools.replaceOption(s, 'advanced', form.Flag, 'peerdns', _('Use DNS servers advertised by peer'), _('If unchecked, the advertised DNS server addresses are ignored'));
@@ -1276,6 +1288,12 @@ return view.extend({
 				if (s && s['.type'] == 'interface' && s.type == 'bridge')
 					continue;
 
+				m = netDevs[i].isBond() ? netDevs[i].getName().match(/^bo-([A-Za-z0-9_]+)$/) : null
+				s = m ? uci.get('network', m[1]) : null;
+
+				if (s && s['.type'] == 'interface' && s.type == 'bond')
+					continue;
+
 				section_ids.push('dev:%s'.format(netDevs[i].getName()));
 			}
 
@@ -1378,7 +1396,10 @@ return view.extend({
 
 			case 'bridge':
 				return 'bridge';
-
+				
+			case 'bond':
+				return 'bond';
+				
 			case 'tunnel':
 				return 'tunnel';
 
@@ -1411,6 +1432,9 @@ return view.extend({
 			case 'bridge':
 				return _('Bridge device');
 
+			case 'bond':
+				return _('Bond device');
+				
 			case 'tunnel':
 				return _('Tunnel device');
 
