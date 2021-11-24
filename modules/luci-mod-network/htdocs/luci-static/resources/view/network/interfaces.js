@@ -446,7 +446,7 @@ return view.extend({
 
 		var dslModemType = data[0],
 		    netDevs = data[1],
-		    m, s, o;
+		    m, s, o, has_ipv6;
 
 		var rtTables = data[2].map(function(l) {
 			var m = l.trim().match(/^(\d+)\s+(\S+)$/);
@@ -454,6 +454,8 @@ return view.extend({
 		}).filter(function(e) {
 			return e && e[0] > 0;
 		});
+
+		has_ipv6 = fs.stat('/proc/net/if_inet6');
 
 		m = new form.Map('network');
 		m.tabbed = true;
@@ -576,7 +578,7 @@ return view.extend({
 				o.modalonly = true;
 				o.default = o.enabled;
 				
-				if (fs.stat('/proc/net/if_inet6')) {
+				if (has_ipv6) {
 					o = s.taboption('general', form.Flag, 'ipv6', _('Enable IPv6'));
 					o.optional = true;
 					o.default = o.disabled;
@@ -676,28 +678,33 @@ return view.extend({
 						so.optional = true;
 						so.datatype = 'or(uinteger,ip4addr("nomask"))';
 						so.default = '100';
+						so.depends("ignore", "0");
 
 						so = ss.taboption('general', form.Value, 'limit', _('Limit'), _('Maximum number of leased addresses.'));
 						so.optional = true;
 						so.datatype = 'uinteger';
 						so.default = '150';
-
+						so.depends("ignore", "0");
+						
 						so = ss.taboption('general', form.Value, 'leasetime', _('Lease time'), _('Expiry time of leased addresses, minimum is 2 minutes (<code>2m</code>).'));
 						so.optional = true;
 						so.default = '12h';
-
+						so.depends("ignore", "0");
+						
 						so = ss.taboption('advanced', form.Flag, 'dynamicdhcp', _('Dynamic <abbr title="Dynamic Host Configuration Protocol">DHCP</abbr>'), _('Dynamically allocate DHCP addresses for clients. If disabled, only clients having static leases will be served.'));
 						so.default = so.enabled;
-
-						ss.taboption('advanced', form.Flag, 'force', _('Force'), _('Force DHCP on this network even if another server is detected.'));
-
+						so.depends("ignore", "0");
+						
+						so = ss.taboption('advanced', form.Flag, 'force', _('Force'), _('Force DHCP on this network even if another server is detected.'));
+						so.depends("ignore", "0");
+						
 						// XXX: is this actually useful?
 						//ss.taboption('advanced', form.Value, 'name', _('Name'), _('Define a name for this network.'));
 
 						so = ss.taboption('advanced', form.Value, 'netmask', _('<abbr title="Internet Protocol Version 4">IPv4</abbr>-Netmask'), _('Override the netmask sent to clients. Normally it is calculated from the subnet that is served.'));
 						so.optional = true;
 						so.datatype = 'ip4addr';
-
+						so.depends("ignore", "0");
 						so.render = function(option_index, section_id, in_table) {
 							this.placeholder = get_netmask(s, true);
 							return form.Value.prototype.render.apply(this, [ option_index, section_id, in_table ]);
@@ -710,7 +717,8 @@ return view.extend({
 							return form.Value.prototype.validate.apply(this, [ section_id, value ]);
 						};
 
-						ss.taboption('advanced', form.DynamicList, 'dhcp_option', _('DHCP-Options'), _('Define additional DHCP options,  for example "<code>6,192.168.2.1,192.168.2.2</code>" which advertises different DNS servers to clients.'));
+						so=ss.taboption('advanced', form.DynamicList, 'dhcp_option', _('DHCP-Options'), _('Define additional DHCP options,  for example "<code>6,192.168.2.1,192.168.2.2</code>" which advertises different DNS servers to clients.'));
+						so.depends("ignore", "0");
 					}
 
 
@@ -1276,6 +1284,9 @@ return view.extend({
 				if (sections.filter(function(s) { return s.name == netDevs[i].getName() }).length)
 					continue;
 
+				if (netDevs[i].getName() == 'bonding_masters')
+					continue;
+
 				if (netDevs[i].getType() == 'wifi' && !netDevs[i].isUp())
 					continue;
 
@@ -1499,13 +1510,50 @@ return view.extend({
 		s.addremove = false;
 		s.anonymous = true;
 
-		o = s.option(form.Value, 'ula_prefix', _('IPv6 ULA-Prefix'), _('Unique Local Address - in the range <code>fc00::/7</code>.  Typically only within the &#8216;local&#8217; half <code>fd00::/8</code>. ULA for IPv6 is analogous to IPv4 private network addressing. This prefix is randomly generated at first install.'));
-		o.datatype = 'cidr6';
-		o.depends("ipv6", "1");
-
+		if(has_ipv6) {
+			o = s.option(form.Value, 'ula_prefix', _('IPv6 ULA-Prefix'), _('Unique Local Address - in the range <code>fc00::/7</code>.  Typically only within the &#8216;local&#8217; half <code>fd00::/8</code>. ULA for IPv6 is analogous to IPv4 private network addressing. This prefix is randomly generated at first install.'));
+			o.datatype = 'cidr6';
+		}
 		o = s.option(form.Flag, 'packet_steering', _('Packet Steering'), _('Enable packet steering across all CPUs. May help or hinder network speed.'));
 		o.optional = true;
 
+		o = s.option(form.Flag, 'nf_iptables', _('Bridge Firewall IP Tables'), _('Pass bridge port packets to netfilter iptables'));
+		o.optional = true;
+		
+		if(has_ipv6) {
+			o = s.option(form.Flag, 'nf_ip6tables', _('Bridge Firewall IP6 Tables'), _('Pass bridge port packets to netfilter ip6tables'));
+			o.optional = true;
+		}
+		
+		o = s.option(form.Flag, 'nf_arptables', _('Bridge Firewall ARP Tables'), _('Pass bridge port packets to arptables'));
+		o.optional = true;
+		
+		o = s.option(form.Flag, 'accept_redirects', _('Accept ICMP redirects'), _('Process incoming redirect messages'));
+		o.default = o.enabled;
+		
+		if(has_ipv6) {
+			o = s.option(form.Flag, 'accept_6redirects', _('Accept ICMP6 redirects'), _('Process incoming IPv6 redirect messages'));
+			o.default = o.enabled;
+		}
+		
+		o = s.option(form.Flag, 'send_redirects', _('Send ICMP redirects'), _('Generate redirect messages'));
+		o.default = o.enabled;
+
+		o = s.option(form.Flag, 'arp_notify', _('ARP notifications'), _('Generate GARP when interface comes up'));
+		o.default = o.enabled;
+
+		o = s.option(form.ListValue, 'arp_ignore', _('ARP Reply Mode'));
+		o.value('0', _('(Loose) Reply for any local adddress on any interface'));
+		o.value('', _('(Normal) Reply if target address is on interface'));
+		o.value('2', _('(Strict) Reply if target address is on interface, and source is in interface subnet'));
+		o.value('3', _('Only reply if address has global scope'));
+		o.optional = true;
+		
+		o = s.option(form.ListValue, 'arp_announce', _('ARP Request Mode'));
+		o.value('0', _('(Loose) Use any local address on any interface'));
+		o.value('1', _('(Normal) Prefer interface that is on subnet'));
+		o.value('', _('(Strict) Always use the best local address for target'));
+		o.optional = true;
 
 		if (dslModemType != null) {
 			s = m.section(form.TypedSection, 'dsl', _('DSL'));

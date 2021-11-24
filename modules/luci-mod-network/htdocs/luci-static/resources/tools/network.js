@@ -692,7 +692,7 @@ return baseclass.extend({
 		o.value('', _('No enforcement'));
 		o.value('1', _('Enforce MLD version 1'));
 		o.value('2', _('Enforce MLD version 2'));
-		o.depends('multicast', '1');
+		o.depends({ multicast: '1', ipv6: '1' });
 
 		if (isBridgePort(dev)) {
 			o = this.replaceOption(s, 'brport', form.Flag, 'learning', _('Enable MAC address learning'));
