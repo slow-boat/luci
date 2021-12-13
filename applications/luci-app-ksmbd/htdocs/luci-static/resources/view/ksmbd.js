@@ -32,9 +32,12 @@ return view.extend({
 		s.tab('general',  _('General Settings'));
 		s.tab('template', _('Edit Template'), _('Edit the template that is used for generating the ksmbd configuration.'));
 
-		s.taboption('general', widgets.NetworkSelect, 'interface', _('Interface'),
-			_('Listen only on the given interface or, if unspecified, on lan'));
-
+		o = s.taboption('general', widgets.NetworkSelect, 'interface', _('Interface'),
+			_('Listen only on the given interface(s)'));
+		o.optional = true;
+		o.placeholder = 'lan';
+		o.multiple = true;
+		
 		o = s.taboption('general', form.Value, 'workgroup', _('Workgroup'));
 		o.placeholder = 'WORKGROUP';
 
