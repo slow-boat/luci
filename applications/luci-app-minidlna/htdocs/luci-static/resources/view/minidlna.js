@@ -42,7 +42,6 @@ return view.extend({
 
 		o = s.option(CBIMiniDLNAStatus);
 
-
 		s = m.section(form.TypedSection, 'minidlna', 'miniDLNA Settings');
 		s.anonymous = true;
 		s.addremove = false;
@@ -56,16 +55,11 @@ return view.extend({
 			_('Port for HTTP (descriptions, SOAP, media transfer) traffic.'));
 		o.default = '8200';
 
-		o = s.taboption('general', widgets.DeviceSelect, 'interface', _('Interfaces'), _('Network interfaces to serve.'));
+		o = s.taboption('general', widgets.NetworkSelect, 'interface', _('Interfaces'), _('Networks to serve.'));
+		o.optional = true;
+		o.placeholder = 'lan';
 		o.multiple = true;
-		o.noaliases = true;
-		o.cfgvalue = function(section_id) {
-			return L.toArray(uci.get('minidlna', section_id, 'interface')).join(',').split(/[ \t,]+/);
-		};
-		o.write = function(section_id, value) {
-			return uci.set('minidlna', section_id, 'interface', L.toArray(value).join(','));
-		};
-
+		
 		o = s.taboption('general', form.Value, 'friendly_name', _('Friendly name'), _('Set this if you want to customize the name that shows up on your clients.'));
 
 		o = s.taboption('general', form.ListValue, 'root_container', _('Root container'));
@@ -86,8 +80,6 @@ return view.extend({
 		};
 
 		o = s.taboption('advanced', form.Value, 'db_dir', _('Database directory'), _('Set this if you would like to specify the directory where you want MiniDLNA to store its database and album art cache.'));
-
-		o = s.taboption('advanced', form.Value, 'log_dir', _('Log directory'), _('Set this if you would like to specify the directory where you want MiniDLNA to store its log file.'));
 
 		o = s.taboption('advanced', form.Flag, 'inotify', _('Enable inotify'), _('Set this to enable inotify monitoring to automatically discover new files.'));
 		o.default = o.enabled;
