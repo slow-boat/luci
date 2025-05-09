@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-04-27 07:11+0000\n"
-"Last-Translator: Vladimir <gh@mail.ru>\n"
+"PO-Revision-Date: 2025-05-02 07:29+0000\n"
+"Last-Translator: Maksim_220 Кабанов <law820314@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "lucimodulesluci-mod-dashboard/ru/>\n"
 "Language: ru\n"
@@ -68,7 +68,7 @@ msgstr "Скач."
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:124
 msgid "Download"
-msgstr "Загрузка"
+msgstr "Получить"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:179
 msgid "Encryption"
@@ -76,7 +76,7 @@ msgstr "Шифрование"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:322
 msgid "Firmware Version"
-msgstr "Версия прошивки"
+msgstr "Версия встроенного ПО"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:163
 msgid "GHz"
@@ -204,7 +204,7 @@ msgstr "Загр."
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:119
 msgid "Upload"
-msgstr "Загрузить"
+msgstr "Выгрузить"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:192
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:232

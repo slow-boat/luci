@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-04-27 19:57+0000\n"
+"PO-Revision-Date: 2025-05-03 01:34+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssmartdns/cs/>\n"
@@ -49,6 +49,8 @@ msgid ""
 "Attempts to serve old responses from cache with a TTL of 0 in the response "
 "without waiting for the actual resolution to finish."
 msgstr ""
+"Pokoušet se poskytovat staré odpovědi z mezipaměti při TTL hodnotě 0 (nula) "
+"v odpovědi bez čekání na dokončení skutečného překladu."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:161
 msgid "Automatically Set Dnsmasq"
@@ -60,7 +62,7 @@ msgstr "Při změně portu automaticky nastavit jako nadřazené pro dnsmaq."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:229
 msgid "Bind Device"
-msgstr ""
+msgstr "Zařízení s bind"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:234
 msgid "Bind Device Name"
@@ -91,6 +93,8 @@ msgid ""
 "Configure IP blacklists that will be filtered from the results of specific "
 "DNS server."
 msgstr ""
+"Nastavte seznamy vyloučených IP adres, které budou odfiltrovány z výsledků "
+"konkrétního DNS serveru."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:929
 msgid "Configure block domain list."
@@ -159,7 +163,7 @@ msgstr ""
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:76
 msgid "Dnsmasq Forwarded To Smartdns Failure"
-msgstr ""
+msgstr "Nezdar přeposlání z dnsmasq do Smartdns"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:719
 msgid "Do not check certificate."
@@ -239,6 +243,8 @@ msgid ""
 "Download domain list files for domain-rule and include config files, please "
 "refresh the page after download to take effect."
 msgstr ""
+"Stáhnout soubory se seznamy domén pro doménové pravidlo a zahrnout soubory s "
+"nastaveními – po stažení stránku načtěte znovu, aby se projevilo."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:240
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1007
@@ -484,6 +490,8 @@ msgid ""
 "Nftset name, Add domain result to nftset when speed check fails, format: "
 "[#[4|6]:[family#table#set]]"
 msgstr ""
+"Název nfset, přidat výsledky domén do nfset, pokud se kontrola rychlosti "
+"nezdaří – formát: [#[4|6]:[generace#tabulka#sada]]"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1014
 msgid "No"
@@ -550,7 +558,7 @@ msgstr ""
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:342
 msgid "Reply maximum TTL for all domain result."
-msgstr ""
+msgstr "Nejvyšší TTL odpovědi pro výsledky všech domén."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1150
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1151
@@ -625,6 +633,8 @@ msgid ""
 "Set the HTTP host used for the query. Use this parameter when the host of "
 "the URL address is an IP address."
 msgstr ""
+"Nastavit HTTP hostitele použitého pro dotaz. Tento parametr použijte pokud "
+"hostitelem URL dresy je IP adresa."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:728
 msgid "Sets the server name indication for query. '-' for disable SNI name."
@@ -702,6 +712,8 @@ msgid ""
 "SmartDNS is a local high-performance DNS server, supports finding fastest "
 "IP, supports ad filtering, and supports avoiding DNS poisoning."
 msgstr ""
+"SmartDNS je lokální, vysoce výkonný DNS server. Podporuje hledání "
+"nejrychlejší IP adresy, filtrování a zabraňování otravě DNS."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1142
 msgid "SmartDNS official website"
@@ -724,6 +736,9 @@ msgid ""
 "Smartdns response mode, First Ping: return the first ping IP, Fastest IP: "
 "return the fastest IP, Fastest Response: return the fastest DNS response."
 msgstr ""
+"Režim odpovědi Smartdns. První ping: vrátit IP adresu prvního pingu; "
+"Nejrychlejší IP: vrátit nejrychlejší IP; Nejrychlejší odpověď: vrátit "
+"nejrychlejší DNS odpověď."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:147
 msgid "Smartdns server name"
@@ -740,6 +755,9 @@ msgid ""
 "in the domains are never forwarded and always replied to with the specified "
 "IP address which may be IPv4 or IPv6."
 msgstr ""
+"Zadejte IP adresu kterou vracet pro libovolného hostitele v dané domény. "
+"Dotazy v doméně nejsou nikdy přeposílány a vždy je na ně odpovězeno zadanou "
+"IP adresou, která může být IPv4 nebo IPv6."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:169
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1016
@@ -815,6 +833,8 @@ msgid ""
 "Upload domain list file, or configure auto download from Download File "
 "Setting page."
 msgstr ""
+"Nahrajte soubor se seznamem domén nebo nastavte automatické stahování na "
+"stránce Nastavení stahování souboru."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:921
 msgid "Upload domain list file."
@@ -850,6 +870,8 @@ msgid ""
 "SPKI fingerprint, leaving blank to indicate that the validity of TLS is not "
 "verified."
 msgstr ""
+"Slouží pro ověřování platnosti TLS serveru, Hodnota je SPKI otisk kódovaný v "
+"Base64. Pokud chcete indikovat, že platnost TLS není ověřena, nevyplňujte."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:262
 msgid "Write cache to disk on exit and load on startup."
@@ -879,7 +901,7 @@ msgstr "https"
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:452
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:858
 msgid "ipset name format error, format: [#[4|6]:]ipsetname"
-msgstr ""
+msgstr "chyba formátu názvu ipset – formát: [#[4|6]:]nazev-pro-ipset"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1143
 msgid "open website"
