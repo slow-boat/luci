@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-04-27 07:11+0000\n"
-"Last-Translator: Vladimir <gh@mail.ru>\n"
+"PO-Revision-Date: 2025-05-03 01:34+0000\n"
+"Last-Translator: Maksim_220 Кабанов <law820314@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsbanip/ru/>\n"
 "Language: ru\n"
@@ -33,55 +33,55 @@ msgstr "-- по умолчанию --"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:230
 msgid "<DATE><IPv4><SPACE>"
-msgstr ""
+msgstr "<DATE><IPv4><SPACE>"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:231
 msgid "<IPv4>, csv"
-msgstr ""
+msgstr "<IPv4>, csv"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:234
 msgid "<IPv4>, substring"
-msgstr ""
+msgstr "<IPv4>, substring"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:226
 msgid "<IPv4><END>"
-msgstr ""
+msgstr "<IPv4><END>"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:228
 msgid "<IPv4><END>, nodups"
-msgstr ""
+msgstr "<IPv4><END>, nodups"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:225
 msgid "<IPv4><SPACE>"
-msgstr ""
+msgstr "<IPv4><SPACE>"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:227
 msgid "<IPv4><SPACE>, concatinated"
-msgstr ""
+msgstr "<IPv4><SPACE>, concatinated"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:232
 msgid "<IPv4><SPACE>NET"
-msgstr ""
+msgstr "<IPv4><SPACE>NET"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:233
 msgid "<IPv4><SPACE>YOUR"
-msgstr ""
+msgstr "<IPv4><SPACE>YOUR"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:229
 msgid "<IPv4>[<SPACE>|<HYPHEN>]"
-msgstr ""
+msgstr "<IPv4>[<SPACE>|<HYPHEN>]"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:252
 msgid "<IPv6>, csv"
-msgstr ""
+msgstr "<IPv6>, csv"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:251
 msgid "<IPv6><END>"
-msgstr ""
+msgstr "<IPv6><END>"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:250
 msgid "<IPv6><SPACE>"
-msgstr ""
+msgstr "<IPv6><SPACE>"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:736
 msgid "AFRINIC - serving Africa and the Indian Ocean region"
@@ -97,7 +97,7 @@ msgstr "ARIN - обслуживание Канады и США"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:749
 msgid "ASN Selection"
-msgstr ""
+msgstr "Выбор ASN"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:751
 msgid "ASNs"
@@ -117,7 +117,7 @@ msgstr "Активный аплинк"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:634
 msgid "AdGuardHome login error"
-msgstr ""
+msgstr "Ошибка входа в AdGuardHome"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:291
 msgid "Additional trigger delay in seconds during interface reload and boot."
@@ -231,7 +231,7 @@ msgstr "Блокировка переадресации VLAN"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:696
 msgid "Blocklist Feed"
-msgstr "Источник блок-листа"
+msgstr "Фильтр блокировки"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:817
 msgid "Blocklist Set Expiry"
@@ -257,7 +257,7 @@ msgstr "Отмена"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:256
 msgid "Chain"
-msgstr ""
+msgstr "Цепь"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:389
 msgid "Chain Priority"
@@ -281,7 +281,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:321
 msgid "Clear"
-msgstr ""
+msgstr "Очистка"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:40
 msgid ""
@@ -299,7 +299,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:193
 msgid "Count"
-msgstr ""
+msgstr "Количество"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:715
 msgid "Countries"
@@ -307,11 +307,11 @@ msgstr "Страны"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:709
 msgid "Country Selection"
-msgstr ""
+msgstr "Выбор страны"
 
 #: applications/luci-app-banip/root/usr/share/luci/menu.d/luci-app-banip.json:49
 msgid "Custom Feed Editor"
-msgstr "Пользовательский редактор каналов"
+msgstr "Редактор собственных списков"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:377
 msgid ""
@@ -347,7 +347,7 @@ msgstr "Не проверять SSL сертификаты сервера во �
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:294
 msgid "Download"
-msgstr "Загрузка"
+msgstr "Получить"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:308
 msgid "Download Insecure"
@@ -368,10 +368,11 @@ msgstr "Утилита для загрузки"
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:494
 msgid "Drop packets silently or actively reject Inbound traffic."
 msgstr ""
+"Автоматически отбрасывайте пакеты или активно отклоняйте входящий трафик."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:666
 msgid "E-Mail Notification"
-msgstr "Уведомление по электронной почте"
+msgstr "Email-уведомление"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:681
 msgid "E-Mail Profile"
@@ -395,11 +396,11 @@ msgstr "Тема"
 
 #: applications/luci-app-banip/root/usr/share/luci/menu.d/luci-app-banip.json:33
 msgid "Edit Allowlist"
-msgstr "Белый список"
+msgstr "Настройка исключений"
 
 #: applications/luci-app-banip/root/usr/share/luci/menu.d/luci-app-banip.json:41
 msgid "Edit Blocklist"
-msgstr "Редактировать черный список"
+msgstr "Редактировать список блокировок"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:173
 msgid "Element Count"
@@ -417,7 +418,7 @@ msgstr "Пустое поле не допускается"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:489
 msgid "Enable GeoIP Map"
-msgstr ""
+msgstr "Включить карту GeoIP"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:638
 msgid "Enable Remote Logging"
@@ -428,10 +429,12 @@ msgid ""
 "Enable a GeoIP Map with suspicious Set elements. This requires external "
 "requests to get the map tiles and geolocation data."
 msgstr ""
+"Активировать GeoIP-карту для подозрительных элементов Set. Для этого "
+"необходимы внешние запросы для загрузки карт и геоданных."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:486
 msgid "Enable nft counter for every Set element."
-msgstr ""
+msgstr "Путь к исполняемому скрипту."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:233
 msgid "Enable the banIP service."
@@ -459,7 +462,7 @@ msgstr "Включает поддержку IPv6."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:373
 msgid "Error Directory"
-msgstr ""
+msgstr "Ошибка каталога"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:817
 msgid "Expiry time for auto added blocklist Set members."
@@ -472,15 +475,16 @@ msgstr "Внешние каналы разрешенных список"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:693
 msgid "External Blocklist Feeds"
-msgstr "Внешние каналы запрещенных списков"
+msgstr "Каналы из внешнего черного списка"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:561
+#, fuzzy
 msgid "Feed Complete"
-msgstr ""
+msgstr "Подача завершена"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:551
 msgid "Feed Flag Reset"
-msgstr ""
+msgstr "Сброс флага подачи"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:200
 msgid "Feed Name"
@@ -496,7 +500,7 @@ msgstr "Настройки каналов/сетов"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:312
 msgid "Fill"
-msgstr ""
+msgstr "Заполнить"
 
 #: applications/luci-app-banip/root/usr/share/luci/menu.d/luci-app-banip.json:65
 msgid "Firewall Log"
@@ -516,7 +520,7 @@ msgstr "Основные Настройки"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:282
 msgid "GeoIP Map is not enabled!"
-msgstr ""
+msgstr "Карта GeoIP не включена!"
 
 #: applications/luci-app-banip/root/usr/share/rpcd/acl.d/luci-app-banip.json:3
 msgid "Grant access to LuCI app banIP"
@@ -842,7 +846,7 @@ msgstr ""
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:244
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:783
 msgid "Protocol/URL format not supported"
-msgstr "Формат протокола/URL не поддерживается"
+msgstr "Формат протокола/URL-адреса не поддерживается"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:740
 msgid "RIPE - serving Europe, Middle East and Central Asia"
@@ -928,11 +932,11 @@ msgstr "Сохранить"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:846
 msgid "Save & Reload"
-msgstr ""
+msgstr "Сохранить и Перезагрузить"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:853
 msgid "Save & Restart"
-msgstr ""
+msgstr "Сохранить и Перезапустить"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:57
 msgid "Search IP"
@@ -1043,7 +1047,7 @@ msgstr "Статус"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:839
 msgid "Stop"
-msgstr "Остановить"
+msgstr "Стоп"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:800
 msgid "Subnet"
@@ -1170,11 +1174,13 @@ msgstr "Невозможно разобрать файл стран!"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:509
 msgid "Unable to parse the custom feed file!"
-msgstr "Невозможно разобрать файл пользовательского канала!"
+msgstr "Не получилось прочитать ваш файл. Проверьте формат!"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:516
 msgid "Unable to parse the default feed file!"
-msgstr "Невозможно разобрать файл канала по умолчанию!"
+msgstr ""
+"Система не может прочитать основной файл с данными. Возможно, он поврежден "
+"или имеет неверный формат!"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:183
 msgid "Unable to parse the report file!"
@@ -1187,17 +1193,17 @@ msgstr "Невозможно разобрать файл набора прави
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/allowlist.js:51
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/blocklist.js:51
 msgid "Unable to save modifications: %s"
-msgstr "Невозможно сохранить изменения: %s"
+msgstr "Не удалось сохранить изменения: %s"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:303
 msgid "Upload"
-msgstr ""
+msgstr "Выгрузить"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:72
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:78
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:85
 msgid "Upload of the custom feed file failed."
-msgstr "Загрузка файла пользовательского канала не удалась."
+msgstr "Не получилось загрузить ваш файл. Проверьте его и попробуйте снова."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:236
 msgid "Verbose Debug Logging"

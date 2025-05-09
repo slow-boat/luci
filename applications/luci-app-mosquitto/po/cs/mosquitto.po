@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-04-27 19:57+0000\n"
+"PO-Revision-Date: 2025-05-03 01:34+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsmosquitto/cs/>\n"
@@ -25,6 +25,8 @@ msgid ""
 "Attempt to notify the local and remote broker of connection status, defaults "
 "to $SYS/broker/connections/&lt;clientid&gt;/state"
 msgstr ""
+"Pokusit se oznámit lokálnímu a vzdálenému zprostředkovateli stav spojení, "
+"výchozí je $SYS/broker/connections/&lt;clientid&gt;/state"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:179
 msgid "Automatic, but no restarts"
@@ -52,7 +54,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:206
 msgid "Bridge PSK"
-msgstr ""
+msgstr "PSK mostu"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:162
 msgid "Bridge connection states should only be published locally"
@@ -154,10 +156,13 @@ msgid ""
 "If checked, mosquitto runs with a config generated from this page. If "
 "unchecked, mosquitto runs with the config in %s (and this page is ignored)."
 msgstr ""
+"Pokud zaškrtnuto, mosquitto bude provozováno s nastaveními, vytvořenými z "
+"této stránky. Pokud nezaškrtnuto, mosquitto bude provozováno s nastaveními v "
+"%s (a tato stránka bude ignorována)."
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:170
 msgid "Keep-alive interval for this bridge"
-msgstr ""
+msgstr "Interval udržování spojení pro tento most"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:206
 msgid "Key for TLS-PSK"
@@ -169,7 +174,7 @@ msgstr "Soubor s klíčem (PEM enkódováno)"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:62
 msgid "Limit for message allowed inflight"
-msgstr ""
+msgstr "Omezení pro zprávy povolené v letu"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:65
 msgid "Limit for message queue when offline"
@@ -214,7 +219,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:162
 msgid "Notifications local only"
-msgstr ""
+msgstr "Upozorňování pouze lokální"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:54
 msgid ""
@@ -262,7 +267,7 @@ msgstr "Název trvalého souboru"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:89
 msgid "Persistent file path (with trailing/)"
-msgstr ""
+msgstr "Popis umístění trvalého souboru (s koncovým/)"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:97
 msgid "Port"
@@ -270,7 +275,7 @@ msgstr "Port"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:100
 msgid "Protocol to use when listening"
-msgstr ""
+msgstr "Protokol který používat pro očekávání spojení"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:199
 msgid "Remote password"
@@ -285,6 +290,8 @@ msgid ""
 "Remove persistent clients if they haven't reconnected in this period, eg 6h, "
 "3d, 2w"
 msgstr ""
+"Odebrat trvalé klienty pokud se znovu nepřipojí v tomto období, např. 6h, "
+"3d, 2w (týdny)"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:129
 msgid "Require clients to present a certificate"
@@ -300,7 +307,7 @@ msgstr "Soubor s certifikátem serveru (PEM formát)"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:57
 msgid "Set to zero to disable"
-msgstr ""
+msgstr "Pokud chcete vypnout, nastavte na 0 (nula)"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:75
 msgid "Should persistence to disk be enabled at all"
@@ -316,6 +323,8 @@ msgid ""
 "The remote broker must support the same version of TLS for the connection to "
 "succeed."
 msgstr ""
+"Aby spojení bylo úspěšné, je třeba, aby vzdálený zprostředkovatel podporoval "
+"stejnou verzi TLS."
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:57
 msgid "Time in seconds between updates of the $SYS tree"
@@ -327,7 +336,7 @@ msgstr "Téma které použít pro lokální+vzdálené vzdálené pro notifikace
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:37
 msgid "Use this LuCI configuration page"
-msgstr ""
+msgstr "Použít tuto LuCI stránku nastavení"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:103
 msgid "WebSockets"
@@ -358,6 +367,8 @@ msgid ""
 "attempt to notify the remote broker that this is a bridge, not all brokers "
 "support this."
 msgstr ""
+"pokus o upozornění vzdáleného zprostředkovatele, že toto je most, ale ne "
+"všichni zprostředkovávatelé toto podporují."
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:151
 msgid "full topic string for mosquitto.conf, eg: 'power/# out 2'"

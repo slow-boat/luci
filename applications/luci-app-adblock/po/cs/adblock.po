@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-04-27 17:36+0000\n"
+"PO-Revision-Date: 2025-05-03 01:34+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/cs/>\n"
@@ -12,23 +12,23 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:213
 msgid "0.0.0.0<SPACE><DOMAIN>"
-msgstr ""
+msgstr "0.0.0.0<MEZERA><DOMENA>"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:212
 msgid "127.0.0.1<SPACE><DOMAIN>"
-msgstr ""
+msgstr "127.0.0.1<MEZERA><DOMENA>"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:527
 msgid "1Hosts List Selection"
-msgstr ""
+msgstr "Výběr seznamu 1Hosts"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:214
 msgid "<ADBLOCK-PLUS>"
-msgstr ""
+msgstr "<ADBLOCK-PLUS>"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:211
 msgid "<DOMAIN>"
-msgstr ""
+msgstr "<DOMENA>"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:215
 msgid "<HTTP[S]-URL>"
@@ -56,11 +56,11 @@ msgstr "Přidat doménu do seznamu blokovaných"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:47
 msgid "Add this (sub-)domain to your local allowlist."
-msgstr ""
+msgstr "Přidat tuto (sub)doménu do vašeho lokálního seznamu povolených."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:12
 msgid "Add this (sub-)domain to your local blocklist."
-msgstr ""
+msgstr "Přidat tuto (pod)doménu do vašeho seznamu blokovaných."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:366
 msgid "Additional Jail Blocklist"
@@ -96,6 +96,8 @@ msgid ""
 "Allow all requests of certain DNS clients based on their IP address (RPZ-"
 "CLIENT-IP)."
 msgstr ""
+"Umožnit veškeré požadavky určitých DNS klientů v závislosti na jejich IP "
+"adrese (RPZ-CLIENT-IP)."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/allowlist.js:45
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:69
@@ -127,6 +129,8 @@ msgid ""
 "Base temp directory for all adblock related runtime operations, e.g. "
 "downloading, sorting, merging etc."
 msgstr ""
+"Základní dočasná složka pro veškeré běhové operace související s adblock – "
+"např. stahování, řazení, slučování, atd."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:354
 msgid "Block Local Client IPs"
@@ -178,6 +182,9 @@ msgid ""
 "those listed in the whitelist. You can use this restrictive blocklist e.g. "
 "for guest wifi or kidsafe configurations."
 msgstr ""
+"Sestaví další DNS seznam blokovaných pro blokování přístupu ke všem doménám "
+"kromě těch uvedených v seznamu povolených. Je možné používat omezující "
+"seznam blokovaného, např. pro nastavení WiFi pro hosty nebo bezpečí dětí."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:22
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:57
@@ -196,6 +203,8 @@ msgstr "Kategorie"
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:454
 msgid "Changes on this tab needs an adblock service reload to take effect."
 msgstr ""
+"Aby se změny, provedené v tomto panelu projevily, je třeba znovu načíst "
+"službu adblock)."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:208
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:274
@@ -204,6 +213,8 @@ msgstr ""
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:417
 msgid "Changes on this tab needs an adblock service restart to take effect."
 msgstr ""
+"Aby se změny, provedené na tomto panelu projevily, je třeba službu adblock "
+"restartovat."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:275
 msgid "Clear"
@@ -328,13 +339,15 @@ msgstr "Upravit seznam blokovaných"
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:191
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:231
 msgid "Empty field not allowed"
-msgstr ""
+msgstr "Nevyplněná kolonka není povolena"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:331
 msgid ""
 "Empty the DNS cache before adblock processing starts to reduce the memory "
 "consumption."
 msgstr ""
+"Pro snížení spotřeby operační paměti vyprázdnit před zahájením zpracovávání "
+"adblock mezipaměť DNS."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:242
 msgid "Enable SafeSearch"
@@ -428,6 +441,10 @@ msgid ""
 "demand. This needs the additional 'tcpdump' or 'tcpdump-mini' package "
 "installation and a full adblock service restart to take effect."
 msgstr ""
+"Shromažďovat síťový provoz související s DNS prostřednictvím tcpdump a "
+"poskytovat na vyžádání hlášení o DNS. Aby se projevilo potřebuje toto "
+"instalaci dodatečných balíčků „tcpdump“ nebo „tcpdump-mini“ a úplný restart "
+"služby adblock."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:196
 msgid "General Settings"
@@ -439,7 +456,7 @@ msgstr "Udělit přístup k LuCI aplikaci adblock"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:511
 msgid "Hagezi List Selection"
-msgstr ""
+msgstr "Výběr hagezi seznamu"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:146
 msgid "Information"
@@ -451,7 +468,7 @@ msgstr "Neplatné znaky"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:117
 msgid "Invalid input values, unable to save modifications."
-msgstr ""
+msgstr "Neplatné vstupní hodnoty – změny není možné uložit."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:370
 msgid "Jail Directory"
@@ -492,7 +509,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:317
 msgid "List of supported DNS backends."
-msgstr ""
+msgstr "Seznam podporovaných podpůrných vrstev pro DNS."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:298
 msgid "List of supported and fully pre-configured download utilities."
@@ -528,7 +545,7 @@ msgstr "Profil „msmtp“ pro e-mailové oznámení adblocku."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:205
 msgid "Protocol/URL format not supported"
-msgstr ""
+msgstr "Nepodporovaný formát protokolu/URL"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:132
 msgid "Query"
@@ -555,6 +572,8 @@ msgid ""
 "Reduce the priority of the adblock background processing to take fewer "
 "resources from the system."
 msgstr ""
+"Snížit prioritu zpracovávání adblock na pozadí a zabírat tak méně "
+"systémových prostředků."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:198
 msgid "Refresh"
@@ -652,10 +671,12 @@ msgid ""
 "Send adblock related notification e-mails. This needs the additional 'msmtp' "
 "package installation."
 msgstr ""
+"Posílat notifikační e-maily související s adblock. Toto vyžaduje instalaci "
+"dodatečného balíčku „msmtp“."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:420
 msgid "Sender address for adblock notification E-Mails."
-msgstr ""
+msgstr "Adresa odesilatele pro notifikační e-maily z adblock."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:341
 msgid "Set the dns backend instance used by adblock."
@@ -675,6 +696,9 @@ msgid ""
 "link to this file in memory. As long as your backup directory resides on an "
 "external drive, enable this option to save memory."
 msgstr ""
+"Posunout konečný DNS seznam blokovaných do složky zálohy a nastavit pouze "
+"symbolický odkaz na tento soubor v paměti. Pokud se složka zálohy nachází na "
+"externí jednotce, ušetřete operační paměť zapnutím této funkce."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:219
 msgid "Size"
@@ -702,7 +726,7 @@ msgstr "Stav/verze"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:495
 msgid "StevenBlack List Selection"
-msgstr ""
+msgstr "Výběr seznamu StevenBlack"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:550
 msgid "Stop"
@@ -730,7 +754,7 @@ msgstr "Cílová složka pro zálohy seznamu vyloučených."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:370
 msgid "Target directory for the generated jail blocklist."
-msgstr ""
+msgstr "Cílová složka pro vytvářené jail seznamy blokovaných."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/allowlist.js:25
 msgid "The allowlist is too big, unable to save modifications."
@@ -758,6 +782,10 @@ msgid ""
 "<em><b>Please note:</b></em> add only one domain per line. Comments "
 "introduced with '#' are allowed - ip addresses, wildcards and regex are not."
 msgstr ""
+"Toto je lokální adblock seznam povolených pro vždy povolení určitých domén "
+".<br /> <em><b>Prosím povšimněte si:</b></em> každou doménu na zvlášť řádek. "
+"Komentáře uvedené znakem „#“ (mřížka) jsou povolené – IP adresy, zástupné "
+"znaky a regulární výrazy nejsou."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/blocklist.js:28
 msgid ""
@@ -765,6 +793,10 @@ msgid ""
 "<em><b>Please note:</b></em> add only one domain per line. Comments "
 "introduced with '#' are allowed - ip addresses, wildcards and regex are not."
 msgstr ""
+"Toto je lokální adblock seznam blokovaných pro vždy blokování určitých domén "
+".<br /> <em><b>Prosím povšimněte si:</b></em> každou doménu na zvlášť řádek. "
+"Komentáře uvedené znakem „#“ (mřížka) jsou povolené – IP adresy, zástupné "
+"znaky a regulární výrazy nejsou."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:312
 msgid ""
@@ -804,7 +836,7 @@ msgstr "URL"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:480
 msgid "UTCapitole Archive Selection"
-msgstr ""
+msgstr "UTCapitole Archive Selection"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:441
 msgid "Unable to parse the custom feed file!"
@@ -816,7 +848,7 @@ msgstr "Nepodařilo se zpracovat soubor výchozího kanálu!"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:62
 msgid "Unable to parse the runtime information!"
-msgstr ""
+msgstr "Nebylo možné zpracovat běhové informace!"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/allowlist.js:51
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/blocklist.js:51
@@ -849,6 +881,12 @@ msgid ""
 "file, delete entries, add new ones or make a local backup. To go back to the "
 "maintainers version just clear the custom feed file."
 msgstr ""
+"Pomocí tohoto editoru je možné nahrát soubor s vaším uživatelsky určeným "
+"kanálem nebo naplnit ten počáteční (kopie 1:1 verze dodávané s tímto "
+"balíčkem). Soubor se nachází v „etc/adblock/adblock.custom.feeds“. Poté "
+"tento soubor můžete upravit, smazat položky, přidat nové nebo udělat lokální "
+"zálohu. Pokud se chcete vrátit k verzi od správců balíčku, stačí jen "
+"vyčistit soubor s uživatelsky určeným kanálem."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:320
 msgid "bind"
@@ -864,7 +902,7 @@ msgstr "kresd"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:163
 msgid "max. result set size"
-msgstr ""
+msgstr "max. velikost výsledné sady"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:150
 msgid "max. top statistics"
