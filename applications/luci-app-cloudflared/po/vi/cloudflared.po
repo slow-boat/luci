@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-02-17 03:43+0000\n"
-"Last-Translator: KagamineHaku <blomaway@gmail.com>\n"
+"PO-Revision-Date: 2025-06-16 17:38+0000\n"
+"Last-Translator: Hiep Nguyen <tanhiep26@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationscloudflared/vi/>\n"
 "Language: vi\n"
@@ -10,11 +10,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.12.1\n"
 
 #: applications/luci-app-cloudflared/htdocs/luci-static/resources/view/cloudflared/log.js:89
 msgid "All"
-msgstr ""
+msgstr "Tất cả"
 
 #: applications/luci-app-cloudflared/htdocs/luci-static/resources/view/cloudflared/config.js:77
 msgid "Certificate of Origin"
@@ -107,7 +107,7 @@ msgstr ""
 #: applications/luci-app-cloudflared/htdocs/luci-static/resources/view/cloudflared/log.js:85
 #: applications/luci-app-cloudflared/root/usr/share/luci/menu.d/luci-app-cloudflared.json:30
 msgid "Log"
-msgstr ""
+msgstr "Nhật ký"
 
 #: applications/luci-app-cloudflared/htdocs/luci-static/resources/view/cloudflared/log.js:94
 msgid "Log Direction:"

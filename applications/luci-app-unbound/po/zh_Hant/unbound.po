@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-03-28 12:16+0000\n"
-"Last-Translator: 翻譯得真好下次別翻了 <x86_64-pc-linux-gnu@proton.me>\n"
+"PO-Revision-Date: 2025-06-19 08:24+0000\n"
+"Last-Translator: ZW <roc_fe@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/openwrt/luciapplicationsunbound/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.12.1\n"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:161
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:53
@@ -473,11 +473,12 @@ msgstr "注意：本地DNS是設置來查看odhpcd，但是odhpcd UCI租約觸�
 msgid ""
 "Organize directed forward, stub, and authoritative zones <a href=\"%s\" "
 "target=\"_blank\">(help)</a>."
-msgstr "組織定向轉送、存根和權威區域<a href=\"%s\" target=\"_blank\">（幫助）</a>。"
+msgstr ""
+"組織定向轉送、存根和權威區域<a href=\"%s\" target=\"_blank\">（幫助）</a>。"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:203
 msgid "Override the WAN side router entry in DNS"
-msgstr "覆蓋路由器中的 WAN 端 DNS 條目"
+msgstr "覆寫路由器中WAN端的DNS條目"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:262
 msgid "Passive"
@@ -522,7 +523,7 @@ msgstr "遞迴"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:238
 msgid "Recursion Protocol"
-msgstr "遞迴協議"
+msgstr "遞迴協定"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:259
 msgid "Recursion Strength"
@@ -559,7 +560,7 @@ msgstr "儲存"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:68
 msgid "Server Port"
-msgstr "伺服器埠"
+msgstr "伺服器連接埠"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:74
 msgid "Server TLS Port"
@@ -687,8 +688,8 @@ msgid ""
 "recursive, and caching DNS resolver <a href=\"%s\" target=\"_blank\">(help)</"
 "a>."
 msgstr ""
-"Unbound <a href=\"%s\" target=\"_blank\">(NLnet Labs)</a>是一個驗證、遞迴和緩"
-"存 DNS 解析器<a href=\"%s\" target=\"_blank\">（幫助）</a>。"
+"Unbound <a href=\"%s\" target=\"_blank\">(NLnet Labs)</a>是一個驗證、"
+"遞迴和快取 DNS 解析器<a href=\"%s\" target=\"_blank\">（幫助）</a>。"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:228
 msgid "Unbound Control App"
@@ -792,18 +793,3 @@ msgstr "使用名稱伺服器"
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zones.lua:165
 msgid "with default certificate for <var>%s</var>"
 msgstr "使用 <var>%s</var> 的預設憑證"
-
-#~ msgid "No Link"
-#~ msgstr "無連結"
-
-#~ msgid "Adblock domain list '"
-#~ msgstr "Adblock 域名列表'"
-
-#~ msgid "Cache Dump"
-#~ msgstr "快取轉儲"
-
-#~ msgid ""
-#~ "This shows Unbound 'cache_dump'. Useful to check if unbound is actually "
-#~ "caching dns entities."
-#~ msgstr ""
-#~ "顯示 Unbound的“cache_dump”。用於檢查 unbound 是否實際快取 dns 實體。"
