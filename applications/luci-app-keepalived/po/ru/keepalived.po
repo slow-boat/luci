@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-05-08 15:15+0000\n"
-"Last-Translator: Петр Иванович <ivan.petr.cool@gmail.com>\n"
+"PO-Revision-Date: 2025-06-16 11:44+0000\n"
+"Last-Translator: SnIPeRSnIPeR <feoktistovk@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationskeepalived/ru/>\n"
 "Language: ru\n"
@@ -25,8 +25,8 @@ msgid ""
 "A VIP address migrates from one LVS router to the other during a failover, "
 "thus maintaining a presence at that IP address"
 msgstr ""
-"VIP-адрес переносится с одного маршрутизатора LVS на другой во время "
-"отработки отказа, таким образом сохраняя присутствие на этом IP-адресе"
+"Виртуальный IP-адрес автоматически переносится между маршрутизаторами LVS "
+"при сбое, обеспечивая постоянную доступность этого IP-адреса"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:46
 msgid "A server with a higher priority becomes a MASTER"
@@ -73,7 +73,7 @@ msgstr "Адрес сервера"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:72
 msgid "Addresses add|del on change to MASTER, to BACKUP."
-msgstr "Добавление|удаление адресов при переключении на MASTER или BACKUP."
+msgstr "Добавление|удаление адресов при переключении на MASTER/BACKUP."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:19
 msgid ""
@@ -94,7 +94,7 @@ msgstr "Изменить приоритет выполнения сценари�
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:28
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:301
 msgid "Advanced"
-msgstr "Дополнительный"
+msgstr "Дополнительные"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:65
 msgid ""
@@ -110,11 +110,11 @@ msgstr "Как только появятся другие машины, буду
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:85
 msgid "Authorize ssh public key of peer"
-msgstr "Добавить публичный SSH-ключ пира в авторизованные"
+msgstr "Авторизовать публичный SSH-ключ узла"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:49
 msgid "Auto Synchonize Config/Data files with peer"
-msgstr "Автосинхронизация конфигов и данных с удалённым узлом"
+msgstr "Автосинхронизация конфигурации и данных с узлом"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:28
 msgid "Backup"
@@ -122,7 +122,7 @@ msgstr "Резервная копия"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:57
 msgid "Blackhole"
-msgstr "Черная дыра"
+msgstr "Чёрная дыра"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:159
 msgid "Check"
@@ -138,7 +138,7 @@ msgstr "Содержимое сохранено."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:42
 msgid "Creates virtual device with Label"
-msgstr "Создает виртуальное устройство с меткой"
+msgstr "Создаёт виртуальное устройство с меткой"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:52
 msgid "Current System should act as Sender/Receiver."
@@ -207,9 +207,7 @@ msgstr "Справочник"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/url.js:25
 msgid "Digest computed with genhash"
-msgstr ""
-"Контрольная сумма содержимого была сгенерирована с использованием "
-"инструмента genhash"
+msgstr "Контрольная сумма была сгенерирована в genhash"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:46
 msgid "Direction"
@@ -226,13 +224,13 @@ msgstr "Отключить основное отслеживание"
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:100
 msgid "Do not send VRRP adverts over VRRP multicast group."
 msgstr ""
-"Запретить передачу VRRP-рекламных сообщений через группу многоадресной "
-"рассылки (multicast), используемую протоколом VRRP."
+"Не отправлять VRRP-объявления через многоадресную рассылку (multicast) "
+"протокола VRRP."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:26
 msgid "EMail accounts that will receive the notification mail"
 msgstr ""
-"Учетные записи электронной почты, на которые будет отправлено уведомление"
+"Учётные записи электронной почты, на которые будет отправлено уведомление"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:231
 msgid "Email Alert"
@@ -245,8 +243,8 @@ msgstr "Уведомление по электронной почте"
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:31
 msgid "Email to use when processing “MAIL FROM:” SMTP command"
 msgstr ""
-"Адрес электронной почты, используемый сервером при обработке SMTP-команды "
-"MAIL FROM"
+"Адрес электронной почты, используемый сервером при обработке SMTP-команды “"
+"MAIL FROM:”"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:30
 msgid "Enable"
@@ -262,7 +260,7 @@ msgstr "Включено"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:246
 msgid "Exclude Virtual IP Address"
-msgstr "Исключить виртуальный IP адрес"
+msgstr "Исключить виртуальный IP-адрес"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:91
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:115
@@ -271,12 +269,14 @@ msgstr "Провал"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:51
 msgid "Firewall fwmark. Use Virtual server from FWMARK"
-msgstr "Использовать виртуальный сервер на основе FWMARK (метки фаервола)"
+msgstr ""
+"Метка межсетевого экрана (FWMARK) для настройки виртуального сервера на её "
+"основе"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:248
 msgid "For cases with large numbers (eg 200) of IPs on the same interface."
 msgstr ""
-"Для случаев с большим количеством IP-адресов (например, 200) на одном "
+"Необходимо для случаев с большим количеством (напр. 200) IP-адресов на одном "
 "интерфейсе."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:66
@@ -323,7 +323,7 @@ msgstr "Шлюз для использования на маршруте"
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:27
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:297
 msgid "General"
-msgstr "Общий"
+msgstr "Общие"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:52
 msgid "Global"
@@ -331,7 +331,7 @@ msgstr "Мировой"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_sync_group.js:49
 msgid "Global Tracking"
-msgstr "Глобальное Отслеживание"
+msgstr "Глобальное отслеживание"
 
 #: applications/luci-app-keepalived/root/usr/share/luci/menu.d/luci-app-keepalived.json:15
 msgid "Globals"
@@ -345,7 +345,7 @@ msgstr "Перейти в состояние FAULT, если любой из э�
 msgid "Go to FAULT state if any of these go down, if unweighted"
 msgstr ""
 "Перейти в состояние FAULT, если любой из этих компонентов выходит из строя, "
-"без учета их веса"
+"без учёта их веса"
 
 #: applications/luci-app-keepalived/root/usr/share/rpcd/acl.d/luci-app-keepalived.json:3
 msgid "Grant access to LuCI app keepalived"
@@ -390,19 +390,19 @@ msgstr "Хост"
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:73
 #: applications/luci-app-keepalived/root/usr/share/luci/menu.d/luci-app-keepalived.json:24
 msgid "IP Address"
-msgstr "IP адрес"
+msgstr "IP-адрес"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:30
 msgid "IP Address of the object"
-msgstr "IP адрес объекта"
+msgstr "IP-адрес объекта"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:18
 msgid "IP Addresses"
-msgstr "IP адреса"
+msgstr "IP-адреса"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:62
 msgid "IP Addresses must be configured for Static IP List"
-msgstr "IP адреса должны быть настроены для списка статического IP"
+msgstr "Статический список требует настройки IP-адресов"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:117
 msgid "IPSec"
@@ -462,7 +462,7 @@ msgstr "Исходное состояние."
 
 #: applications/luci-app-keepalived/root/usr/share/luci/menu.d/luci-app-keepalived.json:78
 msgid "Instance"
-msgstr "Случай"
+msgstr "Экземпляр"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_sync_group.js:37
 msgid "Instance Group"
@@ -477,8 +477,8 @@ msgid ""
 "Instead it sends adverts to the following list of ip addresses using unicast "
 "design fashion"
 msgstr ""
-"Вместо этого он рассылает объявления (adverts) по следующему списку IP-"
-"адресов, используя unicast-метод"
+"Вместо этого рассылать объявления по следующему списку IP-адресов, используя "
+"unicast-метод"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/overview.js:26
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:32
@@ -497,7 +497,7 @@ msgstr "Интерфейсы"
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:75
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:51
 msgid "Interval"
-msgstr "Промежуток времени"
+msgstr "Частота сообщений"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:75
 msgid "Interval between checks in seconds"
@@ -554,7 +554,7 @@ msgstr "Главный"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:50
 msgid "Mark"
-msgstr "Марк"
+msgstr "Метка"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:27
 msgid "Master"
@@ -562,7 +562,7 @@ msgstr "Master"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:47
 msgid "Multicast Group to use for IPv4 VRRP adverts"
-msgstr "Multicast-адрес IPv4 для рассылки VRRP-сообщений"
+msgstr "Адрес multicast-группы IPv4 для рассылки VRRP-сообщений"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:53
 msgid "Multicast Group to use for IPv6 VRRP adverts"
@@ -629,7 +629,7 @@ msgstr "Путь к исполняемому скрипту"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:76
 msgid "Path to SSH Private Key"
-msgstr "Путь к закрытому ключу SSH"
+msgstr "Путь к закрытому SSH-ключу"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:99
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:298
@@ -650,7 +650,8 @@ msgid ""
 "Peers can be referenced into Instances cluster and data/config "
 "synchronization"
 msgstr ""
-"Узлы кластера Instances могут синхронизировать данные и настройки между собой"
+"Равноправные узлы могут быть включены в кластер экземпляров VRRP для "
+"синхронизации данных/конфигураций"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:93
 msgid "Persist Granularity"
@@ -658,7 +659,7 @@ msgstr "Сохраняющаяся степень детализации"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:87
 msgid "Persist Timeout"
-msgstr "Таймаут сохранения"
+msgstr "Таймаут постоянного соединения"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:21
 msgid ""
@@ -689,113 +690,116 @@ msgstr "Приоритет"
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/overview.js:30
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/status/include/35_keepalived.js:34
 msgid "Probes Received"
-msgstr ""
+msgstr "Probes Received (Полученные зонды/пробные запросы)"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/overview.js:29
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/status/include/35_keepalived.js:33
 msgid "Probes Sent"
-msgstr ""
+msgstr "Проб отправлено"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:38
 msgid "Protocol"
-msgstr ""
+msgstr "Протокол"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:55
 msgid "Real Server"
-msgstr ""
+msgstr "Реальный сервер"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:127
 msgid "Real Server to redirect all request"
-msgstr ""
+msgstr "Реальный сервер для перенаправления всех запросов"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:126
 msgid "Real Servers"
-msgstr ""
+msgstr "Реальные серверы"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:55
 msgid "Receiver"
-msgstr ""
+msgstr "Получатель"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:153
 msgid "Relative weight to use"
-msgstr ""
+msgstr "Относительный вес"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:92
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:116
 msgid "Required number of successes for KO transition"
-msgstr ""
+msgstr "Количество успешных проверок для перехода из состояния KO"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:87
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:110
 msgid "Required number of successes for OK transition"
-msgstr ""
+msgstr "Количество успешных проверок для перехода в состояние OK"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:189
 msgid "Retry"
-msgstr ""
+msgstr "Повторы"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:49
 msgid "Reverse"
-msgstr ""
+msgstr "Инверсный"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:86
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:109
 msgid "Rise"
-msgstr ""
+msgstr "Порог активации"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:81
 msgid "Round-Robin"
-msgstr ""
+msgstr "Циклический метод"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:79
 #: applications/luci-app-keepalived/root/usr/share/luci/menu.d/luci-app-keepalived.json:33
 msgid "Route"
-msgstr ""
+msgstr "Маршрут"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:51
 msgid "Route Table"
-msgstr ""
+msgstr "Таблица маршрутизации"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:15
 msgid "Router ID"
-msgstr ""
+msgstr "Идентификатор маршрутизатора"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:18
 msgid "Routes"
-msgstr ""
+msgstr "Маршруты"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:258
 msgid "Routes add|del when changing to MASTER, to BACKUP"
 msgstr ""
+"Маршруты добавляются/удаляются при переходе в состояние MASTER или BACKUP"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:68
 msgid "Routes must be configured for Static Routes"
-msgstr ""
+msgstr "Для статических маршрутов требуется настройка"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:19
 msgid ""
 "Routes would be referenced into Static and Virtual Routes of VRRP instances"
 msgstr ""
+"Маршруты будут связаны со статическими и виртуальными настройками "
+"экземпляров VRRP"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:40
 msgid "SMTP Connect Timeout"
-msgstr ""
+msgstr "Таймаут подключения SMTP"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:35
 msgid "SMTP Server"
-msgstr ""
+msgstr "SMTP-сервер"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:59
 msgid "SSH Port"
-msgstr ""
+msgstr "SSH-порт"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:84
 msgid "SSH Public Key"
-msgstr ""
+msgstr "Публичный SSH-ключ"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:80
 msgid "Scheduler Algorigthm"
-msgstr ""
+msgstr "Алгоритм балансировки"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:46
 msgid "Scope"
@@ -803,136 +807,141 @@ msgstr "Радиус действия"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:47
 msgid "Scope of the Address"
-msgstr ""
+msgstr "Зона адреса"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:68
 msgid "Script"
-msgstr ""
+msgstr "Скрипт"
 
 #: applications/luci-app-keepalived/root/usr/share/luci/menu.d/luci-app-keepalived.json:51
 msgid "Scripts"
-msgstr ""
+msgstr "Скрипты"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:76
 msgid "Seconds between script invocations"
-msgstr ""
+msgstr "Интервал между запусками скрипта в секундах"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:232
 msgid "Send SMTP alerts"
-msgstr ""
+msgstr "Отправка SMTP-оповещений"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_sync_group.js:45
 msgid "Send email notification during state transition"
-msgstr ""
+msgstr "Отправка e-mail уведомлений при изменении состояния"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:185
 msgid "Send/Recv VRRP messages from base interface instead of VMAC interface"
 msgstr ""
+"Отправка/получение VRRP-сообщений через базовый интерфейс вместо интерфейса "
+"VMAC"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:54
 msgid "Sender"
-msgstr ""
+msgstr "Отправитель"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:67
 msgid "Sender will send files to this location of receiver."
-msgstr ""
+msgstr "Отправитель будет передавать файлы в каталог получателя."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:45
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:147
 msgid "Server Port"
-msgstr ""
+msgstr "Порт сервера"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:99
 msgid "Server to be added to the pool if all real servers are down"
 msgstr ""
+"Резервный сервер, добавляемый в пул при недоступности всех реальных серверов"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:36
 msgid "Server to use for sending mail notifications"
-msgstr ""
+msgstr "Сервер для отправки почтовых уведомлений"
 
 #: applications/luci-app-keepalived/root/usr/share/luci/menu.d/luci-app-keepalived.json:87
 msgid "Servers"
-msgstr ""
+msgstr "Серверы"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:116
 msgid "Simple Password"
-msgstr ""
+msgstr "Обычный пароль"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:48
 msgid "Site"
-msgstr ""
+msgstr "Сайт"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:98
 msgid "Sorry Server Address"
-msgstr ""
+msgstr "Резервный сервер"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:104
 msgid "Sorry Server Port"
-msgstr ""
+msgstr "Порт резервного сервера"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:39
 msgid "Source Address"
-msgstr ""
+msgstr "IP-адрес источника"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:40
 msgid "Source Address of the Route"
-msgstr ""
+msgstr "Исходный IP-адрес маршрута"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:23
 msgid "State"
-msgstr ""
+msgstr "Состояние"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:66
 msgid "Static Addresses are not moved by vrrpd, they stay on the machine."
-msgstr ""
+msgstr "Статические адреса не переносятся VRRPd, а остаются на устройстве."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:65
 msgid "Static IP Addresses"
-msgstr ""
+msgstr "Статические IP-адреса"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:71
 msgid "Static Routes"
-msgstr ""
+msgstr "Статические маршруты"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:72
 msgid "Static Routes are not moved by vrrpd, they stay on the machine."
-msgstr ""
+msgstr "Статические маршруты не переносятся VRRPd, а остаются на устройстве."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:16
 msgid "String identifying the machine (need not be hostname)"
 msgstr ""
+"Строка необходима для идентификации устройства (можно использовать любое "
+"название)"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:66
 msgid "Sync Directory"
-msgstr ""
+msgstr "Каталог синхронизации"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:90
 msgid "Sync Files"
-msgstr ""
+msgstr "Файлы синхронизации"
 
 #: applications/luci-app-keepalived/root/usr/share/luci/menu.d/luci-app-keepalived.json:96
 msgid "Sync Group"
-msgstr ""
+msgstr "Группа синхронизации"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:51
 msgid "Sync Mode"
-msgstr ""
+msgstr "Режим синхронизации"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:52
 msgid "System Route Table"
-msgstr ""
+msgstr "Системная таблица маршрутизации"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:34
 msgid "Target IP Address of the Route"
-msgstr ""
+msgstr "Целевой IP-адрес маршрута"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:33
 msgid "Target/Destination"
-msgstr ""
+msgstr "Адрес назначения"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:26
 msgid "The machine with the highest \"priority\" will become MASTER."
-msgstr ""
+msgstr "Устройство с наивысшим «приоритетом» станет MASTER."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_sync_group.js:27
 msgid ""
@@ -940,83 +949,89 @@ msgid ""
 "together so that transition of one instance will be reflected to others "
 "group members"
 msgstr ""
+"Основная цель — объединить группу VRRP-инстансов для их синхронизации, чтобы "
+"переход одного инстанса автоматически отражался на других участниках группы"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/overview.js:78
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/status/include/35_keepalived.js:76
 msgid "There are no active instances"
-msgstr ""
+msgstr "Нет активных VRRP-инстансов"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/notification.js:27
 msgid ""
 "This is the /etc/keepalived.user file in which custom commands can be "
 "defined."
 msgstr ""
+"Это файл /etc/keepalived.user, в котором можно определить пользовательские "
+"команды."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/overview.js:85
 msgid ""
 "This overview shows the current status of the VRRP instances on this device."
-msgstr ""
+msgstr "Здесь отображается текущий статус VRRP-инстансов на устройстве."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:216
 msgid "Time in seconds to delay preempting compared"
-msgstr ""
+msgstr "Время задержки упреждения (в секундах)"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:41
 msgid "Timeout in seconds for SMTP stream processing"
-msgstr ""
+msgstr "Таймаут обработки SMTP-потока (в секундах)"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:88
 msgid "Timeout value for persistent connections"
-msgstr ""
+msgstr "Таймаут для постоянных соединений (в секундах)"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:249
 msgid ""
 "To decrease the number of packets sent in adverts, you can exclude most IPs "
 "from adverts."
 msgstr ""
+"Чтобы уменьшить количество VRRP-пакетов, большинство IP-адресов можно "
+"исключить из рассылки."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/track_interface.js:13
 msgid "Track Interface"
-msgstr ""
+msgstr "Отслеживание интерфейса"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:266
 msgid "Track Interfaces"
-msgstr ""
+msgstr "Отслеживание интерфейсов"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:23
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:275
 msgid "Track Script"
-msgstr ""
+msgstr "Скрипты отслеживания"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_sync_group.js:50
 msgid "Track interfaces, scripts and files"
-msgstr ""
+msgstr "Отслеживание интерфейсов, скриптов и файлов"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:299
 msgid "Tracking"
-msgstr ""
+msgstr "Отслеживание"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:24
 msgid "Tracking scripts would be referenced from VRRP instances"
-msgstr ""
+msgstr "Скрипты отслеживания будут ссылаться на экземпляры VRRP"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/url.js:20
 msgid "URL Path"
-msgstr ""
+msgstr "Путь URL"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/url.js:21
 msgid "URL path, i.e path /, or path /mrtg2/"
-msgstr ""
+msgstr "Путь URL (например, / или /mrtg2/)"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:180
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/url.js:11
 #: applications/luci-app-keepalived/root/usr/share/luci/menu.d/luci-app-keepalived.json:42
 msgid "URLs"
-msgstr ""
+msgstr "URL-адреса"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/url.js:12
 msgid "URLs can be referenced into Real Servers to test"
-msgstr ""
+msgstr "URL-адреса можно привязать к реальным серверам для теста"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/notification.js:20
 msgid "Unable to save contents: %s"
@@ -1024,127 +1039,129 @@ msgstr "Не удалось сохранить содержимое: %s"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:86
 msgid "Unicast Source IP"
-msgstr ""
+msgstr "IP-адрес источника unicast"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:190
 msgid "Use IPV6"
-msgstr ""
+msgstr "Использовать IPv6"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/peers.js:77
 msgid ""
 "Use SSH key for password less authentication, SSH Key would be used on "
 "current system"
 msgstr ""
+"Использовать SSH-ключ для авторизации без пароля, который будет применяться "
+"на текущей системе"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:178
 msgid "Use VMAC"
-msgstr ""
+msgstr "Использовать VMAC"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:184
 msgid "Use VMAC Base"
-msgstr ""
+msgstr "Использовать базовый VMAC"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:179
 msgid "Use VRRP Virtual MAC"
-msgstr ""
+msgstr "Использовать VRRP Virtual MAC (VMAC)"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:175
 msgid "User Check Script"
-msgstr ""
+msgstr "Пользовательский скрипт проверки"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/overview.js:84
 #: applications/luci-app-keepalived/root/usr/share/luci/menu.d/luci-app-keepalived.json:3
 #: applications/luci-app-keepalived/root/usr/share/luci/menu.d/luci-app-keepalived.json:114
 msgid "VRRP"
-msgstr ""
+msgstr "VRRP"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:52
 msgid "VRRP Advert interval in seconds"
-msgstr ""
+msgstr "Интервал VRRP-сообщений (в секундах)"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:247
 msgid "VRRP IP excluded from VRRP."
-msgstr ""
+msgstr "IP-адрес VRRP будет исключён из VRRP-процесса."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:291
 msgid "VRRP Instance"
-msgstr ""
+msgstr "Экземпляр VRRP"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:46
 msgid "VRRP Multicast Group 4"
-msgstr ""
+msgstr "Мультикаст-группа для IPv4-объявлений VRRP"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:52
 msgid "VRRP Multicast Group 6"
-msgstr ""
+msgstr "Мультикаст-группа для IPv6-объявлений VRRP"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:33
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:56
 msgid "VRRP Script"
-msgstr ""
+msgstr "VRRP-скрипт"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:20
 msgid "VRRP Scripts must be configured for Track Scripts"
-msgstr ""
+msgstr "Для скриптов отслеживания необходима настройка VRRP-скриптов"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:58
 msgid "VRRP Startup Delay"
-msgstr ""
+msgstr "Задержка запуска VRRP"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_sync_group.js:26
 msgid "VRRP Sync Group is an extension to VRRP protocol."
-msgstr ""
+msgstr "Группа синхронизации VRRP является расширением протокола VRRP."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_sync_group.js:25
 msgid "VRRP synchronization group"
-msgstr ""
+msgstr "Группа синхронизации VRRP"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:203
 msgid "VRRP version to run on interface"
-msgstr ""
+msgstr "Выберите версию протокола VRRP для запуска на устройстве"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:202
 msgid "Version"
-msgstr ""
+msgstr "Версия"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:41
 msgid "Virtual Device Label"
-msgstr ""
+msgstr "Метка виртуального устройства"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:63
 msgid "Virtual Host"
-msgstr ""
+msgstr "Виртуальный хост"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:71
 msgid "Virtual IP Address"
-msgstr ""
+msgstr "Виртуальный IP-адрес"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:39
 msgid "Virtual Router Id"
-msgstr ""
+msgstr "Идентификатор"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:257
 msgid "Virtual Routes"
-msgstr ""
+msgstr "Виртуальные маршруты"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:17
 msgid "Virtual Server"
-msgstr ""
+msgstr "Виртуальный сервер"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:42
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:81
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:152
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/track_interface.js:28
 msgid "Weight"
-msgstr ""
+msgstr "Вес"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:84
 msgid "Weighted Least-Connection"
-msgstr ""
+msgstr "Взвешенный минимум соединений"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:82
 msgid "Weighted Round-Robin"
-msgstr ""
+msgstr "Взвешенный циклический метод"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/track_interface.js:29
 msgid ""
@@ -1152,35 +1169,18 @@ msgid ""
 "state in case of failure, its priority will be increased or decreased by the "
 "weight when the interface is up or down"
 msgstr ""
+"Если указан вес, то вместо перевода экземпляра VRRP в состояние FAULT при "
+"сбое, приоритет будет увеличиваться или уменьшаться на значение веса при "
+"активации или деактивации интерфейса"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:73
 msgid ""
 "With the same entries on other machines, the opposite transition will be "
 "occurring."
 msgstr ""
+"Если на других устройствах заданы те же настройки VRRP, их статус изменится "
+"на противоположный (например, MASTER станет BACKUP, и наоборот)."
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:53
 msgid "default"
 msgstr "по умолчанию"
-
-#~ msgid "Allows the lower priority machine to maintain the master role,"
-#~ msgstr ""
-#~ "Позволяет машине с более низким приоритетом сохранять роль главного "
-#~ "устройства,"
-
-#~ msgid ""
-#~ "A VIP address migrates from one LVS router to the other during a failover,"
-#~ msgstr ""
-#~ "VIP-адрес перемещается от одного маршрутизатора LVS к другому во время "
-#~ "отказоустойчивого переключения,"
-
-#~ msgid ""
-#~ "Adds a script to be executed periodically. Its exit code will be recorded "
-#~ "for all VRRP instances and sync groups which are monitoring it"
-#~ msgstr ""
-#~ "Добавляет скрипт для периодического выполнения. Его код возврата будет "
-#~ "записываться для всех экземпляров VRRP и групп синхронизации, которые его "
-#~ "отслеживают"
-
-#~ msgid "Active State/State"
-#~ msgstr "Активное состояние/состояние"

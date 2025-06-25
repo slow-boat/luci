@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-05-08 13:02+0000\n"
+"PO-Revision-Date: 2025-06-12 17:02+0000\n"
 "Last-Translator: hmzs <hmzs@1szer1.hu>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationspackage-manager/hu/>\n"
@@ -26,7 +26,7 @@ msgstr "%s foglalt (%1024mB / %1024mB, szabad: %1024mB)"
 msgid ""
 "<strong>Warning!</strong> Package operations can <a %s>break your system</a>."
 msgstr ""
-"<strong>Figyelem!</strong> A csomagművelet(ek) hatására <a %s> a rendszert "
+"<strong>Figyelem!</strong> A csomagművelet(ek) hatására <a %s> a rendszer "
 "működésképtelenné válhat</a>."
 
 #: applications/luci-app-package-manager/htdocs/luci-static/resources/view/package-manager.js:1191
@@ -100,7 +100,7 @@ msgstr "A(z) <em>%h</em> csomag részletei"
 
 #: applications/luci-app-package-manager/htdocs/luci-static/resources/view/package-manager.js:1170
 msgid "Disk space"
-msgstr "Szabad tárterület"
+msgstr "Használt tárterület"
 
 #: applications/luci-app-package-manager/htdocs/luci-static/resources/view/package-manager.js:1058
 msgid "Dismiss"
@@ -425,34 +425,3 @@ msgstr "~%1024mB tömörítve"
 #: applications/luci-app-package-manager/htdocs/luci-static/resources/view/package-manager.js:952
 msgid "~%1024mB installed"
 msgstr "~%1024mB telepítve"
-
-#~ msgid "Configure opkg…"
-#~ msgstr "Az opkg beállítása…"
-
-#~ msgid "Grant access to opkg management"
-#~ msgstr "Jogosultság adása az opkg csomagkezelőnek"
-
-#~ msgid "Install additional software and upgrade existing packages with opkg."
-#~ msgstr ""
-#~ "Telepítsen további szoftvereket, és frissítse a meglévő csomagokat az "
-#~ "opkg segítségével."
-
-#~ msgid "OPKG Configuration"
-#~ msgstr "Csomagkezelő beállítása"
-
-#~ msgid "The <em>opkg %h</em> command failed with code <code>%d</code>."
-#~ msgstr ""
-#~ "Az <em>opkg %h</em> parancs meghiúsult a következő kóddal: <code>%d</"
-#~ "code>."
-
-#~ msgid "Unable to execute <em>opkg %s</em> command: %s"
-#~ msgstr "Nem sikerült végrehajtani az <em>opkg %s</em> parancsot: %s"
-
-#~ msgid "Waiting for the <em>opkg %h</em> command to complete…"
-#~ msgstr "Várakozás az <em>opkg %h</em> parancs befejeződésére…"
-
-#~ msgid "Free space"
-#~ msgstr "Szabad hely"
-
-#~ msgid "Overwrite files from other package(s)"
-#~ msgstr "Fájlok felülírása más csomagokból"
