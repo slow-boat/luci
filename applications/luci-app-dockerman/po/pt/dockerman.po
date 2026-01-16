@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-08 21:04+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2025-11-26 16:13+0000\n"
+"Last-Translator: Luiz Carlos de Souza Santos <lcdessantos@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsdockerman/pt/>\n"
 "Language: pt\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:604
 msgid "A list of kernel capabilities to add to the container"
@@ -389,7 +389,7 @@ msgstr "Impor a Remoção"
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:85
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:96
 msgid "Gateway"
-msgstr "Gateway"
+msgstr "Portal"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:10
 msgid "Global settings"
@@ -789,7 +789,7 @@ msgstr "Execute o comando"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:226
 msgid "Save"
-msgstr "Guardar"
+msgstr "Salvar"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:518
 msgid "Set custom DNS servers"

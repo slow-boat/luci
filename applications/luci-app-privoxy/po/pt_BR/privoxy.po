@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-08-15 05:29+0000\n"
-"Last-Translator: Wellington Terumi Uemura <wellingtonuemura@gmail.com>\n"
+"PO-Revision-Date: 2025-11-16 13:16+0000\n"
+"Last-Translator: Hebert Francis Amaro Nogueira <nogueira.hebert@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsprivoxy/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -11,13 +11,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:90
 msgid ""
 "A directory where Privoxy can create temporary files.<br /><strong>Only when "
 "using 'external filters', Privoxy has to create temporary files.</strong>"
 msgstr ""
+"Um diretório onde o Privoxy pode criar arquivos temporários.<br /"
+"><strong>Somente ao usar 'filtros externos', o Privoxy precisa criar "
+"arquivos temporários</strong>"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:209
 msgid "Accept intercepted requests"
@@ -316,7 +319,7 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:121
 msgid "Listen addresses"
-msgstr ""
+msgstr "Endereços de escuta"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:40
 msgid "Location of the Privoxy User Manual."

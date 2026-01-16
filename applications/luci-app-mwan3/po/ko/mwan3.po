@@ -1,26 +1,26 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-10-04 07:12+0000\n"
-"Last-Translator: Wonchul Kang <teshi85@gmail.com>\n"
+"PO-Revision-Date: 2026-01-11 05:02+0000\n"
+"Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsmwan3/ko/>\n"
 "Language: ko\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:211
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:227
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:249
 msgid "%d hour"
-msgstr ""
+msgstr "%d시간"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:206
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:222
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:244
 msgid "%d minute"
-msgstr ""
+msgstr "%d분"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:207
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:208
@@ -35,14 +35,14 @@ msgstr ""
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:247
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:248
 msgid "%d minutes"
-msgstr ""
+msgstr "%d분"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:193
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:200
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:216
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:238
 msgid "%d second"
-msgstr ""
+msgstr "%d초"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:195
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:201
@@ -61,7 +61,7 @@ msgstr ""
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:242
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:243
 msgid "%d seconds"
-msgstr ""
+msgstr "%d초"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:45
 msgid ""
@@ -93,7 +93,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:71
 msgid "-- Interface Selection --"
-msgstr ""
+msgstr "-- 인터페이스 선택 --"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:109
 msgid "-- Please choose --"
@@ -115,7 +115,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:26
 msgid "Alert"
-msgstr "경고"
+msgstr "경보 (Alert)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:37
 msgid "Also scan this Routing table for connected networks"
@@ -133,17 +133,17 @@ msgstr ""
 msgid "Check routing table"
 msgstr ""
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:95
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:96
 msgid "Collecting data ..."
-msgstr ""
+msgstr "데이터 수집 중 ..."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:18
 msgid "Contents have been saved."
-msgstr ""
+msgstr "내용이 저장되었습니다."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:27
 msgid "Critical"
-msgstr ""
+msgstr "치명적 (Critical)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:32
 msgid "Debug"
@@ -155,14 +155,14 @@ msgstr "목적지 주소"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:89
 msgid "Destination port"
-msgstr ""
+msgstr "목적지 포트"
 
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:29
 msgid "Diagnostics"
-msgstr ""
+msgstr "진단"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:56
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:65
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:57
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:66
 msgid "Disabled"
 msgstr "비활성화"
 
@@ -171,14 +171,14 @@ msgid ""
 "Downed interface will be deemed up after this many successful ping tests"
 msgstr ""
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:40
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:48
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:41
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:49
 msgid "Downtime"
-msgstr ""
+msgstr "중단 시간"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:25
 msgid "Emergency"
-msgstr ""
+msgstr "긴급 (Emergency)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:92
 msgid "Enable ssl tracking"
@@ -195,7 +195,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:20
 msgid "Enables global firewall logging"
-msgstr ""
+msgstr "전역 방화벽 로그 기록을 사용합니다"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:93
 msgid "Enables https tracking on ssl port 443"
@@ -207,11 +207,11 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:28
 msgid "Error"
-msgstr "에러"
+msgstr "오류 (Error)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:108
 msgid "Execute"
-msgstr ""
+msgstr "실행"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:59
 msgid "Expect interface state on up event"
@@ -251,7 +251,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/root/usr/share/rpcd/acl.d/luci-app-mwan3.json:3
 msgid "Grant UCI access for luci-app-mwan3"
-msgstr ""
+msgstr "luci-app-mwan3의 UCI 접근 권한 부여"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:68
 msgid "Hotplug ifdown"
@@ -271,7 +271,7 @@ msgstr "IPv4"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:61
 msgid "IPv4 and IPv6"
-msgstr "IPv4와 IPv6"
+msgstr "IPv4 및 IPv6"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:62
 msgid "IPv4 only"
@@ -287,7 +287,7 @@ msgstr "IPv6 전용"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:31
 msgid "Info"
-msgstr "정보"
+msgstr "정보 (Info)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:58
 msgid "Initial state"
@@ -295,9 +295,9 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/member.js:50
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:83
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:64
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:76
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:100
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:65
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:77
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:101
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:64
 msgid "Interface"
 msgstr "인터페이스"
@@ -324,7 +324,7 @@ msgstr ""
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:65
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:59
 msgid "Internet Protocol"
-msgstr ""
+msgstr "인터넷 프로토콜"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:230
 msgid "Keep failure interval"
@@ -351,7 +351,7 @@ msgstr ""
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:19
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:117
 msgid "Logging"
-msgstr ""
+msgstr "로그 기록"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:22
 msgid "Loglevel"
@@ -399,17 +399,17 @@ msgstr ""
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:288
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/member.js:57
 msgid "Metric"
-msgstr ""
+msgstr "메트릭"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:18
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:19
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:3
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:46
 msgid "MultiWAN Manager"
-msgstr ""
+msgstr "MultiWAN 관리자"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:79
 msgid "MultiWAN Manager - Diagnostics"
-msgstr ""
+msgstr "MultiWAN 관리자 - 진단"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:10
 msgid "MultiWAN Manager - Globals"
@@ -417,7 +417,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:21
 msgid "MultiWAN Manager - Interfaces"
-msgstr ""
+msgstr "MultiWAN 관리자 - 인터페이스"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/member.js:17
 msgid "MultiWAN Manager - Members"
@@ -427,25 +427,25 @@ msgstr ""
 msgid "MultiWAN Manager - Notify"
 msgstr ""
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:92
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:93
 msgid "MultiWAN Manager - Overview"
-msgstr ""
+msgstr "MultiWAN 관리자 - 개요"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:17
 msgid "MultiWAN Manager - Policies"
-msgstr ""
+msgstr "MultiWAN 관리자 - 정책"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:19
 msgid "MultiWAN Manager - Rules"
-msgstr ""
+msgstr "MultiWAN 관리자 - 규칙"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/detail.js:12
 msgid "MultiWAN Manager - Status"
-msgstr ""
+msgstr "MultiWAN 관리자 - 상태"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/troubleshooting.js:12
 msgid "MultiWAN Manager - Troubleshooting"
-msgstr ""
+msgstr "MultiWAN 관리자 - 문제 해결"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:22
 msgid ""
@@ -486,14 +486,14 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:98
 msgid "No"
-msgstr ""
+msgstr "아니요"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:20
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:21
 msgid "No MWAN interfaces found"
 msgstr ""
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:43
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:51
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:44
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:52
 msgid "No Tracking"
 msgstr ""
 
@@ -507,21 +507,21 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:30
 msgid "Notice"
-msgstr ""
+msgstr "알림 (Notice)"
 
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:96
 msgid "Notify"
 msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:62
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:37
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:45
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:38
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:46
 msgid "Offline"
 msgstr "오프라인"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:61
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:30
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:39
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:31
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:40
 msgid "Online"
 msgstr "온라인"
 
@@ -576,7 +576,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:80
 msgid "Policy"
-msgstr ""
+msgstr "정책"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:121
 msgid "Policy assigned"
@@ -614,7 +614,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:88
 msgid "Rule"
-msgstr ""
+msgstr "규칙"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:21
 msgid "Rules are based on IP address, port or protocol."
@@ -645,15 +645,15 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:76
 msgid "Source address"
-msgstr ""
+msgstr "출발지 주소"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:80
 msgid "Source port"
-msgstr ""
+msgstr "출발지 포트"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:65
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:82
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:106
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:66
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:83
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:107
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:21
 msgid "Status"
 msgstr "상태"
@@ -673,7 +673,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:91
 msgid "Task"
-msgstr ""
+msgstr "작업"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:29
 msgid "The file is also preserved during sysupgrade."
@@ -748,14 +748,14 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:20
 msgid "Unable to save contents: %s"
-msgstr ""
+msgstr "내용을 저장할 수 없습니다: %s"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:33
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:47
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:42
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:55
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:34
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:48
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:43
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:56
 msgid "Uptime"
-msgstr "가동시간"
+msgstr "가동 시간"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:67
 msgid "View the content of /etc/protocols for protocol description"
@@ -772,7 +772,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:97
 msgid "Yes"
-msgstr ""
+msgstr "예"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:65
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:128

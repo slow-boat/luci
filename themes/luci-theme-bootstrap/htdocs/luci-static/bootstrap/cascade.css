@@ -115,6 +115,9 @@
 	--disabled-opacity: .7;
 
 	color-scheme: light;
+
+	--font-sans: Helvetica Neue, Helvetica, Arial, ui-sans-serif, system-ui, sans-serif;
+	--font-mono: Monaco, Andale Mono, Courier New, ui-monospace, monospace;
 }
 
 :root[data-darkmode="true"] {
@@ -224,11 +227,6 @@ textarea {
 	line-height: 2em;
 }
 
-button::-moz-focus-inner, input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
-
 button,
 input[type="button"],
 input[type="reset"],
@@ -278,7 +276,7 @@ textarea {
  * ------------------------------------------------------------------------------------------- */
 body {
 	background-color: var(--background-color-high);
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: var(--font-sans);
 	font-size: 13px;
 	font-weight: normal;
 	line-height: 18px;
@@ -485,7 +483,7 @@ address {
 
 code, pre {
 	padding: 0 3px 2px;
-	font-family: Monaco, Andale Mono, Courier New, monospace;
+	font-family: var(--font-mono);
 	font-size: 12px;
 	border-radius: 3px;
 }
@@ -537,7 +535,7 @@ label,
 input,
 button,
 select {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: var(--font-sans);
 	font-size: 13px;
 	font-weight: normal;
 	line-height: normal;
@@ -592,6 +590,12 @@ select,
 	line-height: 18px;
 	border: 1px solid var(--border-color-high);
 	border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {
+	#localtime {
+		width: 300px;
+	}
 }
 
 input,
@@ -1447,7 +1451,7 @@ body.modal-overlay-active #modal_overlay {
 }
 
 .btn .close, .alert-message .close {
-	font-family: Arial, sans-serif;
+	font-family: var(--font-sans);
 	line-height: 18px;
 }
 
@@ -1906,11 +1910,6 @@ body.modal-overlay-active #modal_overlay {
 	font-size: 11px;
 }
 
-button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
-	padding: 0;
-	border: 0;
-}
-
 .close {
 	float: right;
 	color: #000;
@@ -2196,6 +2195,11 @@ th[data-sort-direction="desc"]::after { content: "\a0\25bc"; }
 
 #cbi-network-interface .ifacebox-body {
 	white-space: normal;
+}
+
+#cbi-network-interface .ifacebox img {
+	width: 24px;
+	height: 24px;
 }
 
 .ifacebadge {
@@ -2613,18 +2617,10 @@ div.cbi-value var.cbi-tooltip-container,
 	max-width: none;
 }
 
-[data-darkmode="true"] [data-page="admin-status-channel_analysis"] #view> div > div > div > div > div[style],
-[data-darkmode="true"] [data-page="admin-status-realtime-load"] #view > div > div > div[style],
-[data-darkmode="true"] [data-page="admin-status-realtime-bandwidth"] #view > div > div > div > div[style],
-[data-darkmode="true"] [data-page="admin-status-realtime-wireless"] #view > div > div > div > div[style],
-[data-darkmode="true"] [data-page="admin-status-realtime-connections"] #view > div > div > div[style] {
+#view div[style] > svg {
 	background-color: var(--background-color-high)!important;
 }
 
-[data-darkmode="true"] [data-page="admin-status-channel_analysis"] #view> div > div > div > div > div > svg > line[style],
-[data-darkmode="true"] [data-page="admin-status-realtime-load"] #view > div > div > div > svg > line[style],
-[data-darkmode="true"] [data-page="admin-status-realtime-bandwidth"] #view > div > div > div > div > svg > line[style],
-[data-darkmode="true"] [data-page="admin-status-realtime-wireless"] #view > div > div > div > div > svg > line[style],
-[data-darkmode="true"] [data-page="admin-status-realtime-connections"] #view > div > div > div > svg > line[style] {
-	stroke: #fff!important;
+#view div[style] > svg line[style] {
+	stroke: var(--text-color-highest)!important;
 }

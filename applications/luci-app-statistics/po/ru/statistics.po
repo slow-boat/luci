@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: statistics\n"
 "POT-Creation-Date: 2017-10-17 22:00+0300\n"
-"PO-Revision-Date: 2025-06-16 11:44+0000\n"
-"Last-Translator: SnIPeRSnIPeR <feoktistovk@gmail.com>\n"
+"PO-Revision-Date: 2026-01-11 05:02+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsstatistics/ru/>\n"
 "Language: ru\n"
@@ -12,9 +12,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:54
+msgid "%H: Attenuation on %pi"
+msgstr "%H: Ослабление на %pi"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:363
+msgid "%H: CRC Errors on %pi"
+msgstr "%H: Ошибки CRC на %pi"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:133
+msgid "%H: Data rate on %pi"
+msgstr "%H: Скорость передачи данных на %pi"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:178
+msgid "%H: Errored seconds on %pi"
+msgstr "%H: Секунды с ошибками на %pi"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:95
+msgid "%H: Line flags on %pi"
+msgstr "%H: Флаги строки на %pi"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:13
+msgid "%H: Line uptime on %pi"
+msgstr "%H: Время работы линии на %pi"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:262
+msgid "%H: RETX Errors %pi"
+msgstr "%H: Ошибки повторной передачи (RETX) %pi"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:31
+msgid "%H: SNR on %pi"
+msgstr "%H: Отношение сигнал/шум (SNR) на %pi"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:47
 msgid "0 - At most once"
@@ -63,11 +95,19 @@ msgstr "Тип адреса"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/openvpn.js:18
 msgid "Aggregate number of connected users"
-msgstr "Общее число подключенных пользователей"
+msgstr "Общее число подключённых пользователей"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:237
 msgid "Apply interval »"
 msgstr "Применить интервал »"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:154
+msgid "Attainable Data Rate Down"
+msgstr "Максимально возможная скорость линии (приём)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:167
+msgid "Attainable Data Rate Up"
+msgstr "Максимально возможная скорость линии (отдача)"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/email.js:47
 msgid "Awaiting email input at %s"
@@ -98,15 +138,11 @@ msgstr "Основная статистика"
 msgid "Basic process monitoring enabled"
 msgstr "Включён базовый мониторинг процессов"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:100
-msgid "Bitrate"
-msgstr "Битрейт"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:82
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:103
 msgid "Bitswap Down"
 msgstr "Bitswap Выключено"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:77
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:115
 msgid "Bitswap Up"
 msgstr "Bitswap включён"
 
@@ -116,9 +152,14 @@ msgstr ""
 "При включении данной опции график загрузки будет отображать отдельные данные "
 "по каждому ядру"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:79
+msgid "CACert"
+msgstr "CACert"
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/contextswitch.js:6
 msgid "CPU Context Switches Plugin Configuration"
-msgstr "Настройка плагина сбора статистики о масштабировании частоты процессора"
+msgstr ""
+"Настройка плагина сбора статистики о масштабировании частоты процессора"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/cpufreq.js:8
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/cpufreq.json:2
@@ -170,7 +211,7 @@ msgstr "Настройка плагина «Chrony»"
 msgid "Chrony monitoring enabled"
 msgstr "Включён мониторинг Chrony"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:72
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:85
 msgid "CleanSession"
 msgstr "Очистка сессии (CleanSession)"
 
@@ -262,23 +303,11 @@ msgstr "Настройка плагина «DNS»"
 msgid "DSL"
 msgstr "DSL"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:65
-msgid "DSL Flags"
-msgstr "DSL-флаги"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:52
-msgid "DSL Line Uptime"
-msgstr "Время безотказной работы линии DSL"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:13
-msgid "DSL Signal"
-msgstr "DSL-сигнал"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:128
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:148
 msgid "Data Rate Down"
 msgstr "Снижение скорости передачи данных"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:123
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:160
 msgid "Data Rate Up"
 msgstr "Увеличение скорости передачи данных"
 
@@ -408,10 +437,6 @@ msgstr "Настройка плагина «Энтропия»"
 msgid "Entropy monitoring enabled"
 msgstr "Мониторинг энтропии включён"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:136
-msgid "Errors"
-msgstr "Ошибки"
-
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:206
 msgid "Every 30 seconds"
 msgstr "Каждые 30 секунд"
@@ -450,9 +475,33 @@ msgstr "Дополнительные элементы"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:61
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:68
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:75
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:88
 msgid "False"
 msgstr "False"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:386
+msgid "Far CRC Errors"
+msgstr "Ошибки CRC на стороне провайдера (удалённые)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:226
+msgid "Far Errored Seconds"
+msgstr "Секунды с ошибками на стороне провайдера"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:242
+msgid "Far Loss of Signal Seconds"
+msgstr "Секунды потери сигнала на стороне провайдера"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:393
+msgid "Far Pre-emptive CRC Errors"
+msgstr "Превентивные CRC-ошибки на стороне провайдера"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:234
+msgid "Far Severely Errored Seconds"
+msgstr "Секунды с критическими ошибками на стороне провайдера"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:250
+msgid "Far Unavailable Seconds"
+msgstr "Секунды недоступности на стороне провайдера"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/curl.js:14
 msgid "Fetch pages"
@@ -618,13 +667,13 @@ msgid "Leave unselected to automatically determine interfaces to monitor."
 msgstr ""
 "Снимите флажок для автоматического определения интерфейсов для мониторинга."
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:24
-msgid "Line Attenuation Down (LATN)"
-msgstr "Затухание линии (LATN) выключено"
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:64
+msgid "Line Attenuation Down"
+msgstr "Затухание линии (Down)"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:19
-msgid "Line Attenuation Up (LATN)"
-msgstr "Затухание линии (LATN) включено"
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:77
+msgid "Line Attenuation Up"
+msgstr "Затухание линии (Up)"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:44
 msgid ""
@@ -642,7 +691,7 @@ msgstr "Хост для входящих соединений"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/network.js:44
 msgid "Listen port"
-msgstr "Порт для прослушивания"
+msgstr "Порт прослушивания"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/network.js:32
 msgid "Listener interfaces"
@@ -680,14 +729,6 @@ msgid ""
 msgstr ""
 "Максимальные значения для периода могут использоваться вместо средних "
 "значений, когда не используется опция «Создавать только средние RRA»"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:118
-msgid "Max. Attainable Data Rate (ATTNDR) Down"
-msgstr "Максимальная достижимая скорость передачи данных (ATTNDR) снижается"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:113
-msgid "Max. Attainable Data Rate (ATTNDR) Up"
-msgstr "Максимальная достижимая скорость передачи данных (ATTNDR) повышается"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ping.js:36
 msgid "Maximum Missed Packets"
@@ -790,7 +831,7 @@ msgstr "Мониторинг %s, %s, %s"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:26
 msgid "Monitoring APC UPS at host %s, port %d"
-msgstr "Мониторинг APC UPS на узле %s, порт %d"
+msgstr "Мониторинг APC UPS на хосте %s, порт %d"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/dhcpleases.js:19
 msgid "Monitoring DHCP leases enabled"
@@ -960,7 +1001,7 @@ msgstr "Mqtt"
 msgid "Mqtt Plugin Configuration"
 msgstr "Конфигурация плагина Mqtt"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:86
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:99
 msgid "Mqtt plugin enabled"
 msgstr "Плагин Mqtt включён"
 
@@ -968,6 +1009,30 @@ msgstr "Плагин Mqtt включён"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:25
 msgid "Name"
 msgstr "Имя"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:374
+msgid "Near CRC Errors"
+msgstr "Ошибки контрольной суммы (CRC) на вашей стороне"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:198
+msgid "Near Errored seconds"
+msgstr "Секунды с ошибками (Near)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:212
+msgid "Near Loss of Signal Seconds"
+msgstr "Потеря сигнала (Near)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:380
+msgid "Near Pre-emptive CRC Errors"
+msgstr "CRC-ошибки (превентивные, Near)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:205
+msgid "Near Severely Errored Seconds"
+msgstr "Критические секунды (Near)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:219
+msgid "Near Unavailable Seconds"
+msgstr "Недоступность (Near)"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/netlink.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/netlink.json:2
@@ -997,14 +1062,6 @@ msgstr "Сетевые плагины"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:178
 msgid "No RRD data found"
 msgstr "Данные RRD не найдены"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:44
-msgid "Noise Margin Down (SNR)"
-msgstr "Снижение соотношения сигнал/шум (SNR)"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:39
-msgid "Noise Margin Up (SNR)"
-msgstr "Повышение соотношения сигнал/шум (SNR)"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:15
 msgid ""
@@ -1058,7 +1115,7 @@ msgstr "Обзор"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:41
 msgid "Password"
-msgstr "Пароль"
+msgstr "Парoль"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/memory.js:23
 msgid "Percent values"
@@ -1147,6 +1204,38 @@ msgstr "RRDTool"
 msgid "RRDTool Plugin Configuration"
 msgstr "Настройка плагина «RRDTool»"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:343
+msgid "RX Corrected Far"
+msgstr "Исправленные ошибки (RX Far)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:305
+msgid "RX Corrected Near"
+msgstr "Исправленные ошибки (RX Near)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:319
+msgid "RX Corrupted Far"
+msgstr "Повреждённые данные (RX Far)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:284
+msgid "RX Corrupted Near"
+msgstr "Повреждённые данные (RX Near)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:335
+msgid "RX Retransmitted Far"
+msgstr "Повторные передачи (RX Far)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:298
+msgid "RX Retransmitted Near"
+msgstr "Повторные передачи (RX Near)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:327
+msgid "RX Uncorrected Protected Far"
+msgstr "Некорректируемые ошибки (защита, RX Far)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:291
+msgid "RX Uncorrected Protected Near"
+msgstr "Некорректируемые ошибки (защита, RX Near)"
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpu.js:27
 msgid "Report also the value for the idle metric"
 msgstr "Отображать значение состояния простоя (idle)"
@@ -1175,22 +1264,6 @@ msgstr "Количество «поколений» данных в архиве
 msgid "Rule monitoring enabled"
 msgstr "Мониторинг правил включён"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:142
-msgid "Rx Corrupted Far"
-msgstr "Ошибки приёма (удал.)"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:147
-msgid "Rx Corrupted Near"
-msgstr "Ошибки приёма (лок.)"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:152
-msgid "Rx Retransmitted Far"
-msgstr "Повторная передача (удал.)"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:162
-msgid "Rx Retransmitted Near"
-msgstr "Повторная передача (лок.)"
-
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/snmp6.js:7
 msgid "SNMP6"
 msgstr "SNMP6"
@@ -1198,6 +1271,14 @@ msgstr "SNMP6"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:7
 msgid "SNMP6 Plugin Configuration"
 msgstr "Настройки плагина «SNMP6»"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:41
+msgid "SNR Margin Down"
+msgstr "Запас отношения сигнал/шум для приёма данных"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:45
+msgid "SNR Margin Up"
+msgstr "Запас отношения сигнал/шум для передачи данных"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/sqm.js:7
 msgid "SQM"
@@ -1279,13 +1360,13 @@ msgstr "Показывать состояние простоя (idle)"
 msgid "Show max values instead of averages"
 msgstr "Показывать максимальные значения, а не средние"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:34
-msgid "Signal Attenuation Down (SATN)"
-msgstr "Затухания сигнала (SATN) выключено"
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:70
+msgid "Signal Attenuation Down"
+msgstr "Затухание сигнала (Down)"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:29
-msgid "Signal Attenuation Up (SATN)"
-msgstr "Затухания сигнала (SATN) включено"
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:84
+msgid "Signal Attenuation Up"
+msgstr "Затухание сигнала (Up)"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpufreq.js:23
 msgid "Simple CPU frequency monitoring enabled"
@@ -1381,7 +1462,7 @@ msgstr "Сводка по всем портам"
 
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/syslog.json:2
 msgid "Syslog"
-msgstr "Системные логи"
+msgstr "Системный журнал"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/syslog.js:6
 msgid "Syslog Plugin Configuration"
@@ -1405,13 +1486,33 @@ msgstr "TCPConns"
 msgid "TCPConns Plugin Configuration"
 msgstr "Настройка плагина «TCPConns»"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:74
+msgid "TLS 1.2"
+msgstr "TLS 1.2"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:75
+msgid "TLS 1.3"
+msgstr "TLS 1.3"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:72
+msgid "TLSProtocol"
+msgstr "TLSProtocol"
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/network.js:15
 msgid "TTL for network packets"
-msgstr "TTL для сетевых пакетов"
+msgstr "<abbr title=\"Time to Live\">TTL</abbr> для сетевых пакетов"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ping.js:26
 msgid "TTL for ping packets"
 msgstr "TTL для ping-пакетов"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:351
+msgid "TX Retransmitted Far"
+msgstr "Повторные передачи (TX Far)"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:312
+msgid "TX Retransmitted Near"
+msgstr "Повторные передачи (TX Near)"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:85
 msgid "Table"
@@ -1678,7 +1779,7 @@ msgid ""
 "Additional setup is required to get non-zero counts."
 msgstr ""
 "Плагин users собирает статистику о пользователях, вошедших в систему "
-"локально через shell. ПРИМЕЧАНИЕ: Отслеживание локальной оболочки (wtmp) НЕ "
+"локально через shell. ПРИМЕЧАНИЕ: отслеживание локальной оболочки (wtmp) НЕ "
 "включено в сборках по умолчанию. Для получения ненулевых значений требуется "
 "дополнительная настройка."
 
@@ -1720,29 +1821,21 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/chrony.js:25
 msgid "Timeout for polling chrony"
-msgstr "Таймаут пуллинга chrony"
+msgstr "Тайм-аут пуллинга chrony"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:79
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:92
 msgid "Topic"
 msgstr "Тема"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:60
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:67
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:74
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:87
 msgid "True"
 msgstr "True"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/collectd.js:80
 msgid "Try to look up fully qualified hostname"
 msgstr "Пытаться определять полное имя хоста"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:157
-msgid "Tx Retransmitted Far"
-msgstr "Повторная отправка (удал.)"
-
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:167
-msgid "Tx Retransmitted Near"
-msgstr "Повторная отправка (лок.)"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/mqtt.js:20
 msgid "Type"
@@ -1774,7 +1867,7 @@ msgstr "UnixSock"
 msgid "Unixsock Plugin Configuration"
 msgstr "Настройка плагина «UnixSock»"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:58
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:22
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/uptime.js:15
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/uptime.json:2
 msgid "Uptime"
@@ -1794,7 +1887,7 @@ msgstr "Использовать улучшенную схему наимено�
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/collectd.js:68
 msgid "Used PID file"
-msgstr "Используемый PID-файл"
+msgstr "Используемый <abbr title=\"Process Identifier\">PID</abbr>-файл"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/exec.js:27
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/exec.js:47
@@ -1810,11 +1903,11 @@ msgstr "Пользователи"
 msgid "Users Plugin Configuration"
 msgstr "Конфигурация плагина пользователей"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:92
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:109
 msgid "Vectoring Down"
 msgstr "Векторинг выключено"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:87
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dsl.js:122
 msgid "Vectoring Up"
 msgstr "Векторинг включено"
 
@@ -1898,7 +1991,7 @@ msgstr "нет сводки"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/collectd.js:139
 msgid "none"
-msgstr "ничего"
+msgstr "Нет"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/df.js:107
 msgid "one device"
@@ -1942,3 +2035,61 @@ msgstr "позволяет уменьшить размер RRD"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/tcpconns.js:45
 msgid "summary of all ports"
 msgstr "сводка по всем портам"
+
+#~ msgid "Bitrate"
+#~ msgstr "Скорость"
+
+#~ msgid "DSL Flags"
+#~ msgstr "DSL-флаги"
+
+#~ msgid "DSL Line Uptime"
+#~ msgstr "Время безотказной работы линии DSL"
+
+#~ msgid "DSL Signal"
+#~ msgstr "DSL-сигнал"
+
+#~ msgid "Errors"
+#~ msgstr "Ошибки"
+
+#~ msgid "Line Attenuation Down (LATN)"
+#~ msgstr "Затухание линии (LATN) выключено"
+
+#~ msgid "Line Attenuation Up (LATN)"
+#~ msgstr "Затухание линии (LATN) включено"
+
+#~ msgid "Max. Attainable Data Rate (ATTNDR) Down"
+#~ msgstr "Максимальная достижимая скорость передачи данных (ATTNDR) снижается"
+
+#~ msgid "Max. Attainable Data Rate (ATTNDR) Up"
+#~ msgstr ""
+#~ "Максимальная достижимая скорость передачи данных (ATTNDR) повышается"
+
+#~ msgid "Noise Margin Down (SNR)"
+#~ msgstr "Снижение соотношения сигнал/шум (SNR)"
+
+#~ msgid "Noise Margin Up (SNR)"
+#~ msgstr "Повышение соотношения сигнал/шум (SNR)"
+
+#~ msgid "Rx Corrupted Far"
+#~ msgstr "Ошибки приёма (удал.)"
+
+#~ msgid "Rx Corrupted Near"
+#~ msgstr "Ошибки приёма (лок.)"
+
+#~ msgid "Rx Retransmitted Far"
+#~ msgstr "Повторная передача (удал.)"
+
+#~ msgid "Rx Retransmitted Near"
+#~ msgstr "Повторная передача (лок.)"
+
+#~ msgid "Signal Attenuation Down (SATN)"
+#~ msgstr "Затухания сигнала (SATN) выключено"
+
+#~ msgid "Signal Attenuation Up (SATN)"
+#~ msgstr "Затухания сигнала (SATN) включено"
+
+#~ msgid "Tx Retransmitted Far"
+#~ msgstr "Повторная отправка (удал.)"
+
+#~ msgid "Tx Retransmitted Near"
+#~ msgstr "Повторная отправка (лок.)"

@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-10-09 09:27+0000\n"
-"Last-Translator: try496 <pinghejk@gmail.com>\n"
+"PO-Revision-Date: 2025-12-25 20:00+0000\n"
+"Last-Translator: 大王叫我来巡山 "
+"<hamburger2048@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/openwrt/luciapplicationsrp-pppoe-server/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -10,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: applications/luci-app-rp-pppoe-server/htdocs/luci-static/resources/view/pppoe/rp-pppoe-server.js:48
 msgid "Access Concentrator Name"
@@ -58,7 +59,7 @@ msgstr ""
 #: applications/luci-app-rp-pppoe-server/htdocs/luci-static/resources/view/pppoe/rp-pppoe-relay.js:25
 #: applications/luci-app-rp-pppoe-server/htdocs/luci-static/resources/view/pppoe/rp-pppoe-server.js:25
 msgid "Enabled"
-msgstr "已启用"
+msgstr "启用"
 
 #: applications/luci-app-rp-pppoe-server/htdocs/luci-static/resources/view/pppoe/rp-pppoe-server.js:40
 msgid "First remote IP"
@@ -172,7 +173,7 @@ msgstr "PPPoE 中继配置"
 msgid "PPPoE Server Configuration"
 msgstr "PPPoE 服务器配置"
 
-#: applications/luci-app-rp-pppoe-server/root/usr/share/luci/menu.d/luci-app-rp-pppoe-server.json:14
+#: applications/luci-app-rp-pppoe-server/root/usr/share/luci/menu.d/luci-app-rp-pppoe-server.json:13
 msgid "RP PPPoE Relay"
 msgstr "RP PPPoE 中继"
 

@@ -10,12 +10,15 @@ var pkg = {
 	get Name() {
 		return "pbr";
 	},
+	get LuciCompat() {
+		return 20;
+	},
 	get ReadmeCompat() {
-		return "1.1.8";
+		return "1.2.1";
 	},
 	get URL() {
 		return (
-			"https://docs.openwrt.melmac.net/" +
+			"https://docs.openwrt.melmac.ca/" +
 			pkg.Name +
 			"/" +
 			(pkg.ReadmeCompat ? pkg.ReadmeCompat + "/" : "")
@@ -23,20 +26,48 @@ var pkg = {
 	},
 	get DonateURL() {
 		return (
-			"https://docs.openwrt.melmac.net/" +
+			"https://docs.openwrt.melmac.ca/" +
 			pkg.Name +
 			"/" +
 			(pkg.ReadmeCompat ? pkg.ReadmeCompat + "/" : "") +
 			"#Donate"
 		);
 	},
+	isVersionMismatch: function (luci, pkg, rpcd) {
+		return luci !== pkg || pkg !== rpcd || luci !== rpcd;
+	},
+	formatMessage: function (info, template) {
+		if (!template) return _("Unknown message") + "<br />";
+		return (
+			(Array.isArray(info)
+				? template.format(...info)
+				: template.format(info || " ")) + "<br />"
+		);
+	},
+	buildGatewayText: function (gw) {
+		const gateways = Array.isArray(gw) ? gw : Object.values(gw);
+		const lines = gateways.map((g) => {
+			const iface = g.name;
+			if (!iface) return "";
+			const dev_ipv4 = g.device_ipv4;
+			const gw_ipv4 = g.gateway_ipv4;
+			const dev_ipv6 = g.device_ipv6;
+			const gw_ipv6 = g.gateway_ipv6;
+			const default_gw = g.default;
+			const parts = [iface];
+			if (dev_ipv4 && dev_ipv4 !== iface) parts.push(dev_ipv4);
+			if (gw_ipv4) parts.push(gw_ipv4);
+			if (gw_ipv6) {
+				if (dev_ipv6 && dev_ipv6 !== iface) parts.push(dev_ipv6);
+				parts.push(gw_ipv6);
+			}
+			let line = parts.join("/");
+			if (default_gw) line += " ✓";
+			return line;
+		});
+		return lines.join("<br />");
+	},
 };
-
-var getGateways = rpc.declare({
-	object: "luci." + pkg.Name,
-	method: "getGateways",
-	params: ["name"],
-});
 
 var getInitList = rpc.declare({
 	object: "luci." + pkg.Name,
@@ -59,6 +90,12 @@ var getInterfaces = rpc.declare({
 var getPlatformSupport = rpc.declare({
 	object: "luci." + pkg.Name,
 	method: "getPlatformSupport",
+	params: ["name"],
+});
+
+var getUbusInfo = rpc.declare({
+	object: "luci." + pkg.Name,
+	method: "getUbusInfo",
 	params: ["name"],
 });
 
@@ -87,41 +124,6 @@ var RPC = {
 			}
 		});
 	},
-	getInitList: function (name) {
-		getInitList(name).then(
-			function (result) {
-				this.emit("getInitList", result);
-			}.bind(this)
-		);
-	},
-	getInitStatus: function (name) {
-		getInitStatus(name).then(
-			function (result) {
-				this.emit("getInitStatus", result);
-			}.bind(this)
-		);
-	},
-	getGateways: function (name) {
-		getGateways(name).then(
-			function (result) {
-				this.emit("getGateways", result);
-			}.bind(this)
-		);
-	},
-	getPlatformSupport: function (name) {
-		getPlatformSupport(name).then(
-			function (result) {
-				this.emit("getPlatformSupport", result);
-			}.bind(this)
-		);
-	},
-	getInterfaces: function (name) {
-		getInterfaces(name).then(
-			function (result) {
-				this.emit("getInterfaces", result);
-			}.bind(this)
-		);
-	},
 	setInitAction: function (name, action) {
 		_setInitAction(name, action).then(
 			function (result) {
@@ -131,54 +133,112 @@ var RPC = {
 	},
 };
 
+// Poll service status until completion (for long-running operations like download)
+var pollServiceStatus = function (callback) {
+	var maxAttempts = 300; // Max 5 minutes of polling
+	var attempt = 0;
+
+	var checkStatus = function () {
+		attempt++;
+
+		// Use the RPC function directly from the module scope
+		L.resolveDefault(getInitStatus(pkg.Name), {}).then(function (statusData) {
+			var currentStatus = statusData && statusData[pkg.Name] && statusData[pkg.Name].running;
+
+			// Check if completed or failed
+			if (currentStatus === true) {
+				callback(true, currentStatus);
+			}
+			// Check if timed out
+			else if (attempt >= maxAttempts) {
+				callback(false, 'timeout');
+			}
+			// Continue polling
+			else {
+				setTimeout(checkStatus, 1000); // Check again in 1 second
+			}
+		}).catch(function (err) {
+			// Retry on error unless timed out
+			if (attempt < maxAttempts) {
+				setTimeout(checkStatus, 1000);
+			} else {
+				callback(false, 'error');
+			}
+		});
+	};
+
+	// Start polling after 2 seconds delay (give backend time to start the task)
+	setTimeout(checkStatus, 3000);
+};
+
 var status = baseclass.extend({
 	render: function () {
 		return Promise.all([
 			L.resolveDefault(getInitStatus(pkg.Name), {}),
-			//			L.resolveDefault(getGateways(pkg.Name), {}),
-		]).then(function (data) {
-			//			var replyStatus = data[0];
-			//			var replyGateways = data[1];
-			var reply;
-			var text;
-
-			if (data[0] && data[0][pkg.Name]) {
-				reply = data[0][pkg.Name];
-			} else {
-				reply = {
+			L.resolveDefault(getUbusInfo(pkg.Name), {}),
+		]).then(function ([initStatus, ubusInfo]) {
+			var reply = {
+				status: initStatus?.[pkg.Name] || {
 					enabled: null,
 					running: null,
 					running_iptables: null,
 					running_nft: null,
 					running_nft_file: null,
 					version: null,
-					gateways: null,
+					packageCompat: 0,
+					rpcdCompat: 0,
+				},
+				ubus: ubusInfo?.[pkg.Name]?.instances?.main?.data || {
+					packageCompat: 0,
+					gateways: [],
 					errors: [],
 					warnings: [],
-				};
+				},
+			};
+
+			if (
+				pkg.isVersionMismatch(
+					pkg.LuciCompat,
+					reply.status.packageCompat,
+					reply.status.rpcdCompat
+				)
+			) {
+				reply.ubus.warnings.push({
+					code: "warningInternalVersionMismatch",
+					info: [
+						reply.ubus.packageCompat,
+						pkg.LuciCompat,
+						reply.status.rpcdCompat,
+						'<a href="' +
+						pkg.URL +
+						'#Warning:InternalVersionMismatch" target="_blank">',
+						"</a>",
+					],
+				});
 			}
 
+			var text;
 			var header = E("h2", {}, _("Policy Based Routing - Status"));
 			var statusTitle = E(
 				"label",
 				{ class: "cbi-value-title" },
 				_("Service Status")
 			);
-			if (reply.version) {
-				text = _("Version %s").format(reply.version) + " - ";
-				if (reply.running) {
+			if (reply.status.version) {
+				text = _("Version %s").format(reply.status.version) + " - ";
+				if (reply.status.running) {
 					text += _("Running");
-					if (reply.running_iptables) {
+					if (reply.status.running_iptables) {
 						text += " (" + _("iptables mode") + ").";
-					} else if (reply.running_nft_file) {
+					} else if (reply.status.running_nft_file) {
 						text += " (" + _("fw4 nft file mode") + ").";
-					} else if (reply.running_nft) {
+					} else if (reply.status.running_nft) {
 						text += " (" + _("nft mode") + ").";
 					} else {
 						text += ".";
 					}
 				} else {
-					if (reply.enabled) {
+					if (reply.status.enabled) {
 						text += _("Stopped.");
 					} else {
 						text += _("Stopped (Disabled).");
@@ -195,20 +255,20 @@ var status = baseclass.extend({
 			]);
 
 			var gatewaysDiv = [];
-			if (reply.gateways) {
+			if (reply.ubus.gateways) {
 				var gatewaysTitle = E(
 					"label",
 					{ class: "cbi-value-title" },
 					_("Service Gateways")
 				);
-				text =
+				var description =
 					_(
 						"The %s indicates default gateway. See the %sREADME%s for details."
 					).format(
 						"<strong>✓</strong>",
 						'<a href="' +
-							pkg.URL +
-							'#AWordAboutDefaultRouting" target="_blank">',
+						pkg.URL +
+						'#AWordAboutDefaultRouting" target="_blank">',
 						"</a>"
 					) +
 					"<br />" +
@@ -216,8 +276,13 @@ var status = baseclass.extend({
 						"<a href='" + pkg.DonateURL + "' target='_blank'>",
 						"</a>"
 					);
-				var gatewaysDescr = E("div", { class: "cbi-value-description" }, text);
-				var gatewaysText = E("div", {}, reply.gateways);
+				var gatewaysDescr = E(
+					"div",
+					{ class: "cbi-value-description" },
+					description
+				);
+				text = pkg.buildGatewayText(reply.ubus.gateways);
+				var gatewaysText = E("div", {}, text);
 				var gatewaysField = E("div", { class: "cbi-value-field" }, [
 					gatewaysText,
 					gatewaysDescr,
@@ -229,8 +294,11 @@ var status = baseclass.extend({
 			}
 
 			var warningsDiv = [];
-			if (reply.warnings && reply.warnings.length) {
-				var textLabelsTable = {
+			if (reply.ubus.warnings && reply.ubus.warnings.length) {
+				var warningTable = {
+					warningInternalVersionMismatch: _(
+						"Internal version mismatch (package: %s, luci app: %s, luci rpcd: %s), you may need to update packages or reboot the device, please check the %sREADME%s."
+					),
 					warningResolverNotSupported: _(
 						"Resolver set (%s) is not supported on this system."
 					).format(L.uci.get(pkg.Name, "config", "resolver_set")),
@@ -270,11 +338,18 @@ var status = baseclass.extend({
 							"Please set 'dhcp.%%s.force=1' to speed up service start-up %s(more info)%s"
 						).format(
 							"<a href='" +
-								pkg.URL +
-								"#Warning:Pleasesetdhcp.lan.force1" +
-								"' target='_blank'>",
+							pkg.URL +
+							"#Warning:Pleasesetdhcp.lan.force1" +
+							"' target='_blank'>",
 							"</a>"
 						)
+					),
+					warningSummary: _("Warnings encountered, please check %s"),
+					warningIncompatibleDHCPOption6: _(
+						"Incompatible DHCP Option 6 for interface %s"
+					),
+					warningNetifdMissingInterfaceLocal: _(
+						"Netifd setup: option netifd_interface_local is missing, assuming '%s'"
 					),
 				};
 				var warningsTitle = E(
@@ -283,18 +358,17 @@ var status = baseclass.extend({
 					_("Service Warnings")
 				);
 				var text = "";
-				reply.warnings.forEach((element) => {
-					if (element.id && textLabelsTable[element.id]) {
-						if (element.id !== "warningPolicyProcessCMD") {
-							text +=
-								(textLabelsTable[element.id] + ".").format(
-									element.extra || " "
-								) + "<br />";
-						}
+				reply.ubus.warnings.forEach((element) => {
+					if (element.code && warningTable[element.code]) {
+						text += pkg.formatMessage(element.info, warningTable[element.code]);
 					} else {
 						text += _("Unknown warning") + "<br />";
 					}
 				});
+				text += _("Warnings encountered, please check the %sREADME%s").format(
+					'<a href="' + pkg.URL + '#WarningMessagesDetails" target="_blank">',
+					"</a>!<br />"
+				);
 				var warningsText = E("div", { class: "cbi-value-description" }, text);
 				var warningsField = E(
 					"div",
@@ -308,8 +382,8 @@ var status = baseclass.extend({
 			}
 
 			var errorsDiv = [];
-			if (reply.errors && reply.errors.length) {
-				var textLabelsTable = {
+			if (reply.ubus.errors && reply.ubus.errors.length) {
+				var errorTable = {
 					errorConfigValidation: _("Config (%s) validation failure").format(
 						"/etc/config/" + pkg.Name
 					),
@@ -329,11 +403,11 @@ var status = baseclass.extend({
 					errorNoWanGateway: _(
 						"The %s service failed to discover WAN gateway"
 					).format(pkg.Name),
-					errorNoWanInterface: _(
-						"The %s interface not found, you need to set the 'pbr.config.procd_wan_interface' option"
+					errorNoUplinkInterface: _(
+						"The %s interface not found, you need to set the 'pbr.config.uplink_interface' option"
 					),
-					errorNoWanInterfaceHint: _(
-						"Refer to https://docs.openwrt.melmac.net/pbr/#procd_wan_interface"
+					errorNoUplinkInterfaceHint: _(
+						"Refer to https://docs.openwrt.melmac.ca/pbr/#uplink_interface"
 					),
 					errorIpsetNameTooLong: _(
 						"The ipset name '%s' is longer than allowed 31 characters"
@@ -384,6 +458,7 @@ var status = baseclass.extend({
 					errorPolicyProcessInsertionFailedIpv4: _(
 						"Insertion failed for IPv4 for policy '%s'"
 					),
+					errorPolicyProcessUnknownEntry: _("Unknown entry in policy '%s'"),
 					errorInterfaceRoutingEmptyValues: _(
 						"Received empty tid/mark or interface name when setting up routing"
 					),
@@ -412,6 +487,25 @@ var status = baseclass.extend({
 					errorInterfaceRoutingUnknownDevType: _(
 						"Unknown IPv6 Link type for device '%s'"
 					),
+					errorMktempFileCreate: _(
+						"Failed to create temporary file with mktemp mask: '%s'"
+					),
+					errorSummary: _("Errors encountered, please check %s"),
+					errorNetifdNftFileInstall: _(
+						"Netifd setup: failed to install fw4 netifd nft file '%s'"
+					),
+					errorNetifdNftFileRemove: _(
+						"Netifd setup: failed to remove fw4 netifd nft file '%s'"
+					),
+					errorNetifdMissingOption: _(
+						"Netifd setup: required option '%s' is missing"
+					),
+					errorNetifdInvalidGateway4: _(
+						"Netifd setup: invalid value of netifd_interface_default option '%s'"
+					),
+					errorNetifdInvalidGateway6: _(
+						"Netifd setup: invalid value of netifd_interface_default6 option '%s'"
+					),
 				};
 				var errorsTitle = E(
 					"label",
@@ -419,20 +513,15 @@ var status = baseclass.extend({
 					_("Service Errors")
 				);
 				var text = "";
-				reply.errors.forEach((element) => {
-					if (element.id && textLabelsTable[element.id]) {
-						if (element.id !== "errorPolicyProcessCMD") {
-							text +=
-								(textLabelsTable[element.id] + "!").format(
-									element.extra || " "
-								) + "<br />";
-						}
+				reply.ubus.errors.forEach((element) => {
+					if (element.code && errorTable[element.code]) {
+						text += pkg.formatMessage(element.info, errorTable[element.code]);
 					} else {
-						text += _("Unknown error!") + "<br />";
+						text += _("Unknown error") + "<br />";
 					}
 				});
 				text += _("Errors encountered, please check the %sREADME%s").format(
-					'<a href="' + pkg.URL + '" target="_blank">',
+					'<a href="' + pkg.URL + '#ErrorMessagesDetails" target="_blank">',
 					"</a>!<br />"
 				);
 				var errorsText = E("div", { class: "cbi-value-description" }, text);
@@ -545,10 +634,10 @@ var status = baseclass.extend({
 				_("Disable")
 			);
 
-			if (reply.enabled) {
+			if (reply.status.enabled) {
 				btn_enable.disabled = true;
 				btn_disable.disabled = false;
-				if (reply.running) {
+				if (reply.status.running) {
 					btn_start.disabled = true;
 					btn_action.disabled = false;
 					btn_stop.disabled = false;
@@ -582,7 +671,7 @@ var status = baseclass.extend({
 				btn_disable,
 			]);
 			var buttonsField = E("div", { class: "cbi-value-field" }, buttonsText);
-			var buttonsDiv = reply.version
+			var buttonsDiv = reply.status.version
 				? E("div", { class: "cbi-value" }, [buttonsTitle, buttonsField])
 				: "";
 
@@ -604,7 +693,7 @@ var status = baseclass.extend({
 				)
 			);
 
-			var donateDiv = reply.version
+			var donateDiv = reply.status.version
 				? E("div", { class: "cbi-value" }, [donateTitle, donateText])
 				: "";
 
@@ -622,8 +711,12 @@ var status = baseclass.extend({
 });
 
 RPC.on("setInitAction", function (reply) {
-	ui.hideModal();
-	location.reload();
+	// Don't immediately hide modal and reload
+	// Instead, poll status until the operation actually completes
+	pollServiceStatus(function () {
+		ui.hideModal();
+		location.reload();
+	});
 });
 
 return L.Class.extend({
@@ -632,4 +725,5 @@ return L.Class.extend({
 	getInitStatus: getInitStatus,
 	getInterfaces: getInterfaces,
 	getPlatformSupport: getPlatformSupport,
+	getUbusInfo: getUbusInfo,
 });

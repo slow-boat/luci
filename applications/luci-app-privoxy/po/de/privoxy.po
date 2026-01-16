@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-privoxy\n"
 "POT-Creation-Date: 2015-01-18 21:48+0100\n"
-"PO-Revision-Date: 2025-06-21 11:39+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"PO-Revision-Date: 2025-12-30 17:00+0000\n"
+"Last-Translator: Steve <secure@mail.az>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsprivoxy/de/>\n"
 "Language: de\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:90
@@ -19,14 +19,17 @@ msgid ""
 "A directory where Privoxy can create temporary files.<br /><strong>Only when "
 "using 'external filters', Privoxy has to create temporary files.</strong>"
 msgstr ""
+"Ein Verzeichnis, in dem Privoxy temporäre Dateien erstellen kann.<br /"
+"><strong>Nur bei Verwendung von „externen Filtern“ muss Privoxy temporäre "
+"Dateien erstellen.</strong>"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:209
 msgid "Accept intercepted requests"
-msgstr ""
+msgstr "Abgefangene Anfragen akzeptieren"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:118
 msgid "Access Control"
-msgstr "Zugriffskontrolle"
+msgstr "Zugangskontrolle"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:96
 msgid "Action Files"
@@ -40,17 +43,19 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:42
 msgid "Admin Email"
-msgstr ""
+msgstr "Admin-Email"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:213
 msgid "Allow CGI request crunching"
-msgstr ""
+msgstr "Verarbeitung von CGI-Anfragen zulassen"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:84
 msgid ""
 "An alternative directory where the templates are loaded from.<br />No "
 "trailing \"/\", please."
 msgstr ""
+"Ein alternatives Verzeichnis, aus dem die Vorlagen geladen werden.<br />Kein "
+"\"/\" am Ende, bitte."
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:230
 msgid ""
@@ -66,7 +71,7 @@ msgstr "Systemstart-Verzögerung"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:141
 msgid "Buffer Limit"
-msgstr ""
+msgstr "Puffergrenze"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:318
 msgid "CGI user interface"
@@ -74,7 +79,7 @@ msgstr "Protokolliert die CGI Benutzer Schnittstelle"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:260
 msgid "Client header order"
-msgstr ""
+msgstr "Client-Header-Anordnung"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:310
 msgid "Common Log Format"
@@ -90,79 +95,79 @@ msgstr "Konfigurationsverzeichnis"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:13
 msgid "Configure the Privoxy proxy daemon settings."
-msgstr ""
+msgstr "Privoxy Procy Daemon Einstellungen konfigurieren."
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:233
 msgid "Connection sharing"
-msgstr ""
+msgstr "Verbindungsfreigabe"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:266
 msgid "Debug"
-msgstr ""
+msgstr "Debug"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:273
 msgid "Debug 1"
-msgstr ""
+msgstr "Debug 1"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:313
 msgid "Debug 1024"
-msgstr ""
+msgstr "Debug 1024"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:301
 msgid "Debug 128"
-msgstr ""
+msgstr "Debug 128"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:289
 msgid "Debug 16"
-msgstr ""
+msgstr "Debug 16"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:277
 msgid "Debug 2"
-msgstr ""
+msgstr "Debug 2"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:317
 msgid "Debug 2048"
-msgstr ""
+msgstr "Debug 2048"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:305
 msgid "Debug 256"
-msgstr ""
+msgstr "Debug 256"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:293
 msgid "Debug 32"
-msgstr ""
+msgstr "Debug 32"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:331
 msgid "Debug 32768"
-msgstr ""
+msgstr "Debug 32768"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:281
 msgid "Debug 4"
-msgstr ""
+msgstr "Debug 4"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:321
 msgid "Debug 4096"
-msgstr ""
+msgstr "Debug 4096"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:309
 msgid "Debug 512"
-msgstr ""
+msgstr "Debug 512"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:297
 msgid "Debug 64"
-msgstr ""
+msgstr "Debug 64"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:335
 msgid "Debug 65536"
-msgstr ""
+msgstr "Debug 65536"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:285
 msgid "Debug 8"
-msgstr ""
+msgstr "Debug 8"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:325
 msgid "Debug 8192"
-msgstr ""
+msgstr "Debug 8192"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:306
 msgid "Debug GIF de-animation"
@@ -182,15 +187,15 @@ msgstr "Protokolliert Filter für reguläre Ausdrücke"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:229
 msgid "Default server timeout"
-msgstr ""
+msgstr "Standardmäßige Server-Zeitüberschreitung"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:23
 msgid "Delay (in seconds) during system boot before Privoxy starts."
-msgstr ""
+msgstr "Verzögerung (in Sekunden) beim Systemstart bevor Privoxy startet."
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:135
 msgid "Deny access"
-msgstr ""
+msgstr "Zugriff verweigern"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:151
 msgid "Disabled == Transparent Proxy Mode"
@@ -202,15 +207,15 @@ msgstr "Dokumentation"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:43
 msgid "Email address for the Privoxy administrator."
-msgstr ""
+msgstr "E-Mail-Adresse für den Privoxy-Administrator."
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:167
 msgid "Enable action file editor"
-msgstr ""
+msgstr "Aktionsdatei-Editor aktivieren"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:251
 msgid "Enable compression"
-msgstr ""
+msgstr "Komprimierung aktivieren"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:181
 msgid "Enable proxy authentication forwarding"
@@ -226,7 +231,7 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:20
 msgid "Enable/Disable autostart of Privoxy"
-msgstr ""
+msgstr "Autostart von Privoxy aktivieren/deaktivieren"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:150
 msgid "Enable/Disable filtering when Privoxy starts."
@@ -246,7 +251,7 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:172
 msgid "Enforce page blocking"
-msgstr ""
+msgstr "Seitenblockierung erzwingen"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:55
 msgid "Files and Directories"
@@ -254,27 +259,27 @@ msgstr "Dateien und Verzeichnisse"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:104
 msgid "Filter files"
-msgstr ""
+msgstr "Filterdateien"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:185
 msgid "Forward HTTP"
-msgstr ""
+msgstr "HTTP weiterleiten"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:189
 msgid "Forward SOCKS 4"
-msgstr ""
+msgstr "SOCKS 4 weiterleiten"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:193
 msgid "Forward SOCKS 4A"
-msgstr ""
+msgstr "SOCKS 4A weiterleiten"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:197
 msgid "Forward SOCKS 5"
-msgstr ""
+msgstr "SOCKS 5 weiterleiten"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:201
 msgid "Forward SOCKS 5t"
-msgstr ""
+msgstr "SOCKS 5t weiterleiten"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:178
 msgid "Forwarding"
@@ -290,7 +295,7 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:35
 msgid "Hostname"
-msgstr ""
+msgstr "Hostname"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:173
 msgid ""
@@ -370,7 +375,7 @@ msgstr "Pflichtfeld: Keine Datei angegeben!"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:242
 msgid "Max. client connections"
-msgstr ""
+msgstr "Max. Client-Verbindungen"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:244
 msgid "Maximum number of client connections that will be served."
@@ -382,7 +387,7 @@ msgstr "Maximale Größe (in KB) des Puffers für die Inhaltsfilterung."
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:207
 msgid "Misc"
-msgstr ""
+msgstr "Sonstiges"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:326
 msgid "Non-fatal errors - *we highly recommended enabling this*"
@@ -406,7 +411,7 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:129
 msgid "Permit access"
-msgstr ""
+msgstr "Zugang gewähren"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:130
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:136
@@ -415,11 +420,11 @@ msgstr "Bitte lesen Sie das Privoxy Handbuch für Details!"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:12
 msgid "Privoxy"
-msgstr ""
+msgstr "Privoxy"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:15
 msgid "Privoxy Settings"
-msgstr ""
+msgstr "Privoxy-Einstellungen"
 
 #: applications/luci-app-privoxy/root/usr/share/luci/menu.d/luci-app-privoxy.json:3
 msgid "Privoxy WEB proxy"

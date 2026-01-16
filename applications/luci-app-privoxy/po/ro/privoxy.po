@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-21 11:39+0000\n"
+"PO-Revision-Date: 2025-11-24 10:30+0000\n"
 "Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsprivoxy/ro/>\n"
 "Language: ro\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : "
+"(n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:90
 msgid ""
@@ -22,15 +22,15 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:209
 msgid "Accept intercepted requests"
-msgstr ""
+msgstr "Acceptați cereri interceptate"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:118
 msgid "Access Control"
-msgstr "Control Acces"
+msgstr "Controlul Accesului"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:96
 msgid "Action Files"
-msgstr ""
+msgstr "Fișiere de acțiune"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:98
 msgid "Actions that are applied to all sites and maybe overruled later on."
@@ -97,7 +97,7 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:266
 msgid "Debug"
-msgstr ""
+msgstr "Depanare"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:273
 msgid "Debug 1"
@@ -253,7 +253,7 @@ msgstr "Fișiere și directoare"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:104
 msgid "Filter files"
-msgstr ""
+msgstr "Filtrați fișierele"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:185
 msgid "Forward HTTP"
@@ -289,7 +289,7 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:35
 msgid "Hostname"
-msgstr "Numele gazdei (hostname)"
+msgstr "Nume de gazdă"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:173
 msgid ""
@@ -317,7 +317,7 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:121
 msgid "Listen addresses"
-msgstr ""
+msgstr "Adrese de ascultare"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:40
 msgid "Location of the Privoxy User Manual."

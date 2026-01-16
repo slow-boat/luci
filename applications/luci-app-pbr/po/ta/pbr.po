@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-01-25 20:31+0000\n"
+"PO-Revision-Date: 2025-07-24 15:20+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationspbr/ta/>\n"
@@ -8,14 +8,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:240
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:358
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:277
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:398
 msgid "%s"
 msgstr "%s"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:316
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:356
 msgid "%s binary cannot be found"
 msgstr "%s பைனரியைக் கண்டுபிடிக்க முடியவில்லை"
 
@@ -34,7 +34,7 @@ msgstr "செயலில்"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:116
 msgid "AdGuardHome ipset"
-msgstr "Adguardhome ipset"
+msgstr "விளம்பரபாதுகாப்புவீடு ஐப்செட்"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:177
 msgid "Add"
@@ -63,6 +63,10 @@ msgid ""
 "have dev option other than tun* or tap* or specific use cases of WireGuard "
 "servers. See the %sREADME%s for details."
 msgstr ""
+"சேவையால் வெளிப்படையாக ஆதரிக்கப்படும் இடைமுகப் பெயர்களின் பட்டியலை (சிறிய எழுத்தில்) "
+"குறிப்பிட அனுமதிக்கிறது. உங்கள் OpenVPN சுரங்கங்களில் tun* அல்லது tap* அல்லது "
+"WireGuard சேவையகங்களின் குறிப்பிட்ட பயன்பாட்டு நிகழ்வுகளைத் தவிர வேறு dev விருப்பம் "
+"இருந்தால் பயனுள்ளதாக இருக்கும். விவரங்களுக்கு %sREADME%s ஐப் பார்க்கவும்."
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:159
 msgid ""
@@ -71,6 +75,10 @@ msgid ""
 "WireGuard servers, which have a listen_port defined, are handled "
 "automatically, do not add those here.See the %sREADME%s for details."
 msgstr ""
+"சேவையால் புறக்கணிக்கப்பட வேண்டிய இடைமுகப் பெயர்களின் பட்டியலை (சிறிய எழுத்து) குறிப்பிட "
+"அனுமதிக்கிறது. OpenWrt சாதனத்தில் இயங்கும் OpenVPN சேவையகத்திற்கு பயனுள்ளதாக "
+"இருக்கும். listen_port வரையறுக்கப்பட்ட WireGuard சேவையகங்கள் தானாகவே "
+"கையாளப்படுகின்றன, அவற்றை இங்கே சேர்க்க வேண்டாம். விவரங்களுக்கு %sREADME%s ஐப் பார்க்கவும்."
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:43
 msgid "Basic Configuration"
@@ -80,7 +88,7 @@ msgstr "அடிப்படை உள்ளமைவு"
 msgid "Chain"
 msgstr "சங்கிலி"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:405
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:446
 msgid "Command failed: '%s'"
 msgstr "கட்டளை தோல்வியடைந்தது: '%s'"
 
@@ -88,7 +96,7 @@ msgstr "கட்டளை தோல்வியடைந்தது: '%s'"
 msgid "Condensed output"
 msgstr "அமுக்கப்பட்ட வெளியீடு"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:313
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:353
 msgid "Config (%s) validation failure"
 msgstr "கட்டமைப்பு (%s) சரிபார்ப்பு தோல்வி"
 
@@ -96,11 +104,11 @@ msgstr "கட்டமைப்பு (%s) சரிபார்ப்பு �
 msgid "Controls both system log and console output verbosity."
 msgstr "கணினி பதிவு மற்றும் கன்சோல் வெளியீட்டு சொற்களஞ்சியம் இரண்டையும் கட்டுப்படுத்துகிறது."
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:402
+#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:408
 msgid "Custom User File Includes"
 msgstr "தனிப்பயன் பயனர் கோப்பு அடங்கும்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:361
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:401
 msgid "Custom user file '%s' not found or empty"
 msgstr "தனிப்பயன் பயனர் கோப்பு '%s' காணப்படவில்லை அல்லது காலியாக இல்லை"
 
@@ -108,11 +116,11 @@ msgstr "தனிப்பயன் பயனர் கோப்பு '%s' க�
 msgid "DNS Policies"
 msgstr "டி.என்.எச் கொள்கைகள்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:393
+#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:399
 msgid "DSCP Tag"
 msgstr "டி.எச்.சி.பி குறிச்சொல்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:380
+#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:386
 msgid "DSCP Tagging"
 msgstr "டி.எச்.சி.பி டேக்கிங்"
 
@@ -120,15 +128,15 @@ msgstr "டி.எச்.சி.பி டேக்கிங்"
 msgid "Default ICMP Interface"
 msgstr "இயல்புநிலை ICMP இடைமுகம்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:410
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:451
 msgid "Default fw4 chain '%s' is missing"
 msgstr "இயல்புநிலை FW4 சங்கிலி '%s' இல்லை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:409
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:450
 msgid "Default fw4 table '%s' is missing"
 msgstr "இயல்புநிலை FW4 அட்டவணை '%s' இல்லை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:545
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:585
 msgid "Disable"
 msgstr "முடக்கு"
 
@@ -138,7 +146,7 @@ msgstr "முடக்கு"
 msgid "Disabled"
 msgstr "முடக்கப்பட்டது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:539
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:579
 msgid "Disabling %s service"
 msgstr "%s சேவையை முடக்குதல்"
 
@@ -146,7 +154,7 @@ msgstr "%s சேவையை முடக்குதல்"
 msgid "Display these protocols in protocol column in Web UI."
 msgstr "இந்த நெறிமுறைகளை வலை இடைமுகம் இல் நெறிமுறை நெடுவரிசையில் காண்பி."
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:266
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:303
 msgid ""
 "Dnsmasq instance (%s) targeted in settings, but it doesn't have its own "
 "confdir"
@@ -156,7 +164,7 @@ msgstr ""
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:120
 msgid "Dnsmasq ipset"
-msgstr "Dnsmasq ipset"
+msgstr "டிஎன்எச்மாச்க் ஐப்செட்"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:124
 msgid "Dnsmasq nft set"
@@ -166,11 +174,11 @@ msgstr "Dnsmasq nft கணம்"
 msgid "Do not enforce policies when their gateway is down"
 msgstr "அவர்களின் நுழைவாயில் கீழே இருக்கும்போது கொள்கைகளைச் செயல்படுத்த வேண்டாம்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:592
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:632
 msgid "Donate to the Project"
 msgstr "திட்டத்திற்கு நன்கொடை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:526
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:566
 msgid "Enable"
 msgstr "இயக்கு"
 
@@ -178,19 +186,23 @@ msgstr "இயக்கு"
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:243
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:274
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:354
-#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:415
+#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:421
 msgid "Enabled"
 msgstr "இயக்கப்பட்டது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:520
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:560
 msgid "Enabling %s service"
 msgstr "%s சேவையை செயல்படுத்துகிறது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:363
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:403
 msgid "Error running custom user file '%s'"
 msgstr "தனிப்பயன் பயனர் கோப்பு '%s'"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:434
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:459
+msgid "Errors encountered, please check %s"
+msgstr ""
+
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:474
 msgid "Errors encountered, please check the %sREADME%s"
 msgstr "பிழைகள் ஏற்பட்டன, தயவுசெய்து %sreadme %s ஐ சரிபார்க்கவும்"
 
@@ -202,31 +214,35 @@ msgstr ""
 "சேவையால் பயன்படுத்தப்படும் FW மாச்க். SQM/QoS உடன் மோதலைத் தவிர்க்க உயர் முகமூடி "
 "பயன்படுத்தப்படுகிறது. உடன் எச்சரிக்கையுடன் மாற்றவும்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:401
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:457
+msgid "Failed to create temporary file with mktemp mask: '%s'"
+msgstr ""
+
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:442
 msgid "Failed to download '%s'"
 msgstr "'%s' பதிவிறக்கத் தவறிவிட்டது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:399
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:440
 msgid "Failed to download '%s', HTTPS is not supported"
 msgstr "'%s' ஐ பதிவிறக்குவதில் தோல்வி, HTTPS ஆதரிக்கப்படவில்லை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:394
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:435
 msgid "Failed to install fw4 nft file '%s'"
 msgstr "FW4 NFT கோப்பை '%s' ஐ நிறுவுவதில் தோல்வி"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:360
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:400
 msgid "Failed to reload '%s'"
 msgstr "'%s' ஐ மீண்டும் ஏற்றத் தவறிவிட்டது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:390
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:431
 msgid "Failed to resolve '%s'"
 msgstr "'%s' தீர்க்கத் தவறிவிட்டது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:359
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:399
 msgid "Failed to set up '%s'"
 msgstr "'%s' அமைக்கத் தவறிவிட்டது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:367
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:407
 msgid "Failed to set up any gateway"
 msgstr "எந்த நுழைவாயிலையும் அமைப்பதில் தோல்வி"
 
@@ -254,11 +270,15 @@ msgstr "செயலற்றது"
 msgid "Inactive (Disabled)"
 msgstr "செயலற்ற (முடக்கப்பட்டது)"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:407
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:318
+msgid "Incompatible DHCP Option 6 for interface %s"
+msgstr ""
+
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:448
 msgid "Incompatible custom user file detected '%s'"
 msgstr "பொருந்தாத தனிப்பயன் பயனர் கோப்பு '%s' கண்டறியப்பட்டது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:263
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:300
 msgid ""
 "Incompatible nft calls detected in user include file, disabling fw4 nft file "
 "support"
@@ -270,31 +290,38 @@ msgstr ""
 msgid "Insert"
 msgstr "செருகவும்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:385
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:425
 msgid "Insertion failed for IPv4 for policy '%s'"
 msgstr "கொள்கை '%s' க்கு IPv4 க்கு செருகல் தோல்வியடைந்தது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:382
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:422
 msgid "Insertion failed for both IPv4 and IPv6 for policy '%s'"
 msgstr "'%s' கொள்கைக்கு IPv4 மற்றும் IPv6 இரண்டிற்கும் செருகல் தோல்வியடைந்தது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:238
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:275
 msgid "Installed AdGuardHome (%s) doesn't support 'ipset_file' option."
-msgstr "நிறுவப்பட்ட adgaurdhome (%s) 'ipset_file' விருப்பத்தை ஆதரிக்காது."
+msgstr "நிறுவப்பட்ட விளம்பரரபாதுகாப்புவீடு (%s) 'ipset_file' விருப்பத்தை ஆதரிக்காது."
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:330
 msgid "Interface"
 msgstr "இடைமுகம்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:353
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:393
 msgid "Interface '%s' has no assigned DNS"
 msgstr "இடைமுகம் '%s' ஒதுக்கப்பட்ட டி.என்.எச்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:254
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:269
+msgid ""
+"Internal version mismatch (package: %s, luci app: %s, luci rpcd: %s), you "
+"may need to update packages or reboot the device, please check the "
+"%sREADME%s."
+msgstr ""
+
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:291
 msgid "Invalid OpenVPN config for %s interface"
 msgstr "%s இடைமுகத்திற்கான தவறான OpenVPN கட்டமைப்பு"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:392
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:433
 msgid "Invalid OpenVPN config for '%s' interface"
 msgstr "'%s' இடைமுகத்திற்கான தவறான OpenVPN கட்டமைப்பு"
 
@@ -307,7 +334,7 @@ msgstr "உள்ளக முகவரிகள் / சாதனங்கள�
 msgid "Local ports"
 msgstr "உள்ளக துறைமுகங்கள்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:376
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:416
 msgid "Mismatched IP family between in policy '%s'"
 msgstr "கொள்கையில் '%s' இடையே பொருந்தாத ஐபி குடும்பம்"
 
@@ -345,7 +372,7 @@ msgstr ""
 msgid "No Change"
 msgstr "எந்த மாற்றமும் இல்லை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:188
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:217
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/status/include/72_pbr.js:58
 msgid "Not installed or not found"
 msgstr "நிறுவப்படவில்லை அல்லது கிடைக்கவில்லை"
@@ -354,12 +381,12 @@ msgstr "நிறுவப்படவில்லை அல்லது கி�
 msgid "Output verbosity"
 msgstr "வெளியீட்டு சொற்களஞ்சியம்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:420
+#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:426
 msgid "Path"
 msgstr "பாதை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:215
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:600
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:244
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:640
 msgid "Please %sdonate%s to support development of this project."
 msgstr "இந்த திட்டத்தின் வளர்ச்சியை ஆதரிக்க %sdonate %s."
 
@@ -367,26 +394,26 @@ msgstr "இந்த திட்டத்தின் வளர்ச்சி�
 msgid "Please check the %sREADME%s before changing this option."
 msgstr "இந்த விருப்பத்தை மாற்றுவதற்கு முன் %sreadme %s ஐ சரிபார்க்கவும்."
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:270
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:307
 msgid ""
 "Please set 'dhcp.%%s.force=1' to speed up service start-up %s(more info)%s"
 msgstr ""
 "பணி தொடக்க%s (மேலும் தகவல்)%s ஐ விரைவுபடுத்த 'dhcp. %% S.force = 1' ஐ அமைக்கவும்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:248
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:285
 msgid "Please unset 'chain' or set 'chain' to 'PREROUTING' for policy '%s'"
 msgstr "தயவுசெய்து 'சங்கிலி' அல்லது 'சங்கிலி' கொள்கைக்கு '%s'%s 'க்கு' அமைக்கவும்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:251
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:288
 msgid "Please unset 'chain' or set 'chain' to 'prerouting' for policy '%s'"
 msgstr "தயவுசெய்து 'சங்கிலி' அல்லது 'சங்கிலி' கொள்கைக்கு '%s'%s 'க்கு' அமைக்கவும்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:245
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:282
 msgid "Please unset 'proto' or set 'proto' to 'all' for policy '%s'"
 msgstr ""
 "தயவுசெய்து 'புரோட்டோ' ஐ அமைக்கவும் அல்லது 'புரோட்டோவை' 'அனைத்திற்கும்' கொள்கைக்கு '%'"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:242
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:279
 msgid "Please unset 'src_addr', 'src_port' and 'dest_port' for policy '%s'"
 msgstr "'Src_addr', 'src_port' மற்றும் 'dest_port' கொள்கை '%s'"
 
@@ -394,23 +421,23 @@ msgstr "'Src_addr', 'src_port' மற்றும் 'dest_port' கொள்க
 msgid "Policies"
 msgstr "கொள்கைகள்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:356
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:396
 msgid "Policy '%s' has an unknown interface"
 msgstr "கொள்கை '%s' அறியப்படாத இடைமுகத்தைக் கொண்டுள்ளது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:351
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:391
 msgid "Policy '%s' has no assigned DNS"
 msgstr "கொள்கை '%s' ஒதுக்கப்பட்ட டி.என்.எச்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:350
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:390
 msgid "Policy '%s' has no assigned interface"
 msgstr "கொள்கை '%s' ஒதுக்கப்பட்ட இடைமுகம் இல்லை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:348
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:388
 msgid "Policy '%s' has no source/destination parameters"
 msgstr "கொள்கை '%s' மூல/இலக்கு அளவுருக்கள் இல்லை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:396
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:437
 msgid ""
 "Policy '%s' refers to URL which can't be downloaded in 'secure_reload' mode"
 msgstr ""
@@ -425,7 +452,7 @@ msgstr "கொள்கை அடிப்படையிலான ரூட்�
 msgid "Policy Based Routing - Configuration"
 msgstr "கொள்கை அடிப்படையிலான ரூட்டிங் - உள்ளமைவு"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:161
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:190
 msgid "Policy Based Routing - Status"
 msgstr "கொள்கை அடிப்படையிலான ரூட்டிங் - நிலை"
 
@@ -437,17 +464,21 @@ msgstr "கொள்கை ரூட்டிங்"
 msgid "Protocol"
 msgstr "நெறிமுறை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:388
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:429
 msgid "Received empty tid/mark or interface name when setting up routing"
 msgstr "ரூட்டிங் அமைக்கும் போது வெற்று டிஐடி/குறி அல்லது இடைமுகப் பெயர் பெறப்பட்டது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:336
-msgid "Refer to https://docs.openwrt.melmac.net/pbr/#procd_wan_interface"
-msgstr "Https://docs.openwrt.melmac.net/pbr/#procd_wan_interface ஐப் பார்க்கவும்"
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:376
+msgid "Refer to https://docs.openwrt.melmac.ca/pbr/#uplink_interface"
+msgstr ""
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:368
 msgid "Remote DNS"
 msgstr "தொலை டி.என்.எச்"
+
+#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:376
+msgid "Remote DNS Port"
+msgstr ""
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:292
 msgid "Remote addresses / domains"
@@ -457,41 +488,41 @@ msgstr "தொலை முகவரிகள் / களங்கள்"
 msgid "Remote ports"
 msgstr "தொலைநிலை துறைமுகங்கள்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:411
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:452
 msgid "Required binary '%s' is missing"
 msgstr "தேவையான பைனரி '%s' காணவில்லை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:368
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:408
 msgid "Resolver '%s'"
 msgstr "தீர்வி '%s'"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:324
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:364
 msgid "Resolver set (%s) is not supported on this system"
 msgstr "இந்த அமைப்பில் தீர்வு தொகுப்பு (%s) ஆதரிக்கப்படவில்லை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:235
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:272
 msgid "Resolver set (%s) is not supported on this system."
 msgstr "இந்த அமைப்பில் தீர்வு தொகுப்பு (%s) ஆதரிக்கப்படவில்லை."
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:318
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:358
 msgid ""
 "Resolver set support (%s) requires ipset, but ipset binary cannot be found"
 msgstr ""
 "தீர்வி செட் உதவி (%s) ஐ.பி.எச்.இ.டி தேவைப்படுகிறது, ஆனால் இப்செட் பைனரியைக் "
 "கண்டுபிடிக்க முடியவில்லை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:321
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:361
 msgid ""
 "Resolver set support (%s) requires nftables, but nft binary cannot be found"
 msgstr ""
 "தீர்வு தொகுப்பு உதவி (%s) க்கு nftables தேவைப்படுகிறது, ஆனால் NFT பைனரியைக் "
 "கண்டுபிடிக்க முடியவில்லை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:488
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:528
 msgid "Restart"
 msgstr "மறுதொடக்கம்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:482
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:522
 msgid "Restarting %s service"
 msgstr "%s சேவையை மறுதொடக்கம் செய்தல்"
 
@@ -499,15 +530,15 @@ msgstr "%s சேவையை மறுதொடக்கம் செய்த�
 msgid "Rule Create option"
 msgstr "விதி உருவாக்கு விருப்பம்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:404
+#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:410
 msgid ""
 "Run the following user files after setting up but before restarting DNSMASQ. "
 "See the %sREADME%s for details."
 msgstr ""
-"அமைத்த பிறகு பின்வரும் பயனர் கோப்புகளை இயக்கவும், ஆனால் dnsmasq ஐ மறுதொடக்கம் செய்வதற்கு "
-"முன். விவரங்களுக்கு %sreadme %s ஐப் பார்க்கவும்."
+"அமைத்தபிறகு பின்வரும் பயனர் கோப்புகளை இயக்கவும், ஆனால் dnsmasq ஐ மறுதொடக்கம் செய்வதற்கு "
+"முன். விவரங்களுக்கு %sREADME%s ஐப் பார்க்கவும்."
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:170
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:199
 msgid "Running"
 msgstr "இயங்கும்"
 
@@ -519,11 +550,11 @@ msgstr "விவரங்களுக்கு %README ஐப் பார்�
 msgid "Select Add for -A/add and Insert for -I/Insert."
 msgstr "-A/add க்கு சேர் என்பதைத் தேர்ந்தெடுக்கவும் -i/செருகவும்."
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:571
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:611
 msgid "Service Control"
 msgstr "பணி கட்டுப்பாடு"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:419
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:464
 msgid "Service Errors"
 msgstr "பணி பிழைகள்"
 
@@ -532,19 +563,19 @@ msgstr "பணி பிழைகள்"
 msgid "Service FW Mask"
 msgstr "பணி FW மாச்க்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:202
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:231
 msgid "Service Gateways"
 msgstr "பணி நுழைவாயில்கள்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:165
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:194
 msgid "Service Status"
 msgstr "பணி நிலை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:283
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:324
 msgid "Service Warnings"
 msgstr "பணி எச்சரிக்கைகள்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:382
+#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:388
 msgid ""
 "Set DSCP tags (in range between 1 and 63) for specific interfaces. See the "
 "%sREADME%s for details."
@@ -552,43 +583,42 @@ msgstr ""
 "குறிப்பிட்ட இடைமுகங்களுக்கு டி.எச்.சி.பி குறிச்சொற்களை (1 முதல் 63 வரை வரம்பில்) "
 "அமைக்கவும். விவரங்களுக்கு %sreadme %s ஐப் பார்க்கவும்."
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:370
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:410
 msgid "Skipping IPv6 policy '%s' as IPv6 support is disabled"
 msgstr "ஐபிவி 6 கொள்கையைத் தவிர்ப்பது ஐபிவி 6 உதவி முடக்கப்பட்டுள்ளது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:469
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:509
 msgid "Start"
 msgstr "தொடங்கு"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:463
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:503
 msgid "Starting %s service"
 msgstr "தொடக்க %s பணி"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:202
 msgid ""
-"Starting (WAN) FW Mark for marks used by the service. High starting mark is "
-"used to avoid conflict with SQM/QoS. Change with caution together with"
+"Starting (Uplink Interface) FW Mark for marks used by the service. High "
+"starting mark is used to avoid conflict with SQM/QoS. Change with caution "
+"together with"
 msgstr ""
-"சேவையால் பயன்படுத்தப்படும் மதிப்பெண்களுக்கான தொடக்க (WAN) FW குறி. SQM/QoS உடன் மோதலைத் "
-"தவிர்க்க உயர் தொடக்க குறி பயன்படுத்தப்படுகிறது. உடன் எச்சரிக்கையுடன் மாற்றவும்"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/status/include/72_pbr.js:63
 msgid "Status"
 msgstr "நிலை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:507
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:547
 msgid "Stop"
 msgstr "நிறுத்து"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:184
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:213
 msgid "Stopped (Disabled)."
 msgstr "நிறுத்தப்பட்டது (முடக்கப்பட்டது)."
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:182
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:211
 msgid "Stopped."
 msgstr "நிறுத்தப்பட்டது."
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:501
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:541
 msgid "Stopping %s service"
 msgstr "%s சேவையை நிறுத்துகிறது"
 
@@ -612,31 +642,29 @@ msgstr "உதவி நெறிமுறைகள்"
 msgid "Suppress/No output"
 msgstr "அடக்கு/வெளியீடு இல்லை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:362
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:402
 msgid "Syntax error in custom user file '%s'"
 msgstr "தனிப்பயன் பயனர் கோப்பில் தொடரியல் பிழை '%s'"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:206
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:235
 msgid "The %s indicates default gateway. See the %sREADME%s for details."
 msgstr "%s இயல்புநிலை நுழைவாயிலைக் குறிக்கின்றன. விவரங்களுக்கு %README ஐப் பார்க்கவும்."
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:333
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:373
 msgid ""
 "The %s interface not found, you need to set the "
-"'pbr.config.procd_wan_interface' option"
+"'pbr.config.uplink_interface' option"
 msgstr ""
-"%s இடைமுகம் காணப்படவில்லை, நீங்கள் 'pbr.config.procd_wan_interface' விருப்பத்தை "
-"அமைக்க வேண்டும்"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:96
 msgid "The %s is not supported on this system."
 msgstr "இந்த அமைப்பில் %s ஆதரிக்கப்படவில்லை."
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:330
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:370
 msgid "The %s service failed to discover WAN gateway"
 msgstr "%s பணி வான் நுழைவாயிலைக் கண்டறியத் தவறிவிட்டது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:327
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:367
 msgid "The %s service is currently disabled"
 msgstr "%s பணி தற்போது முடக்கப்பட்டுள்ளது"
 
@@ -644,54 +672,66 @@ msgstr "%s பணி தற்போது முடக்கப்பட்ட�
 msgid "The %s support is unknown."
 msgstr "%s உதவி தெரியவில்லை."
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:257
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:294
 msgid "The WebUI application (luci-app-pbr) is outdated, please update it"
 msgstr ""
 "WebUI பயன்பாடு (லூசி-ஆப்-பிபிஆர்) காலாவதியானது, தயவுசெய்து அதைப் புதுப்பிக்கவும்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:403
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:444
 msgid "The file:// schema requires curl, but it's not detected on this system"
 msgstr ""
 "கோப்பு: // திட்டத்திற்கு சுருட்டை தேவைப்படுகிறது, ஆனால் இது இந்த அமைப்பில் "
 "கண்டறியப்படவில்லை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:339
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:379
 msgid "The ipset name '%s' is longer than allowed 31 characters"
 msgstr "அனுமதிக்கப்பட்ட 31 எழுத்துக்களை விட '%s' என்ற ipset பெயர் நீண்டது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:342
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:382
 msgid "The nft set name '%s' is longer than allowed 255 characters"
 msgstr "அனுமதிக்கப்பட்ட 255 எழுத்துக்களை விட NFT தொகுப்பு பெயர் '%s' நீண்டது"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:260
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:297
 msgid "The principal package (pbr) is outdated, please update it"
 msgstr "முதன்மை தொகுப்பு (பிபிஆர்) காலாவதியானது, தயவுசெய்து அதைப் புதுப்பிக்கவும்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:345
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:385
 msgid "Unexpected exit or service termination: '%s'"
 msgstr "எதிர்பாராத வெளியேறு அல்லது பணி முடித்தல்: '%s'"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:413
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:454
 msgid "Unknown IPv6 Link type for device '%s'"
 msgstr "சாதனத்திற்கான அறியப்படாத ஐபிவி 6 இணைப்பு வகை '%s'"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:431
-msgid "Unknown error!"
-msgstr "தெரியாத பிழை!"
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:427
+msgid "Unknown entry in policy '%s'"
+msgstr ""
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:373
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:471
+msgid "Unknown error"
+msgstr ""
+
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:40
+msgid "Unknown message"
+msgstr ""
+
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:413
 msgid "Unknown packet mark for interface '%s'"
 msgstr "'%s' இடைமுகத்திற்கான அறியப்படாத பாக்கெட் குறி"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:379
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:419
 msgid "Unknown protocol in policy '%s'"
 msgstr "கொள்கையில் அறியப்படாத நெறிமுறை '%s'"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:295
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:331
 msgid "Unknown warning"
 msgstr "தெரியாத எச்சரிக்கை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:365
+#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:200
+msgid "Uplink Interface Table FW Mark"
+msgstr ""
+
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:405
 msgid ""
 "Use of 'curl' is detected in custom user file '%s', but 'curl' isn't "
 "installed"
@@ -711,14 +751,21 @@ msgstr "வெர்போச் வெளியீடு"
 msgid "Version"
 msgstr "பதிப்பு"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:168
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:197
 msgid "Version %s"
 msgstr "பதிப்பு %s"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:200
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:223
 msgid "WAN Table FW Mark"
 msgstr "வான் அட்டவணை FW குறி"
+
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:316
+msgid "Warnings encountered, please check %s"
+msgstr ""
+
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:334
+msgid "Warnings encountered, please check the %sREADME%s"
+msgstr ""
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:61
 msgid "Web UI Configuration"
@@ -728,17 +775,17 @@ msgstr "வலை இடைமுகம் உள்ளமைவு"
 msgid "all"
 msgstr "அனைத்தும்"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:174
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:203
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/status/include/72_pbr.js:44
 msgid "fw4 nft file mode"
 msgstr "FW4 NFT கோப்பு முறை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:172
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:201
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/status/include/72_pbr.js:42
 msgid "iptables mode"
 msgstr "iptables பயன்முறை"
 
-#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:176
+#: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:205
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/status/include/72_pbr.js:46
 msgid "nft mode"
 msgstr "NFT பயன்முறை"
@@ -746,3 +793,24 @@ msgstr "NFT பயன்முறை"
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/status/include/72_pbr.js:48
 msgid "unknown"
 msgstr "தெரியவில்லை"
+
+#~ msgid ""
+#~ "Starting (WAN) FW Mark for marks used by the service. High starting mark "
+#~ "is used to avoid conflict with SQM/QoS. Change with caution together with"
+#~ msgstr ""
+#~ "சேவையால் பயன்படுத்தப்படும் மதிப்பெண்களுக்கான தொடக்க (WAN) FW குறி. SQM/QoS உடன் "
+#~ "மோதலைத் தவிர்க்க உயர் தொடக்க குறி பயன்படுத்தப்படுகிறது. உடன் எச்சரிக்கையுடன் மாற்றவும்"
+
+#~ msgid ""
+#~ "The %s interface not found, you need to set the "
+#~ "'pbr.config.procd_wan_interface' option"
+#~ msgstr ""
+#~ "%s இடைமுகம் காணப்படவில்லை, நீங்கள் 'pbr.config.procd_wan_interface' விருப்பத்தை "
+#~ "அமைக்க வேண்டும்"
+
+#~ msgid "Refer to https://docs.openwrt.melmac.net/pbr/#procd_wan_interface"
+#~ msgstr ""
+#~ "Https://docs.openwrt.melmac.net/pbr/#procd_wan_interface ஐப் பார்க்கவும்"
+
+#~ msgid "Unknown error!"
+#~ msgstr "தெரியாத பிழை!"

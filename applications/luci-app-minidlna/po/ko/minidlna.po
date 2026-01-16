@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-08-01 05:54+0000\n"
-"Last-Translator: somni <me@somni.one>\n"
+"PO-Revision-Date: 2026-01-09 19:56+0000\n"
+"Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsminidlna/ko/>\n"
 "Language: ko\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:51
 msgid "Advanced Settings"
@@ -30,19 +30,19 @@ msgstr ""
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:109
 msgid "Announced model number"
-msgstr ""
+msgstr "표시 모델 번호"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:103
 msgid "Announced serial number"
-msgstr ""
+msgstr "표시 일련번호"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:73
 msgid "Browse directory"
-msgstr ""
+msgstr "디렉터리 탐색"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:88
 msgid "Database directory"
-msgstr ""
+msgstr "데이터베이스 디렉터리"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:53
 msgid "Enable"
@@ -62,11 +62,11 @@ msgstr ""
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:50
 msgid "General Settings"
-msgstr "기본 설정"
+msgstr "일반 설정"
 
 #: applications/luci-app-minidlna/root/usr/share/rpcd/acl.d/luci-app-minidlna.json:3
 msgid "Grant access to minidlna status and configuration"
-msgstr ""
+msgstr "minidlna 상태 및 설정에 접근 권한 부여"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:59
 msgid "Interfaces"
@@ -74,7 +74,7 @@ msgstr "인터페이스"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:78
 msgid "Media directories"
-msgstr ""
+msgstr "미디어 폴더"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:36
 msgid ""
@@ -90,7 +90,7 @@ msgstr ""
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:74
 msgid "Music"
-msgstr ""
+msgstr "음악"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:59
 msgid "Network interfaces to serve."
@@ -98,7 +98,7 @@ msgstr ""
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:100
 msgid "Notify interval"
-msgstr ""
+msgstr "알림 주기"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:100
 msgid "Notify interval in seconds."
@@ -106,7 +106,7 @@ msgstr ""
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:76
 msgid "Pictures"
-msgstr ""
+msgstr "사진"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:55
 msgid "Port"
@@ -118,7 +118,7 @@ msgstr ""
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:98
 msgid "Presentation URL"
-msgstr ""
+msgstr "관리 페이지 URL"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:71
 msgid "Root container"
@@ -206,16 +206,16 @@ msgstr ""
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:75
 msgid "Video"
-msgstr ""
+msgstr "동영상"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:36
 #: applications/luci-app-minidlna/root/usr/share/luci/menu.d/luci-app-minidlna.json:3
 msgid "miniDLNA"
-msgstr ""
+msgstr "miniDLNA"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/status/include/80_minidlna.js:7
 msgid "miniDLNA Status"
-msgstr ""
+msgstr "miniDLNA 상태"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:112
 msgid "miniSSDP socket"

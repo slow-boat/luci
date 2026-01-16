@@ -130,7 +130,7 @@ return view.extend({
 		o.placeholder = _('Unnamed zone');
 		o.modalonly = true;
 		o.rmempty = false;
-		o.datatype = L.hasSystemFeature('firewall4') ? 'uciname' : 'and(uciname,maxlength(11))';
+		o.datatype = L.hasSystemFeature('firewall4') ? 'ucifw4zonename' : 'and(ucifw4zonename,maxlength(11))';
 		o.write = function(section_id, formvalue) {
 			var cfgvalue = this.cfgvalue(section_id);
 
@@ -164,7 +164,7 @@ return view.extend({
 		p[1].default = fwDefaults.getOutput();
 		p[2].default = fwDefaults.getForward();
 
-		o = s.taboption('general', form.Flag, 'masq', _('Masquerading'),
+		o = s.taboption('general', form.Flag, 'masq', _('IPv4 Masquerading'),
 			_('Enable network address and port translation IPv4 (NAT4 or NAPT4) for outbound traffic on this zone. This is typically enabled on the <em>wan</em> zone.'));
 		o.editable = true;
 		o.tooltip = function(section_id) {

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-16 11:44+0000\n"
-"Last-Translator: SnIPeRSnIPeR <feoktistovk@gmail.com>\n"
+"PO-Revision-Date: 2026-01-09 19:56+0000\n"
+"Last-Translator: vanapro1 <law820314@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationskeepalived/ru/>\n"
 "Language: ru\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:205
 msgid "2"
@@ -130,7 +130,7 @@ msgstr "Проверять"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:166
 msgid "Connect Timeout"
-msgstr "Таймаут подключения"
+msgstr "Тайм-аут подключения"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/notification.js:18
 msgid "Contents have been saved."
@@ -243,8 +243,8 @@ msgstr "Уведомление по электронной почте"
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:31
 msgid "Email to use when processing “MAIL FROM:” SMTP command"
 msgstr ""
-"Адрес электронной почты, используемый сервером при обработке SMTP-команды “"
-"MAIL FROM:”"
+"Адрес электронной почты, используемый сервером при обработке SMTP-команды "
+"“MAIL FROM:”"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:30
 msgid "Enable"
@@ -264,8 +264,8 @@ msgstr "Исключить виртуальный IP-адрес"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:91
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:115
-msgid "Fail"
-msgstr "Провал"
+msgid "Fall"
+msgstr "Сбои"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:51
 msgid "Firewall fwmark. Use Virtual server from FWMARK"
@@ -462,7 +462,7 @@ msgstr "Исходное состояние."
 
 #: applications/luci-app-keepalived/root/usr/share/luci/menu.d/luci-app-keepalived.json:78
 msgid "Instance"
-msgstr "Экземпляр"
+msgstr "Экземпляр службы"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_sync_group.js:37
 msgid "Instance Group"
@@ -617,7 +617,7 @@ msgstr "Уведомление по электронной почте от"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:119
 msgid "Password"
-msgstr "Пароль"
+msgstr "Парoль"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:120
 msgid "Password for accessing vrrpd, should be the same on all machines"
@@ -659,7 +659,7 @@ msgstr "Сохраняющаяся степень детализации"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:87
 msgid "Persist Timeout"
-msgstr "Таймаут постоянного соединения"
+msgstr "Тайм-аут постоянного соединения"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:21
 msgid ""
@@ -677,7 +677,7 @@ msgstr "Порт"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:171
 msgid "Port to connect to"
-msgstr "Порт подключен в"
+msgstr "Порт подключён в"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:215
 msgid "Preempt Delay"
@@ -724,12 +724,15 @@ msgstr "Относительный вес"
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:92
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:116
 msgid "Required number of successes for KO transition"
-msgstr "Количество успешных проверок для перехода из состояния KO"
+msgstr ""
+"Требуемое количество неудачных выполнений для перехода в состояние "
+"«недоступно»"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:87
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:110
 msgid "Required number of successes for OK transition"
-msgstr "Количество успешных проверок для перехода в состояние OK"
+msgstr ""
+"Требуемое количество успешных выполнений для перехода в состояние «доступно»"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:189
 msgid "Retry"
@@ -742,7 +745,7 @@ msgstr "Инверсный"
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:86
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:109
 msgid "Rise"
-msgstr "Порог активации"
+msgstr "Успехи"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:81
 msgid "Round-Robin"
@@ -783,7 +786,7 @@ msgstr ""
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:40
 msgid "SMTP Connect Timeout"
-msgstr "Таймаут подключения SMTP"
+msgstr "Тайм-аут подключения SMTP"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:35
 msgid "SMTP Server"
@@ -887,7 +890,7 @@ msgstr "Исходный IP-адрес маршрута"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:23
 msgid "State"
-msgstr "Состояние"
+msgstr "Штат"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:66
 msgid "Static Addresses are not moved by vrrpd, they stay on the machine."
@@ -976,11 +979,11 @@ msgstr "Время задержки упреждения (в секундах)"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:41
 msgid "Timeout in seconds for SMTP stream processing"
-msgstr "Таймаут обработки SMTP-потока (в секундах)"
+msgstr "Тайм-аут обработки SMTP-потока (в секундах)"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:88
 msgid "Timeout value for persistent connections"
-msgstr "Таймаут для постоянных соединений (в секундах)"
+msgstr "Тайм-аут для постоянных соединений (в секундах)"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:249
 msgid ""
@@ -1184,3 +1187,6 @@ msgstr ""
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:53
 msgid "default"
 msgstr "по умолчанию"
+
+#~ msgid "Fail"
+#~ msgstr "Провал"

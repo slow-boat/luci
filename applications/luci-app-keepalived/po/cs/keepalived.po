@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-20 09:25+0000\n"
+"PO-Revision-Date: 2026-01-11 05:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationskeepalived/cs/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:205
 msgid "2"
@@ -253,8 +253,8 @@ msgstr "Vynechat virtuální IP adresu"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:91
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:115
-msgid "Fail"
-msgstr "Nezdar"
+msgid "Fall"
+msgstr "Pád"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:51
 msgid "Firewall fwmark. Use Virtual server from FWMARK"
@@ -328,7 +328,8 @@ msgstr "Pokud jakékoli z tohoto spadne, přejít do stavu PORUCHA"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:276
 msgid "Go to FAULT state if any of these go down, if unweighted"
-msgstr "Přejít do stavu PORUCHA pokud jakékoli z těchto spadne (pokud neváženo)"
+msgstr ""
+"Přejít do stavu PORUCHA pokud jakékoli z těchto spadne (pokud neváženo)"
 
 #: applications/luci-app-keepalived/root/usr/share/rpcd/acl.d/luci-app-keepalived.json:3
 msgid "Grant access to LuCI app keepalived"
@@ -737,7 +738,7 @@ msgstr "Trasa"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:51
 msgid "Route Table"
-msgstr "Směrovací tabulka"
+msgstr "Tabulka směrování"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:15
 msgid "Router ID"
@@ -1161,3 +1162,6 @@ msgstr ""
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:53
 msgid "default"
 msgstr "výchozí"
+
+#~ msgid "Fail"
+#~ msgstr "Nezdar"

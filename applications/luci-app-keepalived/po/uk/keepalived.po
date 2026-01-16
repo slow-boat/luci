@@ -1,16 +1,17 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-03-14 17:27+0000\n"
-"Last-Translator: Максим Горпиніч <maksimgorpinic2005a@gmail.com>\n"
+"PO-Revision-Date: 2025-10-05 18:40+0000\n"
+"Last-Translator: Максим Горпиніч <gorpinicmaksim0@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationskeepalived/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.11-dev\n"
+"Plural-Forms: nplurals=3; plural="
+"(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? "
+"1 : 2);\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:205
 msgid "2"
@@ -149,7 +150,7 @@ msgstr "Налагодження"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:222
 msgid "Debug Level"
-msgstr "Рівень налагодження"
+msgstr "Рівень налагодженням"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:87
 msgid "Default IP for binding vrrpd is the primary IP on interface"
@@ -256,8 +257,8 @@ msgstr "Виключити віртуальну IP-адресу"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:91
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:115
-msgid "Fail"
-msgstr "Невдача"
+msgid "Fall"
+msgstr "Осінь"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:51
 msgid "Firewall fwmark. Use Virtual server from FWMARK"
@@ -312,7 +313,7 @@ msgstr "Шлюз для використання для маршруту"
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:27
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:297
 msgid "General"
-msgstr "Загальний"
+msgstr "Загальне"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:52
 msgid "Global"
@@ -589,7 +590,7 @@ msgstr "Ні де"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:204
 msgid "None"
-msgstr "Жодного"
+msgstr "Жоден"
 
 #: applications/luci-app-keepalived/root/usr/share/luci/menu.d/luci-app-keepalived.json:105
 msgid "Notification"
@@ -1168,3 +1169,6 @@ msgstr ""
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:53
 msgid "default"
 msgstr "за замовчуванням"
+
+#~ msgid "Fail"
+#~ msgstr "Невдача"

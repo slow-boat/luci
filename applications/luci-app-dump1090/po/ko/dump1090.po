@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-10-04 07:12+0000\n"
-"Last-Translator: Wonchul Kang <teshi85@gmail.com>\n"
+"PO-Revision-Date: 2026-01-11 05:02+0000\n"
+"Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsdump1090/ko/>\n"
 "Language: ko\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: applications/luci-app-dump1090/htdocs/luci-static/resources/view/dump1090/dump1090.js:117
 msgid "Absolute maximum range for position decoding"
@@ -105,7 +105,7 @@ msgstr ""
 
 #: applications/luci-app-dump1090/htdocs/luci-static/resources/view/dump1090/dump1090.js:31
 msgid "Frequency"
-msgstr ""
+msgstr "주파수"
 
 #: applications/luci-app-dump1090/htdocs/luci-static/resources/view/dump1090/dump1090.js:25
 msgid "Gain (-10 for auto-gain)"
@@ -113,7 +113,7 @@ msgstr ""
 
 #: applications/luci-app-dump1090/root/usr/share/rpcd/acl.d/luci-app-dump1090.json:3
 msgid "Grant UCI access for luci-app-dump1090"
-msgstr ""
+msgstr "luci-app-dump1090의 UCI 접근 권한 부여"
 
 #: applications/luci-app-dump1090/htdocs/luci-static/resources/view/dump1090/dump1090.js:61
 msgid "HTTP server port"

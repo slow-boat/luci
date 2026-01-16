@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-20 21:42+0000\n"
-"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
+"PO-Revision-Date: 2025-10-05 18:40+0000\n"
+"Last-Translator: brodrigueznu <brodrigueznu@hotmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationskeepalived/es/>\n"
 "Language: es\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:205
 msgid "2"
@@ -255,7 +255,7 @@ msgstr "Excluir dirección IP virtual"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:91
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:115
-msgid "Fail"
+msgid "Fall"
 msgstr "Fallo"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:51
@@ -582,7 +582,7 @@ msgstr "No inversa"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/ipaddress.js:51
 msgid "No Where"
-msgstr "Ninguno"
+msgstr "En ningún lugar"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:204
 msgid "None"
@@ -606,7 +606,8 @@ msgstr "Contraseña"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:120
 msgid "Password for accessing vrrpd, should be the same on all machines"
-msgstr "Contraseña para acceder a vrrpd, debe ser la misma en todos los equipos"
+msgstr ""
+"Contraseña para acceder a vrrpd, debe ser la misma en todos los equipos"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/script.js:69
 msgid "Path of the script to execute"
@@ -834,7 +835,8 @@ msgstr "Puerto del servidor"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:99
 msgid "Server to be added to the pool if all real servers are down"
-msgstr "Servidor que se agrega al sondeo si todos los servidores reales se caen"
+msgstr ""
+"Servidor que se agrega al sondeo si todos los servidores reales se caen"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/globals.js:36
 msgid "Server to use for sending mail notifications"
@@ -1169,3 +1171,6 @@ msgstr ""
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:53
 msgid "default"
 msgstr "predeterminado"
+
+#~ msgid "Fail"
+#~ msgstr "Fallo"

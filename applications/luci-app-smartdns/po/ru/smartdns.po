@@ -1,17 +1,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-06-10 16:38+0000\n"
-"Last-Translator: SnIPeRSnIPeR <feoktistovk@gmail.com>\n"
+"PO-Revision-Date: 2025-10-28 16:38+0000\n"
+"Last-Translator: SnIPeRSnIPeR <snipersniper@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssmartdns/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.12-dev\n"
+"Plural-Forms: nplurals=3; plural="
+"(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? "
+"1 : 2);\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:792
 msgid "Additional Args for upstream dns servers"
@@ -98,12 +100,12 @@ msgid ""
 "Configure IP blacklists that will be filtered from the results of specific "
 "DNS server."
 msgstr ""
-"Настройте списки блокировки IP-адресов, которые будут отфильтровываться из "
+"Настройте списки блокировок IP-адресов, которые будут отфильтровываться из "
 "результатов работы определённого DNS-сервера."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:929
 msgid "Configure block domain list."
-msgstr "Настройка списка доменов блокировки."
+msgstr "Настройка списка блокируемых доменов."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:950
 msgid "Configure domain rule list."
@@ -326,7 +328,7 @@ msgstr "Тип файла"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:702
 msgid "Filtering IP with blacklist"
-msgstr "Фильтрация IP-адресов с помощью списка блокировки"
+msgstr "Фильтрация IP-адресов с помощью списка блокировок"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:214
 msgid "First Ping"
@@ -382,11 +384,11 @@ msgstr "HTTP-хост"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:808
 msgid "IP Blacklist"
-msgstr "Список блокировки IP-адресов"
+msgstr "Список блокировок IP-адресов"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:701
 msgid "IP Blacklist Filtering"
-msgstr "Фильтрация списков блокировки IP-адресов"
+msgstr "Фильтрация списков блокировок IP-адресов"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:224
 msgid "IPV6 Server"
@@ -628,7 +630,7 @@ msgstr "Установите список правил конкретного д
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:808
 msgid "Set Specific ip blacklist."
-msgstr "Установить конкретный список блокировки IP."
+msgstr "Установить конкретный список блокировок IP."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:709
 msgid "Set TLS hostname to verify."
@@ -767,7 +769,7 @@ msgid ""
 "in the domains are never forwarded and always replied to with the specified "
 "IP address which may be IPv4 or IPv6."
 msgstr ""
-"Укажите IP-адрес, который будет возвращаться для любого узла в указанных "
+"Укажите IP-адрес, который будет возвращаться для любого хоста в указанных "
 "доменах. Запросы в доменах никогда не пересылаются и всегда отвечают на "
 "указанный IP-адрес, который может быть IPv4 или IPv6."
 

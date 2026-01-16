@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-06-20 21:40+0000\n"
+"PO-Revision-Date: 2025-11-24 10:29+0000\n"
 "Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsopenwisp/ro/>\n"
@@ -9,13 +9,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : "
+"(n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:17
 msgid "Advanced Settings"
-msgstr "Setări avansate"
+msgstr "Setări Avansate"
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:82
 msgid "Boot Delay"
@@ -23,11 +23,11 @@ msgstr "Amânare Boot-are"
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:100
 msgid "CA Cert"
-msgstr ""
+msgstr "Cert CA"
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:97
 msgid "CA Path"
-msgstr ""
+msgstr "Cale CA"
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:12
 msgid ""
@@ -47,11 +47,11 @@ msgstr ""
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:29
 msgid "Disabled"
-msgstr ""
+msgstr "Dezactivat"
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:27
 msgid "Enable"
-msgstr "Permite"
+msgstr "Activați"
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:28
 msgid "Enable or disable the OpenWISP service."
@@ -63,7 +63,7 @@ msgstr "Activat"
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:16
 msgid "General Settings"
-msgstr ""
+msgstr "Setări Generale"
 
 #: applications/luci-app-openwisp/root/usr/share/rpcd/acl.d/luci-app-openwisp.json:3
 msgid "Grant access to luci-app-openwisp"

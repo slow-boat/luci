@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-03-30 17:00+0200\n"
-"PO-Revision-Date: 2025-02-18 10:14+0000\n"
-"Last-Translator: Alan <georgianization@outlook.com>\n"
+"PO-Revision-Date: 2025-10-16 03:09+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsfirewall/ka/>\n"
 "Language: ka\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.1-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:48
 msgid ""
@@ -39,11 +39,11 @@ msgstr "-- დაემატოს IP --"
 msgid "-- add MAC --"
 msgstr "-- დაემატოს MAC --"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:199
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:200
 msgid "0"
 msgstr "0"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:182
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:183
 msgid "1024"
 msgstr "1024"
 
@@ -90,6 +90,8 @@ msgid ""
 "<var data-tooltip=\"MARK\">%{set_mark?Assign:XOR}</var> firewall mark <var>%"
 "{set_mark?:%{set_xmark}}</var>"
 msgstr ""
+"<var data-tooltip=\"MARK\">%{set_mark?ენიჭება:XOR}</var> ქსელის ფარით "
+"მონიშვნა <var>%{set_mark?:%{set_xmark}}</var>"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:90
 msgid "<var data-tooltip=\"MASQUERADE\">Automatically rewrite</var> source IP"
@@ -116,11 +118,11 @@ msgstr ""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:306
 msgid "A rewrite IP must be specified!"
-msgstr ""
+msgstr "შესანაცვლებელი IP აუცილებლად უნდა მიეთითოს!"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:292
 msgid "ACCEPT - Disable address rewriting"
-msgstr ""
+msgstr "ACCEPT - გათიშავს მისამართის შენაცვლებას"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:224
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:220
@@ -145,7 +147,7 @@ msgstr ""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:107
 msgid "Address family, Internal IP address must match"
-msgstr ""
+msgstr "მისამართების ჯგუფი, შიდა IP-მისამართი უნდა დაემთხვეს"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:135
 msgid ""
@@ -164,7 +166,7 @@ msgstr "გაფართოებული პარამეტრები"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:283
 msgid "Allow \"invalid\" traffic"
-msgstr ""
+msgstr "„უმართებულო“ მიმოცვლის ნებართვა"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:397
 msgid "Allow forward from <em>source zones</em>:"
@@ -230,21 +232,21 @@ msgstr "შემცველობა შენახულია."
 msgid "Continue"
 msgstr "გაგრძელება"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:204
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:205
 msgid "Counters"
 msgstr "მთვლელები"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:231
 msgid "Covered devices"
-msgstr ""
+msgstr "მოიცავს მოწყობილობებს"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:183
 msgid "Covered networks"
-msgstr ""
+msgstr "მოიცავს ქსელებს"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:236
 msgid "Covered subnets"
-msgstr ""
+msgstr "მოიცავს ქვექსელებს"
 
 #: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:62
 msgid "Custom Rules"
@@ -259,15 +261,15 @@ msgstr ""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:416
 msgid "DSCP classification"
-msgstr ""
+msgstr "DSCP-დახარისხება"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:263
 msgid "DSCP mark"
-msgstr ""
+msgstr "DSCP-მონიშვნა"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:297
 msgid "DSCP mark required"
-msgstr ""
+msgstr "DSCP-მონიშვნა აუცილებელია"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:397
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:270
@@ -301,7 +303,7 @@ msgstr "გაუმართავი კრებულების აცი�
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:226
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:210
 msgid "Enable"
-msgstr ""
+msgstr "ჩართვა"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:306
 msgid "Enable NAT Loopback"
@@ -316,7 +318,7 @@ msgstr "SYN-flood-დაცვის ჩართვა"
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:341
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:296
 msgid "Enable logging"
-msgstr ""
+msgstr "აღრიცხვის ჩართვა"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:168
 msgid ""
@@ -335,17 +337,17 @@ msgstr ""
 "ამოქმედდეს ქსელისა და პორტის გარდაქმნა IPv6 (NAT6 ან NAPT6) გამავალი "
 "ნაკადისთვის ამ არეში."
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:211
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:212
 msgid "Enabled"
 msgstr "მოქმედია"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:205
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:206
 msgid "Enables packet and byte count tracking for the set."
 msgstr ""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:339
 msgid "Expecting: %s"
-msgstr ""
+msgstr "მოსალოდნელი: %s"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:290
 msgid "Explicitly choses allowed connection tracking helpers for zone traffic"
@@ -371,7 +373,7 @@ msgstr "დამატებით არგუმენტები საბ�
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:116
 msgid "Extra iptables arguments"
-msgstr ""
+msgstr "დამატებითი iptables-არგუმენტები"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:324
 msgid "Extra source arguments"
@@ -489,7 +491,7 @@ msgstr "ნაკადის აპარატურული განტვ�
 msgid "Hardware flow offloading"
 msgstr "ნაკადის აპარატურული განტვირთვა"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:144
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:145
 msgid "IP (range)"
 msgstr "IP (შუალედი)"
 
@@ -498,19 +500,24 @@ msgstr "IP (შუალედი)"
 msgid "IP Sets"
 msgstr "IP-კრებულები"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:152
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:153
 msgid "IPs/Networks"
 msgstr "IP-ები/ქსელები"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:107
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:108
 msgid "IPs/Networks/MACs"
 msgstr "IP-ები/ქსელები/MAC-ები"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:68
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:69
 msgid "IPv4"
 msgstr "IPv4"
 
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:167
+msgid "IPv4 Masquerading"
+msgstr ""
+
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:191
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:68
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:275
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:219
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:256
@@ -524,7 +531,7 @@ msgstr "IPv4 და IPv6"
 msgid "IPv4 only"
 msgstr "IPv4 მხოლოდ"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:69
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:70
 msgid "IPv6"
 msgstr "IPv6"
 
@@ -541,9 +548,9 @@ msgstr "IPv6 მხოლოდ"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:247
 msgid "Inbound device"
-msgstr ""
+msgstr "მიმღები მოწყობილობა"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:187
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:188
 msgid "Include File"
 msgstr "ფაილის დართვა"
 
@@ -561,7 +568,7 @@ msgid ""
 "</var>:<var data-tooltip=\"%{helper.name}\">%{helper.val}</var>}}"
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:180
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:181
 msgid "Initial Hash Size"
 msgstr "ჰეშის საწყისი ზომა"
 
@@ -651,10 +658,6 @@ msgstr "MASQUERADE - თავისთავად გადაიწერე�
 msgid "MSS clamping"
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:167
-msgid "Masquerading"
-msgstr ""
-
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:213
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:209
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:193
@@ -723,11 +726,11 @@ msgstr ""
 msgid "Matches traffic carrying the specified DSCP marking."
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:113
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:114
 msgid "Max Entries"
 msgstr "მაქს. ჩანაწერები"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:172
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:173
 msgid "Max Length"
 msgstr "უმაღლესი სიგრძე"
 
@@ -769,13 +772,13 @@ msgstr ""
 msgid "Name"
 msgstr "სახელი"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:166
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:167
 msgid "Netmask"
-msgstr ""
+msgstr "ქსელის ნიღაბი"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:83
 msgid "None"
-msgstr ""
+msgstr "არცერთი"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:77
 msgid "Not fully compatible with QoS/SQM."
@@ -813,11 +816,11 @@ msgstr "გამავალი ზონა"
 msgid "Output"
 msgstr "გამომავალი"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:75
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:76
 msgid "Packet Field Match"
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:76
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:77
 msgid ""
 "Packet fields to match upon.<br />Syntax: <em>direction_datatype</em>. e.g.: "
 "<code>src_port, dest_net</code>.<br />Directions: <code>src, dst</code>. "
@@ -829,7 +832,7 @@ msgstr ""
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:474
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:346
 msgid "Passes additional arguments to iptables. Use with care!"
-msgstr ""
+msgstr "დამატებით არგუმენტებს მიიღებს iptables. გამოიყენეთ სიფრთხილით!"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:321
 msgid ""
@@ -840,7 +843,7 @@ msgid ""
 "all services."
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:188
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:189
 msgid "Path to file of CIDRs, subnets, host IPs, etc.<br />"
 msgstr ""
 
@@ -857,9 +860,9 @@ msgstr ""
 "პორტის გადამისამართებით მოშორებულ კომპიუტერებს ინტერნეტით შეეძლება "
 "ადგილობრივი ქსელის რომელიმე კომპიუტერთან ან მომსახურებასთან წვდომა."
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:158
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:159
 msgid "Port range"
-msgstr ""
+msgstr "პორტების შუალედი"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:237
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:284
@@ -876,7 +879,7 @@ msgstr ""
 msgid "Redirect matched incoming traffic to the specified internal host"
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:122
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:123
 msgid "Refer To External Set"
 msgstr ""
 
@@ -905,7 +908,7 @@ msgstr "მისამართის ჯგუფის შეზღუდვ�
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:297
 msgid "Rewrite IP address"
-msgstr ""
+msgstr "IP-მისამართის შენაცვლება"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:298
 msgid "Rewrite matched traffic to the specified source IP address."
@@ -917,7 +920,7 @@ msgstr ""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:311
 msgid "Rewrite port"
-msgstr ""
+msgstr "პორტის შენაცვლება"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:76
 msgid "Routing/NAT Offloading"
@@ -934,7 +937,7 @@ msgstr "შაბათი"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:316
 msgid "Set mark"
-msgstr ""
+msgstr "ნიშნის დადება"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:318
 msgid ""
@@ -1009,7 +1012,7 @@ msgstr "შეწყვეტის თარიღი (yyyy-mm-dd)"
 msgid "Stop Time (hh:mm:ss)"
 msgstr "შეწყვეტის დრო (hh:mm:ss)"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:130
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:131
 msgid "Storage Method"
 msgstr "შენახვის ხერხი"
 
@@ -1066,13 +1069,13 @@ msgstr "დროის შეზღუდვები"
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:521
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:394
 msgid "Time in UTC"
-msgstr ""
+msgstr "სასაათე სარტყელი UTC"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:239
 msgid "Time restrictions are enabled for this rule"
 msgstr "დროის შეზღუდვები ამოქმედებულია ამ წესისთვის"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:196
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:197
 msgid "Timeout"
 msgstr "მოლოდინის ვადა"
 
@@ -1128,13 +1131,15 @@ msgstr "სამშაბათი"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/custom.js:19
 msgid "Unable to save contents: %s"
-msgstr "ვერ შეინახა შიგთავსი: %s"
+msgstr "შემცველობის შენახვა შეუძლებელია: %s"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:197
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:198
 msgid ""
 "Unit: seconds. Default <code>0</code> means the entry is added permanently "
 "to the set.<br />Max: 2147483 seconds."
 msgstr ""
+"ერთეული: წამი. ნაგულიხსმევი <code>0</code> ნიშნავს, რომ ჩანაწერი მუდმივი "
+"დროით ემატება კრებულს.<br />არაუმეტეს: 2147483 წამისა."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:341
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:456
@@ -1187,7 +1192,7 @@ msgstr "შიდა IP-მისამართის გამოყენე�
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:373
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:322
 msgid "Use ipset"
-msgstr ""
+msgstr "ip-კრებულის გამოყენება"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:231
 msgid ""
@@ -1292,13 +1297,13 @@ msgstr ""
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:194
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:222
 msgid "automatic"
-msgstr ""
+msgstr "ავტომატური"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:131
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:132
 msgid "bitmap"
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:137
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:138
 msgid "bitmap is ipv4 only"
 msgstr ""
 
@@ -1308,23 +1313,23 @@ msgstr ""
 msgid "day"
 msgstr "დღე"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:93
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:94
 msgid "dest_ip: Destination IP"
 msgstr "dest_ip: საბოლოო IP"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:95
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:96
 msgid "dest_mac: Destination MAC addr"
 msgstr "dest_mac: საბოლოო MAC-მის"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:96
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:97
 msgid "dest_net: Destination (sub)net"
 msgstr "dest_net: საბოლოო (ქვე)ქსელი"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:94
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:95
 msgid "dest_port: Destination Port"
 msgstr "dest_port: საბოლოო პორტი"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:98
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:99
 msgid "dest_set: Destination ipset*"
 msgstr ""
 
@@ -1349,11 +1354,11 @@ msgid ""
 "Port ranges in ipsets are unsupported by firewall4.<br />"
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:159
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:160
 msgid "fromport-toport"
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:132
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:133
 msgid "hash"
 msgstr "ჰეში"
 
@@ -1363,27 +1368,27 @@ msgstr "ჰეში"
 msgid "hour"
 msgstr "საათი"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:81
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:82
 msgid "ip: IP addr"
 msgstr "ip: IP-მის"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:153
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:154
 msgid "ip[/cidr]<br />"
 msgstr "ip[/cidr]<br />"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:145
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:146
 msgid "ip[/cidr]<br />For use with Match datatypes: <code>*_ip</code>."
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:133
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:134
 msgid "list"
 msgstr "სია"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:83
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:84
 msgid "mac: MAC addr"
 msgstr "mac: MAC-მის"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:108
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:109
 msgid "macaddr|ip[/cidr]<br />"
 msgstr ""
 
@@ -1393,11 +1398,11 @@ msgstr ""
 msgid "minute"
 msgstr "წუთი"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:84
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:85
 msgid "net: (sub)net"
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:82
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:83
 msgid "port: Port"
 msgstr ""
 
@@ -1413,27 +1418,27 @@ msgstr "უარყოფა"
 msgid "second"
 msgstr "წამი"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:86
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:87
 msgid "set: ipset*"
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:92
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:93
 msgid "src_Set: Source ipset*"
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:87
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:88
 msgid "src_ip: Source IP"
 msgstr "src_ip: საწყისი IP"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:89
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:90
 msgid "src_mac: Source MAC addr"
 msgstr "src_mac: საწყისი MAC-მის"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:90
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:91
 msgid "src_net: Source (sub)net"
 msgstr "src_net: საწყისი (ქვე)ქსელი"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:88
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:89
 msgid "src_port: Source Port"
 msgstr "src_port: საწყისი პორტი"
 
@@ -1460,11 +1465,11 @@ msgstr "შეუზღუდავი"
 msgid "unspecified"
 msgstr "არ მითითებულა"
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:114
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:173
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:115
+#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:174
 msgid "up to 65536 entries."
 msgstr "65536 ჩანაწერამდე."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:339
 msgid "valid firewall mark"
-msgstr ""
+msgstr "ქსელის ფარის მართებული მონიშვნა"
