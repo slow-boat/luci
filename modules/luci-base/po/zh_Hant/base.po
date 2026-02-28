@@ -1406,7 +1406,8 @@ msgstr "始終發送所選的 DHCP 選項。有時需要，例如 PXELinux。"
 msgid ""
 "Always use 40MHz channels even if the secondary channel overlaps. Using this "
 "option does not comply with IEEE 802.11n-2009!"
-msgstr "始終使用 40MHz 頻道，即使次要頻道重疊。使用此選項不符合 IEEE 802.11n-2009！"
+msgstr ""
+"始終使用 40MHz 頻道，即使次要頻道重疊。使用此選項不符合 IEEE 802.11n-2009！"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:1224
 msgid "Amount of Duplicate Address Detection probes to send"
@@ -1839,7 +1840,6 @@ msgstr "綁定 NTP 伺服器"
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6.js:64
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6tap.js:69
 #: protocols/luci-proto-ipip/htdocs/luci-static/resources/protocol/ipip.js:48
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:144
 #: protocols/luci-proto-vti/htdocs/luci-static/resources/protocol/vti.js:59
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan.js:132
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:132
@@ -1869,7 +1869,6 @@ msgstr ""
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6.js:64
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6tap.js:69
 #: protocols/luci-proto-ipip/htdocs/luci-static/resources/protocol/ipip.js:48
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:144
 #: protocols/luci-proto-vti/htdocs/luci-static/resources/protocol/vti.js:59
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan.js:132
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:132
@@ -1968,12 +1967,6 @@ msgstr "已緩衝"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dns.js:260
 msgid "By default, dnsmasq caches A, AAAA, CNAME and SRV DNS record types."
 msgstr "預設情況下，dnsmasq 快取 A、AAAA、CNAME 和SRV 類別的 DNS 紀錄。"
-
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:131
-msgid ""
-"CA certificate (PEM encoded; Use instead of system-wide store to verify the "
-"gateway certificate."
-msgstr "CA 憑證 (PEM 編碼；使用此憑證而非系統儲存的閘道憑證。"
 
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:178
 msgid "CA certificate; if empty it will be saved after the first connection."
@@ -3675,7 +3668,8 @@ msgid ""
 "Each software repository public key (from official or third party "
 "repositories) allows packages in lists signed by it to be installed by the "
 "package manager."
-msgstr "每個軟體儲存庫的公鑰 (來自官方或第三方) 允許套件管理器安裝由其簽署的套件。"
+msgstr ""
+"每個軟體儲存庫的公鑰 (來自官方或第三方) 允許套件管理器安裝由其簽署的套件。"
 
 #: protocols/luci-proto-openvpn/htdocs/luci-static/resources/protocol/openvpn.js:91
 msgid "Echo parameters to log"
@@ -5844,14 +5838,12 @@ msgstr "若指定，則用分割區標籤掛載裝置而非固定裝置節點"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1197
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/ipip6.js:70
 #: protocols/luci-proto-mbim/htdocs/luci-static/resources/protocol/mbim.js:134
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:158
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:129
 msgid "If unchecked, no default route is configured"
 msgstr "不勾選則不配置預設路由"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1201
 #: protocols/luci-proto-mbim/htdocs/luci-static/resources/protocol/mbim.js:145
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:162
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:140
 msgid "If unchecked, the advertised DNS server addresses are ignored"
 msgstr "不勾選則忽略公告的 DNS 伺服器位址"
@@ -6251,11 +6243,6 @@ msgstr "無效"
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:73
 msgid "Invalid APN provided"
 msgstr "提供的 APN 無效"
-
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:38
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:41
-msgid "Invalid Base64 key string"
-msgstr "無效的 Base64 金鑰字串"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:729
 msgid ""
@@ -6912,10 +6899,6 @@ msgstr "本地 6"
 #: modules/luci-base/htdocs/luci-static/resources/tools/views.js:56
 msgid "Local 7"
 msgstr "本地 7"
-
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:171
-msgid "Local IP address"
-msgstr "本地 IP 位址"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:12
 #: modules/luci-compat/luasrc/model/network.lua:30
@@ -8504,17 +8487,9 @@ msgstr "開啟 iptables 規則概覽…"
 msgid "Open list..."
 msgstr "開啟清單..."
 
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:63
-msgid "OpenConnect"
-msgstr "OpenConnect"
-
 #: modules/luci-compat/luasrc/model/network/proto_openconnect.lua:9
 msgid "OpenConnect (CISCO AnyConnect)"
 msgstr "OpenConnect (CISCO AnyConnect)"
-
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:63
-msgid "OpenFortivpn"
-msgstr "OpenFortivpn"
 
 #: protocols/luci-proto-openvpn/htdocs/luci-static/resources/protocol/openvpn.js:326
 msgid "OpenVPN"
@@ -8601,10 +8576,6 @@ msgstr ""
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:137
 msgid "Optional, free-form notes about this device"
 msgstr "此裝置可選的任意格式備註"
-
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:149
-msgid "Optional, in seconds. If set to '0', no reconnect is attempted."
-msgstr "可選，秒為單位。若設定為 \"0\" ，則不嘗試重新連線。"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:176
 msgid ""
@@ -9060,7 +9031,6 @@ msgstr "直通 (將實體裝置鏡像至單個 MAC VLAN)"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2088
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:51
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:145
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:103
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:58
 #: protocols/luci-proto-yggdrasil/htdocs/luci-static/resources/protocol/yggdrasil.js:301
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/sysauth.ut:19
@@ -9258,10 +9228,6 @@ msgstr "持久/非持久 ifconfig 池"
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:653
 msgid "Persistent Keep Alive"
 msgstr "持續保持連線"
-
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:149
-msgid "Persistent reconnect interval"
-msgstr "持續重新連線間隔"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:310
 msgid "PersistentKeepAlive setting is invalid"
@@ -12445,7 +12411,8 @@ msgstr ""
 msgid ""
 "The system is rebooting now. If the restored configuration changed the "
 "current LAN IP address, you might need to reconnect manually."
-msgstr "系統重啟中。如果恢復的設定變更了當前的 LAN IP 位址，可能需要手動重新連線。"
+msgstr ""
+"系統重啟中。如果恢復的設定變更了當前的 LAN IP 位址，可能需要手動重新連線。"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:85
 msgid "The system password has been successfully changed."
@@ -12537,11 +12504,6 @@ msgstr "中繼 IPv4 位址"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2040
 msgid "This authentication type is not applicable to the selected EAP method."
 msgstr "此認證類別不適用於所選的 EAP 方式。"
-
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:48
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:56
-msgid "This does not look like a valid PEM file"
-msgstr "這看起來不像有效的 PEM 檔案"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1773
 msgid ""
@@ -13296,7 +13258,6 @@ msgstr "使用 DHCPv6"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1201
 #: protocols/luci-proto-mbim/htdocs/luci-static/resources/protocol/mbim.js:144
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:162
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:139
 msgid "Use DNS servers advertised by peer"
 msgstr "使用公告的 DNS 伺服器"
@@ -13353,7 +13314,6 @@ msgstr "使用自訂 DNS 伺服器"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1197
 #: protocols/luci-proto-mbim/htdocs/luci-static/resources/protocol/mbim.js:133
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:158
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:128
 msgid "Use default gateway"
 msgstr "使用預設閘道"
@@ -13361,7 +13321,6 @@ msgstr "使用預設閘道"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1214
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/ipip6.js:73
 #: protocols/luci-proto-mbim/htdocs/luci-static/resources/protocol/mbim.js:138
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:166
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:133
 msgid "Use gateway metric"
 msgstr "使用閘道計量"
@@ -13460,7 +13419,6 @@ msgid "User"
 msgstr "使用者"
 
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:154
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:106
 msgid "User certificate (PEM encoded)"
 msgstr "使用者憑證 (PEM 編碼)"
 
@@ -13469,13 +13427,11 @@ msgid "User identifier"
 msgstr "使用者識別碼"
 
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:166
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:118
 msgid "User key (PEM encoded)"
 msgstr "使用者金鑰 (PEM 編碼)"
 
 #: modules/luci-base/ucode/template/sysauth.ut:23
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:143
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:101
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:56
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/sysauth.ut:13
 msgid "Username"
@@ -13544,24 +13500,10 @@ msgstr "VPN 本地位址"
 msgid "VPN Local port"
 msgstr "VPN 本地連接埠"
 
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:94
-msgid "VPN Protocol"
-msgstr "VPN 協定"
-
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:103
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:93
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pptp.js:58
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:39
 msgid "VPN Server"
 msgstr "VPN 伺服器"
-
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:154
-msgid "VPN Server certificate's SHA256 hash"
-msgstr "VPN 伺服器憑證 SHA256 雜湊"
-
-#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:96
-msgid "VPN Server port"
-msgstr "VPN 伺服器連接埠"
 
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:141
 msgid "VPN Server's certificate SHA1 hash"
@@ -14743,13 +14685,6 @@ msgstr "有效的整數值"
 msgid "valid multicast MAC address"
 msgstr "有效的多播 MAC 位址"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:1006
-msgid ""
-"valid network device name between 1 and 15 characters not containing \":\", "
-"\"/\", \"%\" or spaces"
-msgstr ""
-"有效的網路裝置名稱 (1 到 15 個字元) ，不包含 \":\" ，\"/\" ，\"%\" 或空格"
-
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:1004
 msgid "valid network device name, not \".\" or \"..\""
 msgstr "有效的網路裝置名稱，非 \".\" 或 \"..\""
@@ -14856,6 +14791,47 @@ msgstr "{example_nx} 返回 {nxdomain}。"
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
 msgstr "« 返回"
+
+#~ msgid ""
+#~ "CA certificate (PEM encoded; Use instead of system-wide store to verify "
+#~ "the gateway certificate."
+#~ msgstr "CA 憑證 (PEM 編碼；使用此憑證而非系統儲存的閘道憑證。"
+
+#~ msgid "Invalid Base64 key string"
+#~ msgstr "無效的 Base64 金鑰字串"
+
+#~ msgid "Local IP address"
+#~ msgstr "本地 IP 位址"
+
+#~ msgid "OpenConnect"
+#~ msgstr "OpenConnect"
+
+#~ msgid "OpenFortivpn"
+#~ msgstr "OpenFortivpn"
+
+#~ msgid "Optional, in seconds. If set to '0', no reconnect is attempted."
+#~ msgstr "可選，秒為單位。若設定為 \"0\" ，則不嘗試重新連線。"
+
+#~ msgid "Persistent reconnect interval"
+#~ msgstr "持續重新連線間隔"
+
+#~ msgid "This does not look like a valid PEM file"
+#~ msgstr "這看起來不像有效的 PEM 檔案"
+
+#~ msgid "VPN Protocol"
+#~ msgstr "VPN 協定"
+
+#~ msgid "VPN Server certificate's SHA256 hash"
+#~ msgstr "VPN 伺服器憑證 SHA256 雜湊"
+
+#~ msgid "VPN Server port"
+#~ msgstr "VPN 伺服器連接埠"
+
+#~ msgid ""
+#~ "valid network device name between 1 and 15 characters not containing \":"
+#~ "\", \"/\", \"%\" or spaces"
+#~ msgstr ""
+#~ "有效的網路裝置名稱 (1 到 15 個字元) ，不包含 \":\" ，\"/\" ，\"%\" 或空格"
 
 #~ msgid "Add template based configuration"
 #~ msgstr "新增基於範本的配置"
