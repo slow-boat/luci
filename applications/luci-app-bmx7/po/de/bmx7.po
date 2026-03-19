@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-03-02 15:15+0000\n"
+"PO-Revision-Date: 2026-03-16 23:09+0000\n"
 "Last-Translator: Werner Schleifer <werner.schleifer@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsbmx7/de/>\n"
@@ -8,11 +8,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16.1-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: applications/luci-app-bmx7/ucode/template/bmx7/bmxstatus.ut:11
 msgid "A mesh routing protocol for Linux devices."
-msgstr ""
+msgstr "Ein Mesh-Routing-Protokoll für Linux-Geräte."
 
 #: applications/luci-app-bmx7/ucode/template/bmx7/bmxtunnels.ut:33
 msgid "Announcements"
@@ -21,7 +21,7 @@ msgstr "Ankündigungen"
 #: applications/luci-app-bmx7/htdocs/luci-static/resources/view/bmx7/config.js:10
 #: applications/luci-app-bmx7/root/usr/share/luci/menu.d/luci-app-bmx7.json:3
 msgid "BMX7"
-msgstr ""
+msgstr "BMX7"
 
 #: applications/luci-app-bmx7/ucode/template/bmx7/bmxstatus.ut:28
 msgid "BMX7 revision"
@@ -37,16 +37,16 @@ msgstr "CPU-Auslastung"
 
 #: applications/luci-app-bmx7/root/usr/share/luci/menu.d/luci-app-bmx7.json:15
 msgid "Config"
-msgstr ""
+msgstr "Konfiguration"
 
 #: applications/luci-app-bmx7/ucode/template/bmx7/bmxnodes.ut:144
 msgid "Desc. size"
-msgstr ""
+msgstr "Desc. Größe"
 
 #: applications/luci-app-bmx7/htdocs/luci-static/resources/view/bmx7/config.js:27
 #: applications/luci-app-bmx7/htdocs/luci-static/resources/view/bmx7/config.js:33
 msgid "Dev"
-msgstr ""
+msgstr "Dev"
 
 #: applications/luci-app-bmx7/ucode/template/bmx7/bmxstatus.ut:80
 msgid "Device"
@@ -54,11 +54,11 @@ msgstr "Gerät"
 
 #: applications/luci-app-bmx7/htdocs/luci-static/resources/view/bmx7/config.js:23
 msgid "Devices"
-msgstr ""
+msgstr "Geräte"
 
 #: applications/luci-app-bmx7/htdocs/luci-static/resources/view/bmx7/config.js:37
 msgid "Gateway Devices"
-msgstr ""
+msgstr "Gateway-Geräte"
 
 #: applications/luci-app-bmx7/root/usr/share/rpcd/acl.d/luci-app-bmx7.json:3
 msgid "Grant UCI access for luci-app-bmx7"
@@ -66,7 +66,7 @@ msgstr ""
 
 #: applications/luci-app-bmx7/htdocs/luci-static/resources/view/bmx7/config.js:57
 msgid "Ignore"
-msgstr ""
+msgstr "Ignorieren"
 
 #: applications/luci-app-bmx7/ucode/template/bmx7/bmxstatus.ut:58
 msgid "Interface"
@@ -74,7 +74,7 @@ msgstr "Schnittstelle"
 
 #: applications/luci-app-bmx7/htdocs/luci-static/resources/view/bmx7/config.js:61
 msgid "JSON source"
-msgstr ""
+msgstr "JSON Quelle"
 
 #: applications/luci-app-bmx7/ucode/template/bmx7/bmxnodes.ut:81
 msgid "Last Desc"
@@ -110,7 +110,7 @@ msgstr "Speichernutzung"
 
 #: applications/luci-app-bmx7/ucode/template/bmx7/bmxnodes.ut:59
 msgid "Mesh nodes"
-msgstr ""
+msgstr "Mesh Nodes"
 
 #: applications/luci-app-bmx7/ucode/template/bmx7/bmxnodes.ut:80
 msgid "Metric"
